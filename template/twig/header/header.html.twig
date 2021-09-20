@@ -1,0 +1,46 @@
+{{ do_action('start_render_header') }}
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html dir="rtl" lang="fa" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html dir="rtl" lang="fa" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html dir="rtl" lang="fa" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html dir="rtl" lang="fa" class="no-js"> <!--<![endif]-->
+<head>{{ wp_head() }}</head>
+<body {{ body_class(body_class|default('')) }} id="top">
+{{ add_location(_self, '', 'start_body') }}
+{% if apply_filters('has_header', has_header|default(1)) %}
+<header id="site_header">
+    {{ add_location(_self, '', 'header_1') }}
+    {% set can_render_breadcrumb = apply_filters('breadcrumb_can_render'|generate_hook, 1) %}
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-3 main-nav{% if not can_render_breadcrumb %} shadow-sm{% endif %}">
+        {{ add_location(_self, '', 'header_2') }}
+        <div class="container">
+            {{ dynamic_sidebar('header-1') }}
+            {% if has_nav_menu('primary') %}
+                <button class="navbar-toggler svg-icon icon-menu icon-before-secondary icon-before-2xs lazyload"
+                        data-class="icon-menu" type="button" data-toggle="collapse" data-target=".nav-bar"
+                        aria-controls="navbar" aria-expanded="true" aria-label="{{ __('Toggle navigation', domain) }}">
+                </button>
+                <div class="collapse navbar-collapse nav-bar" id="navbar">
+                    {{ wp_nav_menu({theme_location:'primary'}) }}
+                    {{ wp_nav_menu({theme_location:'secondary'}) }}
+                </div>
+            {% endif %}
+        </div>
+    </nav>
+    {% if is_active_sidebar('header-2') %}
+        <nav class="bg-gray-300">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        {{ dynamic_sidebar('header-2') }}
+                    </div>
+                </div>
+            </div>
+        </nav>
+    {% endif %}
+</header>
+{% endif %}

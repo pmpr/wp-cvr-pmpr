@@ -1,0 +1,14 @@
+{% if permalink is defined and permalink is not empty %}
+<a class="py-0 d-flex navbar-brand" href="{{ permalink|raw }}">
+    {% endif %}
+    <div class="{{ image_container_class|default('') }}">
+
+        {{ get_icon(logo.logo, {width: 192, height: 60, title: logo.title})|raw }}
+        <div class="sr-only">
+            <span>{{ name|default('') }}</span>
+            <span>{{ description|default('') }}</span>
+        </div>
+    </div>
+    {% if permalink is defined and permalink is not empty %}
+</a>
+{% endif %}

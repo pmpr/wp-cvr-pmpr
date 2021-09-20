@@ -1,0 +1,10 @@
+{% set url = include(get_include_template('render_author_url')) %}
+{% if url is not empty %}
+    <a href="{{ url|esc_attr }}" class="text-decoration-none">
+        {% include get_include_template('render_avatar') with {
+            avatar_class: 'avatar-sm',
+            avatar_size: 29,
+        } %}
+        <span class="ml-2">{% include get_include_template('render_author') %}</span>
+    </a>
+{% endif %}

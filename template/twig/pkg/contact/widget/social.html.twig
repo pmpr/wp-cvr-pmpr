@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-between justify-content-md-end flex-row flex-md-column">
+    {% for item in items %}
+        {% if loop.first or loop.index % 2 == 1 %}
+            <div class="d-flex justify-content-between w-100 pb-2">
+        {% endif %}
+
+        <a href="{{ item.url|raw }}" rel="nofollow noopener noreferrer" target="_blank" title="{{ item.title|raw }}"
+           class="w-100 hover-translate-y-n3 text-center text-gray-300 hover-gray-200 my-auto d-flex justify-content-center justify-content-md-end">
+            <span class="direction-ltr d-none d-md-block mr-2 my-auto">@{{ item.url|split('/')|filter|last }}</span>
+            {{ get_icon(item.icon, {class: 'social-icon icon-gray-400 icon-' ~ icon_size|default('xxl')})|raw }}
+        </a>
+
+        {% if loop.last or loop.index % 2 == 0 %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

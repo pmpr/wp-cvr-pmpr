@@ -1,0 +1,10 @@
+{% extends get_template('base', _self) %}
+
+{% block body %}
+    <main>
+        {% if jumbotron is defined and jumbotron is not empty%}
+            <h1 class="sr-only">{{ jumbotron|raw }}</h1>
+        {% endif %}
+        {% block main %}{% endblock %}
+    </main>
+{% endblock %}

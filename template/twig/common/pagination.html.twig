@@ -1,0 +1,6 @@
+{% set pagination = apply_filters('get_post_paginate_links', '') %}
+{% if pagination is not empty %}
+    <nav class="d-flex justify-content-center my-3" aria-label="{{ pagination_label|esc_attr }}">
+        {{ pagination|raw }}
+    </nav>
+{% endif %}

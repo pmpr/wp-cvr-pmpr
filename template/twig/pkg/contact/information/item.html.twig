@@ -1,0 +1,17 @@
+{% set value = item.value %}
+
+{% if value is not empty %}
+    {% set class = "font-" ~ sizes[font_size] %}
+    <div class="d-flex flex-column flex-sm-row {{ item_holder_class|default(class) }}">
+        {% if value is iterable %}
+            {% for val in value %}
+                {% include get_template('value', _self) %}
+                {% if not loop.last %}
+                    <span class="mx-2 my-auto d-none d-sm-block">|</span>
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {% include get_template('value', _self) %}
+        {% endif %}
+    </div>
+{% endif %}

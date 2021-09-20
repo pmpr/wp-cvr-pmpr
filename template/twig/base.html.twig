@@ -1,0 +1,17 @@
+{% block header %}
+    {{ do_action('render_header') }}
+{% endblock %}
+
+{{ add_location(_self, '', 'after_header') }}
+
+{{ add_location(_self, 'section') }}
+
+{% block body %}{% endblock %}
+
+{{ add_location(_self, 'section') }}
+
+{{ add_location(_self, '', 'before_footer') }}
+
+{% block footer %}
+    {{ do_action('render_footer') }}
+{% endblock %}

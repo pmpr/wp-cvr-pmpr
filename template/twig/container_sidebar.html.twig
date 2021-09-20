@@ -1,0 +1,21 @@
+{% extends get_template('base', _self) %}
+{% block body %}
+    {% block before_container %}{% endblock %}
+    <div class="container my-5">
+        {% block before_main_and_sidebar %}{% endblock %}
+        <div class="row">
+            <div class="col-12 col-lg-8 order-{{ main_order|default(2)|esc_attr }}">
+                {% block main %}{% endblock %}
+            </div>
+            <div class="col-12 col-lg-4 order-{{ sidebar_order|default(3)|esc_attr }}">
+                <aside class="h-100 position-relative">
+                    {{ dynamic_sidebar('aside-sidebar') }}
+                    {% block sidebar %}{% endblock %}
+                </aside>
+            </div>
+        </div>
+        {% block after_main_and_sidebar %}{% endblock %}
+    </div>
+    {{ dynamic_sidebar('after-container') }}
+    {% block after_container %}{% endblock %}
+{% endblock %}

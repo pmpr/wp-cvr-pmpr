@@ -1,0 +1,30 @@
+{% if items is defined and items is not empty %}
+    <div class="card text-center shadow-sm">
+        <table class="table mb-0 bg-transparent w-100">
+            <tbody>
+            {% for key, item in items %}
+                {% set has_link = item.getLink() is defined
+                    and item.getLink() is not empty %}
+                {% set attrs = item.getAttributes() ?? {} %}
+
+                {% set icon = item.getIcon() %}
+                {% set attrs = attrs|add('class', 'clickable-row', has_link) %}
+                <tr {{ attrs|parse_attrs|raw }} {% if has_link %} data-href="{{ item.getLink()|esc_attr }}"{% endif %}>
+                    {% set has_title = 0 %}
+                    {% if item.getTitle() is defined
+                        and item.getTitle() is not empty %}
+                        {% set has_title = 1 %}
+                        <th class="d-flex font-15 font-weight-normal text-gray-800 text-left py-2">
+                            {{ get_icon(item.getIcon(), {class: 'icon-lg mr-3'}, 1)|raw }}
+                            {{ item.getTitle|raw }}
+                        </th>
+                    {% endif %}
+                    <td class="font-15 font-weight-bold text-gray-700 text-right py-2"{% if not has_title %} colspan="2" {% endif %}>
+                        {{ item.getValue()|raw }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endif %}

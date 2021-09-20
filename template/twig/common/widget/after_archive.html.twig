@@ -1,0 +1,9 @@
+{% if is_active_sidebar(sidebar_name) %}
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                {{ dynamic_sidebar(sidebar_name) }}
+            </div>
+        </div>
+    </section>
+{% endif %}

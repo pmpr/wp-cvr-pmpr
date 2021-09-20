@@ -1,0 +1,105 @@
+{{ do_action('start_render_header') }}
+<!DOCTYPE html>
+<html amp ⚡ lang="fa">
+<head>
+    {{ do_action('amp_wp_head') }}
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }</style>
+    </noscript>
+</head>
+<body {{ body_class(body_class|default('')) }} id="top">
+{{ add_location(_self, '', 'start_body') }}
+{% if apply_filters('has_header', has_header|default(1)) %}
+<nav class="ampstart-headerbar fixed items-center top-0 left-0 right-0 py-2 bg-gray-100">
+    <button aria-label="open sidebar"
+            on="tap:menu-sidebar.toggle" tabindex="0"
+            class="ampstart-navbar-trigger position-absolute my-4 mr-4 btn p-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+        </svg>
+    </button>
+    {{ do_action('theme_logo_render', {
+        url:        home_url()|amp,
+        position: 'center',
+        svg_class: 'brand-logo mx-auto',
+        text_class: 'text-gray-200',
+    }) }}
+</nav>
+<amp-sidebar id="menu-sidebar" class="sidebar w-50 position-relative p-3" layout="nodisplay" side="right">
+    <div class="text-left mb-3">
+        <button aria-label="close sidebar"
+                on="tap:menu-sidebar.close" tabindex="0"
+                class="ampstart-navbar-trigger top-0 left-0 btn">
+            {{ do_action('render_html_icon_action', 'x', {
+                class: 'icon-2xs mx-auto'
+            }) }}
+        </button>
+    </div>
+    {{ do_action('render_menu', 'amp_header', {}, 1) }}
+    <div class="text-center pt-3 border-top">
+        <a class="text-gray-800" href="{{ canonical_url|esc_attr }}">{{ none_amp|raw }}</a>
+    </div>
+</amp-sidebar>
+<div class="position-fixed w-100 p-2 bottom-0 z-index-3">
+    <a class="btn btn-outline-primary py-2 font-18 btn-block bg-gray-100" href="{{ canonical_url|esc_attr }}">{{ none_amp|raw }}</a>
+</div>
+{% endif %}

@@ -1,0 +1,21 @@
+{
+  "name": "pmpr/pw-thm-pmpr",
+  "type": "project",
+  "license": "proprietary",
+  "description": "PMPR Theme for Wordpress",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "pmpr"
+  ],
+  "require": {
+    "php": ">=7.4",
+    "pmpr/wp-thm-foundation": "^1.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pmpr\\Theme\\Pmpr\\": "src/Pmpr/Theme/Pmpr"
+    }
+  },
+  "minimum-stability": "dev"
+}
