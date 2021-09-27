@@ -7,9 +7,9 @@
             <div class="list-view d-flex mr-2">
                 {% for item in views %}
                     <button class="btn p-0 change-view card-link ml-2 shadow-none" role="button"
-                            aria-label="{{ item.getTitle()|esc_attr }}" data-name="{{ item.getName()|esc_attr }}">
-                        {{ get_icon(item.getIcon(), {
-                            class: 'icon-lg my-auto icon-' ~ (item.isEnable() ? 'primary enable' : 'gray-500')
+                            aria-label="{{ item.title|esc_attr }}" data-name="{{ item.name|esc_attr }}">
+                        {{ get_icon(item.icon, {
+                            class: 'icon-lg my-auto icon-' ~ (item|call('isEnable') ? 'primary enable' : 'gray-500')
                         })|raw }}
                     </button>
                 {% endfor %}

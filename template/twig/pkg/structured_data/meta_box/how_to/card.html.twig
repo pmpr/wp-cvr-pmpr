@@ -77,8 +77,9 @@
                                 {% endif %}
                                 <ul class="list-group list-group-flush w-100">
                                     {% for instruction in step.instructions %}
-                                        <li class="list-group-item border-0 mb-2 font-16{% if instruction.isTip() %} p-2 li-icon svg-icon icon-info-mark icon-before-3xs alert alert-primary d-flex{% else %} px-2 py-0 bg-transparent{% endif %}">
-                                            <span class="my-auto{% if instruction.isTip() %} mr-2{% endif %}">{{ instruction.text|raw }}</span>
+                                        {% set isTip = instruction|call('isTip') %}
+                                        <li class="list-group-item border-0 mb-2 font-16{% if isTip %} p-2 li-icon svg-icon icon-info-mark icon-before-3xs alert alert-primary d-flex{% else %} px-2 py-0 bg-transparent{% endif %}">
+                                            <span class="my-auto{% if isTip %} mr-2{% endif %}">{{ instruction.text|raw }}</span>
                                         </li>
                                     {% endfor %}
                                 </ul>

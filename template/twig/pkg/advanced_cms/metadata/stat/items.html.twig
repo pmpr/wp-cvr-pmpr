@@ -1,16 +1,16 @@
 {% if items is not empty and items is not empty %}
     {% for key, item in items %}
-        <div class="w-100 text-center py-3 py-md-auto lh-xxl" id="statistic_{{ item.getName()|raw }}">
+        <div class="w-100 text-center py-3 py-md-auto lh-xxl" id="statistic_{{ item.name|raw }}">
             <div class="d-flex justify-content-center">
-                {{ get_icon(item.getIcon(), {
+                {{ get_icon(item.icon, {
                     class: 'icon-primary icon-xxl'
                 })|raw }}
-                <span class="statistic-lg ml-2" data-value="{{ item.getValue()|esc_attr }}">
-                    {{ item.getValue()|short_number|number|raw }}
+                <span class="statistic-lg ml-2" data-value="{{ item.value|esc_attr }}">
+                    {{ item.value|short_number|number|raw }}
                 </span>
             </div>
             <div class="text-secondary h5 mb-0 text-center">
-                {{ item.getTitle()|raw }}
+                {{ item.title|raw }}
             </div>
         </div>
     {% endfor %}

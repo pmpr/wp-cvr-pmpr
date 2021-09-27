@@ -1,5 +1,5 @@
 {
-  "name": "pmpr/wp-thm-pmpr",
+  "name": "pmpr/theme/wp-thm-pmpr",
   "type": "project",
   "license": "proprietary",
   "description": "PMPR Theme for Wordpress",
@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": ">=7.4",
-    "pmpr/wp-thm-foundation": "dev-main"
+    "pmpr/theme/wp-thm-foundation": "dev-main"
   },
   "autoload": {
     "psr-4": {

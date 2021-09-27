@@ -4,18 +4,18 @@
         {% for key, item in items %}
 
             {% set item_class = item_class|default('') ~ ' w-100 font-16' ~ (not loop.first ? ' d-none d-md-block' : '') %}
-            {% set value = item.getValue() %}
+            {% set value = item.value %}
             <span class="{{ item_class|raw }}">
-                {% set link = item.getLink() %}
+                {% set link = item.link %}
                 {% if link is defined
                     and link is not empty %}
                     {% set value %}
                         <a class="card-link {{ link_class|esc_attr }}"
-                           href="{{ item.getLink()|esc_attr }}">{{ value|raw }}</a>
+                           href="{{ item.link|esc_attr }}">{{ value|raw }}</a>
                     {% endset %}
                 {% endif %}
 
-                {% if item.getName() is same as('category') %}
+                {% if item.name is same as('category') %}
                     {{ __('in %s Category', constant('PR__THM__PMPR'))|format(value)|raw }}
                 {% else %}
                     {{ value|raw }}
