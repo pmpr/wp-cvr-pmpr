@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": ">=7.4",
-    "pmpr-thm/wp-thm-foundation": "dev-main"
+    "pmpr-cmn/wp-cmn-theme": "dev-main"
   },
   "autoload": {
     "psr-4": {
