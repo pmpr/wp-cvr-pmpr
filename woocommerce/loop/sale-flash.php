@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6151c1dba229a             |
+    |             61680efaba9e9             |
     |_______________________________________|
 */
- goto oqoogougwwcqeimq; cwomucmeuqqucyge: goto eguukwmoyaaieuww; oqoogougwwcqeimq: if (defined("\x41\x42\123\120\x41\x54\x48")) { goto qgmgmkeiemcqkyim; } goto eqiiqamuyewoowwy; eqiiqamuyewoowwy: exit; goto cwomucmeuqqucyge; eguukwmoyaaieuww: qgmgmkeiemcqkyim: goto kqkeomoaociyuoye; kqkeomoaociyuoye: wc_get_template("\163\141\x6c\x65\55\x66\x6c\141\x73\x68\56\x70\150\x70");
+ goto gyeayeuuyiemuwuq; imeaiksowuukikui: aymmymequcisekie: goto aqmiewawgseaqeqk; gyeayeuuyiemuwuq: if (defined("\101\x42\x53\x50\x41\124\x48")) { goto aymmymequcisekie; } goto kyggwyywiycksgqq; kyggwyywiycksgqq: exit; goto sugumgeqcwgekcqs; sugumgeqcwgekcqs: goto imeaiksowuukikui; aqmiewawgseaqeqk: wc_get_template("\163\141\154\145\55\146\x6c\141\x73\x68\x2e\x70\x68\160");

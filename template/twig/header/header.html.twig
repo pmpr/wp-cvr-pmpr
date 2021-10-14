@@ -8,7 +8,11 @@
 <html dir="rtl" lang="fa" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html dir="rtl" lang="fa" class="no-js"> <!--<![endif]-->
-<head>{{ wp_head() }}</head>
+<head>
+    {{ wp_head() }}
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+</head>
 <body {{ body_class(body_class|default('')) }} id="top">
 {{ add_location(_self, '', 'start_body') }}
 {% if apply_filters('has_header', has_header|default(1)) %}
@@ -23,6 +27,7 @@
                 <button class="navbar-toggler svg-icon icon-menu icon-before-secondary icon-before-2xs lazyload"
                         data-class="icon-menu" type="button" data-toggle="collapse" data-target=".nav-bar"
                         aria-controls="navbar" aria-expanded="true" aria-label="{{ __('Toggle navigation', domain) }}">
+                    {{ get_icon('fontawesome/bars', {}, 1)|raw }}
                 </button>
                 <div class="collapse navbar-collapse nav-bar" id="navbar">
                     {{ wp_nav_menu({theme_location:'primary'}) }}
