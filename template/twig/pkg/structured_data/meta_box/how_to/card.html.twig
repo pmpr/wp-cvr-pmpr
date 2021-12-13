@@ -55,12 +55,9 @@
                                data-target="#step_content_{{ index|esc_attr }}"
                                aria-expanded="true" aria-controls="step_content_{{ index|esc_attr }}">
                                 <h4 class="h6 font-17 mb-0 text-right">{{ step_title_mask|format(loop.index|number, step.title)|raw }}</h4>
-                                {% include get_include_template('svg') with {
-                                    icon: 'x',
-                                    icon_attrs: {
-                                        class: 'el-circle-4xs rotate-45deg icon-gray-600 d-none d-md-block my-auto'
-                                    }
-                                } %}
+                                {{ get_icon('fontawesome/xmark', {
+                                    class: 'el-circle-4xs rotate-45deg icon-gray-600 d-none d-md-block my-auto'
+                                })|raw }}
                             </a>
                         </div>
                         <div id="step_content_{{ index|esc_attr }}"
@@ -69,11 +66,12 @@
                             <div class="card-body d-flex">
                                 {% if step.image_id is defined
                                     and step.image_id is not empty %}
-                                    {% include get_include_template('render_image') with {
-                                        item: step.image_id,
-                                        class: 'img-fluid d-none d-md-block mb-auto ml-5',
-                                        image_size: apply_filters('structured_data_howto_step_image_size', 'small')
-                                    } %}
+                                    {{ render_post_data('image', step.image_id, {
+                                        size: apply_filters('structured_data_howto_step_image_size', 'small')
+                                        attrs: {
+                                            class: 'img-fluid d-none d-md-block mb-auto ml-5',
+                                        }
+                                    })|raw }}
                                 {% endif %}
                                 <ul class="list-group list-group-flush w-100">
                                     {% for instruction in step.instructions %}

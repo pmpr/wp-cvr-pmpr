@@ -6,15 +6,13 @@
                href="#filter-{{ id }}" aria-expanded="true"
                aria-controls="filter-{{ id }}" id="heading-{{ id }}">
                 <span>{{ title }}</span>
-                {% include get_include_template('svg') with {
-                    icon: 'chevron-down',
-                    icon_attrs: {
-                        class: 'icon-3xs rotate-90deg icon-secondary'
-                    }
-                } %}
+                {{ get_icon('fontawesome/chevron-down', {
+                    class: 'icon-3xs rotate-90deg icon-secondary'
+                }) }}
             </a>
         </h2>
-        <div id="filter-{{ id|esc_attr }}" data-filter="{{ id|esc_attr }}" class="collapse{% if not collapse_items %} show{% endif %}" aria-labelledby="heading-{{ id }}">
+        <div id="filter-{{ id|esc_attr }}" data-filter="{{ id|esc_attr }}"
+             class="collapse{% if not collapse_items %} show{% endif %}" aria-labelledby="heading-{{ id }}">
             <div class="card-body {{ card_body_class|default('px-3 py-2') }}">
                 {% block body %}{% endblock body %}
             </div>

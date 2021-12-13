@@ -1,4 +1,4 @@
-{% extends get_include_template('base') %}
+{% extends get_template('include/base', _self) %}
 {% block content %}
     {% set is_left = is_left|default(1) %}
     {% if has_grid is defined and has_grid %}
@@ -24,7 +24,7 @@
             {% endif %}
         </div>
         {% if has_meta %}
-            {% embed get_include_template('card_footer') with {
+            {% embed get_template('include/card_footer', _self) with {
                 has_border: 0
             } %}
                 {% block content %}

@@ -3,13 +3,10 @@
 
     <div class="dropdown">
         <a id="profile" href="#" class="d-flex btn btn-sm btn-outline-primary ml-2"
-           data-toggle="dropdown"
-           aria-haspopup="true" aria-expanded="false">
-            <div class="icon-3xs">
-                {% include get_include_template('svg') with {
-                    name: profile.icon,
-                } %}
-            </div>
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ get_icon(profile.icon, {
+                class: 'icon-3xs'
+            })|raw }}
             <span class="mr-2">{{ profile.user.nickname|raw }}</span>
         </a>
         <div class="dropdown-menu left-auto border-0 right-0 mt-4 py-0 min-w-14">
@@ -18,13 +15,11 @@
                 <div class="">
                     {% for id, item in items %}
                         {% if item.url is defined and item.url is not empty %}
-                            <a class="d-flex px-3 py-2 dropdown-item text-gray-600" id="{{ id|esc_attr }}_dropdown_item"
-                               href="{{ item.url|raw }}">
-                                <div class="icon-3xs my-auto">
-                                    {% include get_include_template('svg') with {
-                                        name: item.icon,
-                                    } %}
-                                </div>
+                            <a class="d-flex px-3 py-2 dropdown-item text-gray-600"
+                               id="{{ id|esc_attr }}_dropdown_item" href="{{ item.url|raw }}">
+                                {{ get_icon(item.icon, {
+                                    class: 'icon-3xs my-auto'
+                                })|raw }}
                                 <span class="ml-2 font-15">{{ item.title|raw }}</span>
                                 {% if item.count is defined %}
                                     <span class="ml-auto my-auto badge badge-danger badge-primary">{{ item.count|raw }}</span>
@@ -44,11 +39,9 @@
         <a id="{{ id|esc_attr }}" href="{{ button.url }}"
            class="d-flex btn btn-sm btn-outline-primary ml-2">
             <span class="mr-2">{{ button.title|raw }}</span>
-            <div class="icon-3xs">
-                {% include get_include_template('svg') with {
-                    name: button.icon,
-                } %}
-            </div>
+            {{ get_icon(button.icon, {
+                class: 'icon-3xs'
+            }) }}
         </a>
     {% endfor %}
 {% endif %}
