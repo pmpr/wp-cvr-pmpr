@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61c04d741c735             |
+    |             61c066d89355c             |
     |_______________________________________|
 */
- if (defined("\101\x42\x53\120\101\x54\110")) { goto yyqygaokeccgugos; } exit; yyqygaokeccgugos: wc_get_template("\x73\141\154\x65\55\x66\x6c\x61\x73\x68\56\160\x68\160");
+ if (defined("\101\x42\x53\x50\101\124\x48")) { goto yyqygaokeccgugos; } exit; yyqygaokeccgugos: wc_get_template("\163\141\x6c\x65\x2d\x66\154\141\163\x68\x2e\x70\150\160");
