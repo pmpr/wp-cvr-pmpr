@@ -1230,3 +1230,4 @@ msgstr "به روزرسانی جمع کل"
 
 #~ msgid "Your Text"
 #~ msgstr "متن شما"
+

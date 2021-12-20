@@ -6,3 +6,4 @@
         <p class="paragraph {{ text_class|default('mb-0') }}{% if justify is defined and justify %} text-justify{% else %} text-{{ align ?? 'left' }}{% endif %}">{{ text|raw }}</p>
     {% endif %}
 </div>
+
