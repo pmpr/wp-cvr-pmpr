@@ -1,7 +1,12 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61c066d89355c             |
+    |             61d45f0edbe3b             |
     |_______________________________________|
 */
- if (defined("\101\102\x53\x50\x41\x54\x48")) { goto aeiemwacaiygemmg; } exit; aeiemwacaiygemmg: echo "\x3c\x66\157\x72\x6d\x20\143\x6c\141\163\163\75\42\x77\x6f\x6f\143\157\x6d\155\145\162\x63\x65\55\157\x72\x64\x65\x72\x69\156\x67\x22\40\x6d\x65\164\150\157\x64\75\x22\147\x65\x74\x22\x3e\12\40\40\40\x20"; do_action("\167\157\x6f\143\x6f\155\x6d\145\x72\143\145\x5f\157\x72\144\145\x62\x79\x5f\x64\162\157\160\x64\x6f\167\156", $catalog_orderby_options, $waoayeqikyuuamca); echo "\x9\x3c\151\x6e\x70\165\164\40\x74\x79\x70\145\x3d\x22\x68\x69\x64\144\145\x6e\42\40\x6e\x61\x6d\145\x3d\x22\x70\141\x67\x65\x64\x22\40\166\x61\x6c\165\145\75\42\61\x22\40\57\x3e\xa\11"; wc_query_string_form_fields(null, array("\x6f\x72\144\x65\x72\142\171", "\x73\x75\x62\155\x69\164", "\x70\141\147\x65\144", "\x70\162\157\144\x75\143\164\55\160\x61\x67\x65")); echo "\x3c\x2f\146\157\162\155\76\xa";
+ if (defined("\x41\x42\123\x50\x41\124\x48")) { goto aeiemwacaiygemmg; } exit; aeiemwacaiygemmg: ?>
+<form class="woocommerce-ordering" method="get">
+    <?php  do_action("\167\x6f\x6f\143\x6f\155\x6d\145\x72\143\x65\x5f\x6f\162\144\x65\142\171\137\144\x72\157\x70\x64\157\x77\156", $catalog_orderby_options, $waoayeqikyuuamca); ?>
+	<input type="hidden" name="paged" value="1" />
+	<?php  wc_query_string_form_fields(null, array("\x6f\x72\x64\145\162\x62\x79", "\163\x75\142\x6d\151\x74", "\160\141\147\145\144", "\160\x72\x6f\144\x75\143\164\x2d\x70\141\x67\x65")); ?>
+</form>

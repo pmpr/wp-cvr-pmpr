@@ -1,7 +1,14 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61c066d89355c             |
+    |             61d45f0edbe3b             |
     |_______________________________________|
 */
- defined("\101\102\123\120\x41\124\110") || exit; if (wc_coupons_enabled()) { goto kaiesowkgwogqseg; } return; kaiesowkgwogqseg: echo "\74\144\x69\x76\40\151\144\75\42\143\x68\145\143\153\157\165\x74\x5f\x63\157\x75\x70\157\x6e\x22\76\xa\74\41\55\55\40\x20\x20\x20\x54\117\x44\117\x3a\x20\x63\150\145\x63\x6b\x6f\x75\164\137\x63\157\x75\x70\x6f\x6e\x20\x68\151\144\x65\40\164\150\x69\163\x20\146\157\162\x6d\x20\x62\x79\x20\152\163\40\x2d\x2d\x3e\12\x3c\41\x2d\55\x20\x20\40\40\74\x66\x6f\x72\x6d\x20\x63\x6c\x61\163\163\75\42\x63\150\x65\143\x6b\x6f\x75\x74\137\143\157\165\160\157\x6e\x20\x77\x6f\157\143\157\155\155\x65\162\143\145\55\x66\x6f\162\x6d\55\x63\157\x75\x70\157\x6e\42\40\x6d\145\164\x68\157\144\x3d\42\160\x6f\163\x74\x22\40\163\164\x79\154\145\75\x22\x64\151\x73\160\x6c\141\x79\x3a\40\x62\x6c\x6f\x63\153\42\x3e\55\55\x3e\12\x20\x20\x20\x20\x3c\146\157\162\x6d\x20\x63\x6c\x61\163\x73\x3d\42\x77\157\x6f\x63\157\x6d\155\145\x72\143\145\x2d\x66\157\x72\155\x2d\143\157\x75\x70\157\x6e\x22\40\155\145\164\x68\x6f\x64\x3d\42\160\157\163\x74\x22\40\x73\164\x79\154\x65\75\42\144\151\x73\x70\154\141\x79\x3a\40\142\154\157\x63\153\42\x3e\xa\11\40\x20\x20\x20"; wc_get_template("\x63\x6f\165\x70\x6f\x6e\56\x70\150\160"); echo "\x20\40\x20\x20\x3c\x2f\146\x6f\162\155\x3e\12\74\x2f\144\x69\166\76";
+ defined("\101\x42\x53\120\101\124\110") || exit; if (wc_coupons_enabled()) { goto kaiesowkgwogqseg; } return; kaiesowkgwogqseg: ?>
+<div id="checkout_coupon">
+<!--    TODO: checkout_coupon hide this form by js -->
+<!--    <form class="checkout_coupon woocommerce-form-coupon" method="post" style="display: block">-->
+    <form class="woocommerce-form-coupon" method="post" style="display: block">
+	    <?php  wc_get_template("\x63\x6f\165\x70\157\x6e\x2e\x70\x68\x70"); ?>
+    </form>
+</div>
