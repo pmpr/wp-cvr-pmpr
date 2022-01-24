@@ -6,6 +6,15 @@
     <footer class="text-gray-300" id="site_footer">
         <div class="py-5 py-md-8 bg-gray-800">
             <div class="container">
+                {% include get_template('../common/logo', _self) with {
+                    args: {
+                        attrs: {
+                            class: 'icon-gray-300'
+                        },
+                        target: 'footer_logo',
+                        container_class: 'navbar-brand d-flex mb-5',
+                    }
+                } %}
                 {{ dynamic_sidebar('footer-1') }}
             </div>
         </div>
@@ -19,6 +28,7 @@
                                     {% if has_footer_2 %}
                                         <div class="col-12 col-md-6 mb-5 my-lg-auto">
                                             {{ dynamic_sidebar('footer-2') }}
+                                            {{ wp_nav_menu({theme_location:'footer-menu'}) }}
                                         </div>
                                     {% endif %}
                                     {% if has_footer_3 %}
@@ -31,7 +41,9 @@
                         {% endif %}
                         {% if has_footer_4 %}
                             <div class="col-12 col-lg-4 my-auto">
-                                {{ dynamic_sidebar('footer-4') }}
+                                <div class="d-flex justify-content-end">
+                                    {{ dynamic_sidebar('footer-4') }}
+                                </div>
                             </div>
                         {% endif %}
                     </div>

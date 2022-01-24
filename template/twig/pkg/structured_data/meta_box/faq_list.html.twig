@@ -14,7 +14,7 @@
                            data-target="#faq_answer_{{ index|esc_attr }}"
                            aria-expanded="true" aria-controls="faq_answer_{{ index|esc_attr }}">
                             <h3 class="h6 font-17 mb-0 text-right">{{ item.question|raw }}</h3>
-                            {{ generate_icon(icon, {
+                            {{ get_icon(icon, {
                                 class: 'icon-xs rotate-45deg icon-gray-600 d-none d-md-block my-auto'
                             }) }}
                         </a>

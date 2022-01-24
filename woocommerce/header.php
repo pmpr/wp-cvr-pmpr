@@ -1,10 +1,10 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61d45f0edbe3b             |
+    |             61eec51b10e4f             |
     |_______________________________________|
 */
- defined("\x41\x42\x53\x50\101\124\110") || exit; ?>
+ defined("\101\x42\123\x50\x41\124\x48") || exit; ?>
 <header class="mt-5 mb-2">
     <div class="h2 text-primary"><?php  the_title(); ?></div>
 </header>
