@@ -1,7 +1,23 @@
 <?php
-/*   _______________________________________
-    |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61eec51b10e4f             |
-    |_______________________________________|
-*/
- if (defined("\x41\x42\x53\120\101\x54\110")) { goto yoagcooekomeokwg; } exit; yoagcooekomeokwg: wc_get_template("\163\x61\154\x65\x2d\x66\154\141\163\x68\x2e\160\x68\160");
+/**
+ * Single Product Sale Flash
+ *
+ * This template can be overridden by copying it to yourtheme/woocommerce/single-product/sale-flash.php.
+ *
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
+ *
+ * @see         https://docs.woocommerce.com/document/template-structure/
+ * @package     WooCommerce\Templates
+ * @version     1.6.4
+ */
+
+if (!defined('ABSPATH')) {
+	exit; // Exit if accessed directly
+}
+
+wc_get_template('sale-flash.php');
+

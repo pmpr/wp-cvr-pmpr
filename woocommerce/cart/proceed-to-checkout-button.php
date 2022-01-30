@@ -1,11 +1,28 @@
 <?php
-/*   _______________________________________
-    |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61eec51b10e4f             |
-    |_______________________________________|
-*/
- if (defined("\x41\102\123\120\x41\x54\x48")) { goto ikcwmsgocyuqiumc; } exit; ikcwmsgocyuqiumc: ?>
+/**
+ * Proceed to checkout button
+ *
+ * Contains the markup for the proceed to checkout button on the cart.
+ *
+ * This template can be overridden by copying it to yourtheme/woocommerce/cart/proceed-to-checkout-button.php.
+ *
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
+ *
+ * @see     https://docs.woocommerce.com/document/template-structure/
+ * @package WooCommerce\Templates
+ * @version 2.4.0
+ */
 
-<a href="<?php  echo esc_url(wc_get_checkout_url()); ?>" class="btn btn-danger font-weight-bold btn-block checkout-button button alt wc-forward">
-	<?php  esc_html_e("\x50\x72\157\x63\145\x65\144\x20\164\x6f\x20\x63\x68\x65\143\153\157\165\164", PR__THM__PMPR); ?>
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+?>
+
+<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="btn btn-danger font-weight-bold btn-block checkout-button button alt wc-forward">
+	<?php esc_html_e('Proceed to checkout', PR__THM__PMPR); ?>
 </a>
+

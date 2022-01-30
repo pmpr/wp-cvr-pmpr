@@ -1,45 +1,218 @@
 <?php
-/*   _______________________________________
-    |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61eec51b10e4f             |
-    |_______________________________________|
-*/
- defined("\x41\102\123\x50\x41\124\110") || exit; $wwcysoksoogyacog = WC()->cart; $oammesyieqmwuwyi = []; $t_regular = 0; $t_discount = 0; foreach ($wwcysoksoogyacog->get_cart() as $uusmaiomayssaecw => $igqsaukqcqscimok) { $_product = apply_filters("\167\x6f\157\143\157\x6d\x6d\145\162\143\145\137\x63\141\162\164\137\x69\164\145\155\x5f\x70\162\157\x64\x75\x63\x74", $igqsaukqcqscimok["\x64\x61\x74\x61"], $igqsaukqcqscimok, $uusmaiomayssaecw); $swykymamuiiwegii = (int) $igqsaukqcqscimok["\161\165\x61\156\164\151\164\171"]; $eeeyyekmaesysegc = (int) $_product->get_sale_price(''); $aumscagymwyyicag = (int) $_product->get_price(''); $iuiwoikawsooqksg = (int) $_product->get_regular_price(''); $t_regular += $iuiwoikawsooqksg; if (!($aumscagymwyyicag !== $iuiwoikawsooqksg)) { goto kwiggogcgciwuwqk; } $t_discount += ($iuiwoikawsooqksg - $eeeyyekmaesysegc) * $swykymamuiiwegii; kwiggogcgciwuwqk: yykqaowwsqgqysmq: } suqceasgacskcmkc: if (!$t_regular) { goto uckewycoogsogwiy; } $oammesyieqmwuwyi["\143\x61\162\x74\x2d\162\145\147\x75\154\x61\x72"] = ["\164\151\x74\x6c\x65" => __("\124\x6f\164\141\154\x20\122\145\x67\165\x6c\141\162\40\120\x72\x69\143\x65", PR__THM__PMPR), "\x76\141\x6c\x75\x65" => "\74\x64\x65\154\76" . wc_price($t_regular) . "\x3c\x2f\x64\145\x6c\76"]; uckewycoogsogwiy: if (!$t_discount) { goto ikuuiauwouuqawuw; } $oammesyieqmwuwyi["\143\141\162\x74\x2d\144\x69\x73\143\157\165\156\164"] = ["\164\151\164\x6c\x65" => __("\124\x6f\x74\x61\154\x20\x44\151\163\143\157\165\x6e\x74", PR__THM__PMPR), "\x76\x61\x6c\x75\145" => wc_price($t_discount)]; ikuuiauwouuqawuw: foreach ($wwcysoksoogyacog->get_coupons() as $ymacoouqwcqwwagu => $smwiiesyqsgyisos) { $uusmaiomayssaecw = sanitize_title($ymacoouqwcqwwagu); $oammesyieqmwuwyi["\x63\157\165\160\x6f\x6e\x2d{$uusmaiomayssaecw}"] = ["\x74\x69\x74\x6c\145" => wc_cart_totals_coupon_label($smwiiesyqsgyisos, false), "\166\141\154\x75\145" => "\x77\143\137\x63\x61\162\164\x5f\x74\157\164\141\154\x73\x5f\143\x6f\x75\x70\157\156\137\x68\164\155\154", "\141\x72\x67\163" => [$smwiiesyqsgyisos]]; gswcoeiisamakwii: } yoqakewookqoqacm: $oammesyieqmwuwyi["\143\141\x72\164\55\163\165\142\x74\157\164\141\154"] = ["\x74\x69\164\x6c\x65" => __("\x54\x6f\x74\141\154\40\x53\x61\154\x65\40\120\162\151\x63\145", PR__THM__PMPR), "\x76\141\154\x75\x65" => "\x77\143\137\143\141\162\164\137\164\x6f\164\141\x6c\x73\x5f\x73\x75\142\164\157\164\x61\x6c\137\150\x74\x6d\x6c"]; if (!$wwcysoksoogyacog->needs_shipping()) { goto iwsmmkqaoksmocok; } if ($wwcysoksoogyacog->show_shipping()) { goto ocywegekakimmwcq; } if ("\171\x65\x73" === get_option("\167\157\x6f\x63\x6f\x6d\x6d\145\162\143\145\x5f\x65\156\141\142\x6c\145\x5f\x73\x68\151\x70\160\x69\156\147\x5f\x63\141\154\x63")) { goto emqswoaawgeyosmi; } goto yuimwyoywaiiqacs; ocywegekakimmwcq: $oammesyieqmwuwyi["\163\x68\x69\160\160\151\x6e\x67\55\x74\157\164\141\x6c"] = ["\x76\x61\x6c\165\x65" => "\167\143\137\143\141\x72\164\137\x74\x6f\x74\x61\154\163\137\x73\150\x69\x70\160\151\x6e\x67\x5f\150\164\x6d\x6c"]; goto yuimwyoywaiiqacs; emqswoaawgeyosmi: $oammesyieqmwuwyi["\163\x68\x69\160\160\151\x6e\147\55\x63\x61\x6c\x63"] = ["\164\151\164\154\x65" => __("\123\x68\x69\x70\x70\151\156\x67", PR__THM__PMPR), "\166\x61\154\165\145" => "\x77\x6f\x6f\143\x6f\x6d\x6d\x65\x72\x63\x65\137\x73\x68\151\160\x70\x69\156\147\137\143\x61\154\143\165\154\141\x74\157\x72"]; yuimwyoywaiiqacs: iwsmmkqaoksmocok: foreach ($wwcysoksoogyacog->get_fees() as $uusmaiomayssaecw => $wqcguqokwiwqqmoo) { $oammesyieqmwuwyi["\x66\145\145\55{$uusmaiomayssaecw}"] = ["\x74\151\164\154\x65" => $wqcguqokwiwqqmoo->name, "\166\x61\x6c\165\145" => "\167\x63\137\143\x61\162\x74\137\x74\157\x74\x61\154\163\137\146\x65\x65\x5f\150\x74\155\x6c", "\141\162\147\x73" => [$wqcguqokwiwqqmoo]]; okkmcocqokkskasy: } esikeyqyuikmaiek: if (!(wc_tax_enabled() && !$wwcysoksoogyacog->display_prices_including_tax())) { goto wwukgaquuyoissgy; } $scwmkmciyywokcug = WC()->customer; $taxable_address = $scwmkmciyywokcug->get_taxable_address(); $estimated_text = ''; if (!(WC()->customer->is_customer_outside_base() && !$scwmkmciyywokcug->has_calculated_shipping())) { goto qiiigwkqeoewsuwm; } $estimated_text = sprintf("\40\74\x73\x6d\141\154\154\x3e" . __("\x28\145\x73\x74\x69\x6d\x61\x74\145\x64\40\146\157\x72\40\45\x73\51", PR__THM__PMPR) . "\74\x2f\163\x6d\141\x6c\x6c\x3e", WC()->countries->estimated_for_prefix($taxable_address[0]) . WC()->countries->countries[$taxable_address[0]]); qiiigwkqeoewsuwm: if ("\x69\164\x65\x6d\151\172\x65\x64" === get_option("\x77\157\x6f\143\157\x6d\155\x65\x72\143\145\x5f\164\x61\x78\137\x74\x6f\164\141\154\137\x64\151\x73\160\x6c\141\x79")) { goto mscgewkcqcoowweg; } $oammesyieqmwuwyi["\x74\141\170\x2d\x74\x6f\x74\x61\154"] = ["\164\x69\164\x6c\x65" => WC()->countries->tax_or_vat() . $estimated_text, "\166\141\x6c\x75\145" => "\167\143\137\x63\141\162\x74\137\x74\x6f\x74\x61\x6c\163\137\x74\141\x78\145\x73\137\x74\157\x74\141\x6c\137\x68\164\x6d\154"]; goto suqcsgaosywaauuu; mscgewkcqcoowweg: foreach ($wwcysoksoogyacog->get_tax_totals() as $ymacoouqwcqwwagu => $ieqocgiosekoeoqe) { $uusmaiomayssaecw = sanitize_title($ymacoouqwcqwwagu); $oammesyieqmwuwyi["\164\141\x78\x2d\x72\141\164\x65\55{$uusmaiomayssaecw}"] = ["\164\x69\x74\154\x65" => $ieqocgiosekoeoqe->label . $estimated_text, "\x76\x61\154\x75\x65" => wp_kses_post($ieqocgiosekoeoqe->formatted_amount)]; ikqeeaysmqgcgawq: } esaqcqqwuussiiwo: suqcsgaosywaauuu: wwukgaquuyoissgy: $oammesyieqmwuwyi["\157\x72\x64\x65\162\55\x74\x6f\164\141\x6c"] = ["\x74\151\x74\154\x65" => __("\124\157\x74\x61\154\x20\x43\141\162\164", PR__THM__PMPR), "\166\141\x6c\x75\145" => "\167\143\137\x63\x61\x72\164\137\164\x6f\164\x61\x6c\x73\x5f\x6f\162\144\145\162\137\x74\157\x74\141\x6c\x5f\x68\x74\155\154"]; ?>
+
+defined( 'ABSPATH' ) || exit;
+
+$cart = WC()->cart;
+
+$items = [];
+
+$t_regular  = 0;
+$t_discount = 0;
+foreach ($cart->get_cart() as $key => $item) {
+	
+	$_product = apply_filters('woocommerce_cart_item_product', $item['data'], $item, $key);
+	
+	$qty      = (int)$item['quantity'];
+	$sale     = (int)$_product->get_sale_price('');
+	$price    = (int)$_product->get_price('');
+	$regular  = (int)$_product->get_regular_price('');
+	
+	$t_regular  += $regular;
+	if ($price !== $regular) {
+		
+		$t_discount += ($regular - $sale) * $qty;
+	}
+}
+
+if ($t_regular) {
+	
+	$items['cart-regular'] = [
+		'title' => __('Total Regular Price', PR__THM__PMPR),
+		'value' => "<del>" . wc_price($t_regular) . "</del>" ,
+	];
+}
+
+if ($t_discount) {
+	
+	$items['cart-discount'] = [
+		'title' => __('Total Discount', PR__THM__PMPR),
+		'value' => wc_price($t_discount),
+	];
+}
+
+foreach ($cart->get_coupons() as $code => $coupon) {
+	$key = sanitize_title($code);
+	$items["coupon-{$key}"] = [
+		'title' => wc_cart_totals_coupon_label($coupon, false),
+		'value' => 'wc_cart_totals_coupon_html',
+		'args' => [$coupon]
+	];
+}
+
+$items['cart-subtotal'] = [
+	'title' => __('Total Sale Price', PR__THM__PMPR),
+	'value' => 'wc_cart_totals_subtotal_html',
+];
+
+if ($cart->needs_shipping()) {
+	
+	if ($cart->show_shipping()) {
+		
+		$items['shipping-total'] = [
+			'value' => 'wc_cart_totals_shipping_html',
+		];
+		
+	} elseif ('yes' === get_option( 'woocommerce_enable_shipping_calc' )) {
+		
+		$items['shipping-calc'] = [
+			'title' => __('Shipping', PR__THM__PMPR),
+			'value' => 'woocommerce_shipping_calculator',
+		];
+	}
+}
+
+foreach ($cart->get_fees() as $key => $fee) {
+	$items["fee-{$key}"] = [
+		'title' => $fee->name,
+		'value' => 'wc_cart_totals_fee_html',
+		'args'  => [$fee],
+	];
+}
+
+if (wc_tax_enabled() && !$cart->display_prices_including_tax()) {
+	
+	$customer = WC()->customer;
+	$taxable_address = $customer->get_taxable_address();
+	$estimated_text  = '';
+	if (WC()->customer->is_customer_outside_base() && !$customer->has_calculated_shipping()) {
+		
+		$estimated_text = sprintf(
+			' <small>' . __('(estimated for %s)', PR__THM__PMPR) . '</small>',
+			WC()->countries->estimated_for_prefix($taxable_address[0]) . WC()->countries->countries[$taxable_address[0]]
+		);
+	}
+	if ( 'itemized' === get_option( 'woocommerce_tax_total_display' ) ) {
+		foreach ($cart->get_tax_totals() as $code => $tax) {
+			
+			$key = sanitize_title($code);
+			$items["tax-rate-{$key}"] = [
+				'title' => $tax->label . $estimated_text,
+				'value' => wp_kses_post($tax->formatted_amount),
+			];
+		}
+	} else {
+		
+		$items['tax-total'] = [
+			'title' => WC()->countries->tax_or_vat() . $estimated_text,
+			'value' => 'wc_cart_totals_taxes_total_html',
+		];
+	}
+	
+}
+
+$items['order-total'] = [
+	'title' => __('Total Cart', PR__THM__PMPR),
+	'value' => 'wc_cart_totals_order_total_html',
+];
+
+?>
 
 <div class="card border-gray-300">
 	<div class="card-body">
 		<ul class="list-group list-group-flush">
 			
-			<?php  $gaeqamemwmwsyukm = count($oammesyieqmwuwyi); $momcykaoccoymeig = 0; foreach ($oammesyieqmwuwyi as $uusmaiomayssaecw => $igqsaukqcqscimok) { if ($uusmaiomayssaecw === "\x6f\162\144\x65\162\x2d\x74\157\x74\x61\x6c") { goto qikaewekoecykeou; } if (!($uusmaiomayssaecw === "\163\x68\151\160\160\x69\156\x67\x2d\164\x6f\164\141\154")) { goto yqagomygmeoecwey; } do_action("\x77\157\x6f\143\157\155\155\145\x72\x63\x65\137\x63\141\162\x74\x5f\x74\x6f\x74\141\154\x73\x5f\142\145\x66\x6f\x72\x65\137\163\x68\x69\160\x70\151\x6e\147"); yqagomygmeoecwey: goto eucqomyqykgoiuge; qikaewekoecykeou: do_action("\167\x6f\x6f\143\x6f\x6d\155\x65\162\x63\145\137\143\141\x72\x74\137\x74\157\x74\x61\x6c\x73\x5f\142\145\146\x6f\x72\145\x5f\x6f\162\144\145\162\137\164\x6f\x74\141\x6c"); eucqomyqykgoiuge: $meqocwsecsywiiqs = isset($igqsaukqcqscimok["\164\151\x74\154\x65"]) ? $igqsaukqcqscimok["\164\151\x74\154\x65"] : ''; $eqgoocgaqwqcimie = $igqsaukqcqscimok["\166\x61\154\165\x65"]; $egkyssmuqcwaciya = "\x64\55\146\154\x65\170\40\152\165\163\x74\x69\146\x79\55\143\157\x6e\x74\145\156\164\55\x62\x65\x74\167\145\145\156\40{$uusmaiomayssaecw}"; $title_class = "\146\157\x6e\164\55\x31\64"; if ($momcykaoccoymeig == $gaeqamemwmwsyukm - 1) { goto sqyokemumceysegy; } if ($momcykaoccoymeig == $gaeqamemwmwsyukm - 2) { goto usymasgsyqgsuocg; } $egkyssmuqcwaciya .= "\x20\x70\142\x2d\62\40\146\x6f\x6e\164\55\61\67\40\142\x6f\x72\x64\x65\162\55\60\x20\x74\x65\x78\164\55\x67\x72\x61\x79\55\x37\60\60"; goto aiccyaswigkaycqk; usymasgsyqgsuocg: $egkyssmuqcwaciya .= "\40\x70\142\55\62\40\x66\157\156\x74\x2d\61\x37\x20\142\157\162\144\145\x72\x2d\147\162\x61\x79\x2d\63\x30\x30\40\x74\145\170\x74\55\147\x72\x61\171\x2d\67\x30\x30"; aiccyaswigkaycqk: goto oqousikwiiqagoyw; sqyokemumceysegy: $egkyssmuqcwaciya .= "\x20\160\x62\x2d\x33\40\x70\x74\x2d\62\x20\142\157\x72\x64\x65\162\x2d\x30\40\x66\x6f\156\164\x2d\167\145\151\x67\150\164\55\x62\x6f\154\144\40\x66\157\x6e\x74\55\x31\71"; $title_class = ''; oqousikwiiqagoyw: if (!($uusmaiomayssaecw == "\x63\x61\162\164\x2d\x64\x69\x73\143\157\165\x6e\x74" || substr($uusmaiomayssaecw, 0, 7) === "\x63\157\165\160\157\x6e\x2d")) { goto zayqqeqgcwkekwws; } $egkyssmuqcwaciya .= "\x20\164\145\170\164\55\x64\x61\156\147\145\162"; zayqqeqgcwkekwws: ?>
+			<?php
+			
+			$count = count($items);
+			$index = 0;
+			foreach ($items as $key => $item) {
 				
-				<li class="<?php  get_wc_total_card_list_item_class($egkyssmuqcwaciya); ?>">
-					<?php  if (!$meqocwsecsywiiqs) { goto aueaceeyommgkicu; } ?>
-						<div class="my-auto <?php  echo $title_class; ?>">
-							<?php  echo esc_html($meqocwsecsywiiqs); ?>
+				if ($key === 'order-total') {
+					
+					do_action('woocommerce_cart_totals_before_order_total');
+				} else if ($key === 'shipping-total') {
+					
+					do_action('woocommerce_cart_totals_before_shipping');
+				}
+				
+				$title       = isset($item['title']) ? $item['title'] : '';
+				$value       = $item['value'];
+				$class       = "d-flex justify-content-between {$key}";
+				$title_class = "font-14";
+				if ($index == $count - 1) {
+					
+					$class       .= ' pb-3 pt-2 border-0 font-weight-bold font-19';
+					$title_class = '';
+				} else if ($index == $count - 2) {
+					
+					$class .= ' pb-2 font-17 border-gray-300 text-gray-700';
+				} else {
+					
+					$class .= ' pb-2 font-17 border-0 text-gray-700';
+				}
+				if ($key == 'cart-discount' || substr($key, 0, 7) === 'coupon-') {
+					
+					$class .= ' text-danger';
+				}
+				?>
+				
+				<li class="<?php get_wc_total_card_list_item_class($class); ?>">
+					<?php if ($title): ?>
+						<div class="my-auto <?php echo $title_class ?>">
+							<?php echo esc_html($title) ?>
 						</div>
-					<?php  aueaceeyommgkicu: ?>
-					<div data-title="<?php  echo esc_attr($meqocwsecsywiiqs); ?>">
-						<?php  if (is_callable($eqgoocgaqwqcimie)) { goto mysueeoswqgccmui; } echo $eqgoocgaqwqcimie; goto egmayaiikwsskgmy; mysueeoswqgccmui: $ywmkwiwkosakssii = isset($igqsaukqcqscimok["\x61\x72\147\x73"]) ? $igqsaukqcqscimok["\x61\x72\147\x73"] : []; call_user_func($eqgoocgaqwqcimie, ...$ywmkwiwkosakssii); egmayaiikwsskgmy: ?>
+					<?php endif ?>
+					<div data-title="<?php echo esc_attr($title)?>">
+						<?php
+						if (is_callable($value)) {
+							
+							$args = isset($item['args']) ? $item['args'] : [];
+							call_user_func($value, ...$args);
+						} else {
+							
+							echo $value;
+						}
+						?>
 					</div>
 				</li>
 				
-				<?php  if ($uusmaiomayssaecw === "\157\x72\x64\145\162\x2d\164\157\x74\141\154") { goto yuuyikiacmmueosu; } if ($uusmaiomayssaecw === "\x73\x68\x69\160\160\151\x6e\x67\55\164\x6f\164\x61\154") { goto sguskaeaaqcagqgc; } goto ucuoeymyqeokgsya; yuuyikiacmmueosu: do_action("\167\x6f\157\x63\x6f\x6d\x6d\145\x72\143\145\137\143\x61\x72\164\x5f\x74\157\164\141\154\163\137\x61\x66\164\x65\162\137\x6f\x72\x64\x65\x72\x5f\x74\157\x74\141\x6c"); goto ucuoeymyqeokgsya; sguskaeaaqcagqgc: do_action("\x77\157\157\x63\157\x6d\155\145\162\143\145\137\143\141\162\x74\x5f\164\x6f\x74\141\154\163\137\x61\x66\x74\x65\x72\x5f\x73\150\x69\x70\x70\151\x6e\x67"); ucuoeymyqeokgsya: $momcykaoccoymeig++; qsgqwyqaqiowkmco: } gsygwgsiawgmqiyi: ?>
+				<?php
+				if ($key === 'order-total') {
+					
+					do_action('woocommerce_cart_totals_after_order_total');
+				} elseif ($key === 'shipping-total') {
+					
+					do_action('woocommerce_cart_totals_after_shipping');
+				}
+				$index++;
+			}
+			?>
 		</ul>
 		<div class="wc-proceed-to-checkout">
-			<?php  if (is_cart()) { goto syuaummumssgwwee; } if (is_checkout()) { goto oocuemosmeeekgas; } goto agkmiayuawacakau; syuaummumssgwwee: do_action("\167\157\x6f\x63\157\x6d\x6d\145\x72\143\x65\x5f\160\162\157\143\x65\145\x64\x5f\164\x6f\x5f\x63\x68\x65\143\153\157\165\x74"); goto agkmiayuawacakau; oocuemosmeeekgas: $ooomcekygkaukkmk = __("\120\x6c\x61\143\145\x20\x6f\162\x64\145\162", PR__THM__PMPR); ?>
+			<?php
+			if (is_cart()) {
+				
+				do_action( 'woocommerce_proceed_to_checkout' );
+			} elseif (is_checkout()) {
+			 
+				$orderButtonText = __('Place order', PR__THM__PMPR);
+			?>
 			<noscript>
-                <?php  printf(esc_html__("\123\151\x6e\x63\x65\40\171\157\x75\162\x20\x62\162\157\167\163\x65\x72\40\x64\157\x65\163\40\x6e\x6f\164\40\163\x75\160\160\x6f\162\x74\40\112\141\166\x61\123\143\162\x69\x70\164\54\40\157\162\40\x69\x74\40\x69\163\x20\144\151\163\141\x62\x6c\x65\144\x2c\x20\160\154\145\x61\163\x65\x20\145\156\x73\165\162\x65\40\171\x6f\x75\x20\x63\154\151\x63\153\x20\164\150\x65\40\x25\61\44\163\x55\x70\x64\x61\164\x65\40\x54\157\x74\x61\x6c\163\x25\62\44\163\40\142\165\164\x74\157\x6e\x20\142\x65\146\157\x72\x65\x20\x70\154\x61\x63\x69\156\147\x20\171\157\165\162\x20\x6f\x72\x64\x65\162\56\x20\x59\157\x75\x20\155\141\171\40\142\145\x20\x63\150\141\162\147\x65\144\x20\155\x6f\162\x65\x20\x74\150\141\156\x20\164\x68\x65\40\141\x6d\157\x75\156\x74\40\163\x74\x61\164\x65\144\x20\141\142\x6f\x76\145\40\151\x66\x20\x79\x6f\165\40\146\141\x69\154\40\x74\x6f\40\144\157\x20\163\157\x2e", PR__THM__PMPR), "\x3c\145\x6d\76", "\74\57\145\x6d\76"); ?>
+                <?php printf( esc_html__( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so.', PR__THM__PMPR ), '<em>', '</em>' ); ?>
 			
-				<br/><button type="submit" class="btn btn-danger button alt" name="woocommerce_checkout_update_totals" value="<?php  esc_attr_e("\125\x70\x64\141\164\145\40\x74\x6f\164\141\x6c\163", PR__THM__PMPR); ?>"><?php  esc_html_e("\125\x70\144\141\x74\145\40\x74\157\164\x61\x6c\x73", PR__THM__PMPR); ?></button>
+				<br/><button type="submit" class="btn btn-danger button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', PR__THM__PMPR ); ?>"><?php esc_html_e( 'Update totals', PR__THM__PMPR ); ?></button>
 			</noscript>
 			
-			<?php  do_action("\167\157\157\143\157\155\155\145\x72\x63\x65\137\x72\x65\x76\x69\x65\167\x5f\x6f\162\144\x65\162\137\x62\x65\146\157\x72\x65\x5f\x73\165\x62\155\151\164"); ?>
+			<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 			
-			<?php  echo apply_filters("\x77\157\x6f\x63\x6f\155\155\145\162\143\145\137\157\x72\144\145\x72\x5f\x62\x75\164\x74\157\x6e\137\150\164\x6d\154", "\74\142\x75\x74\164\x6f\x6e\40\164\171\x70\x65\x3d\42\163\x75\142\155\151\x74\42\40\x66\x6f\162\x6d\x3d\x22\143\x68\145\143\x6b\x6f\165\164\42\40\x63\154\x61\x73\163\75\42\x62\x74\156\x20\142\x74\x6e\x2d\x62\x6c\x6f\143\153\40\146\157\156\164\55\167\x65\151\147\x68\x74\x2d\142\157\x6c\x64\x20\142\x74\156\55\x64\x61\156\x67\145\162\40\142\x75\164\164\x6f\x6e\40\141\154\x74\x22\x20\156\x61\x6d\145\75\x22\167\x6f\x6f\x63\x6f\x6d\155\x65\162\143\x65\137\x63\x68\145\x63\x6b\x6f\x75\x74\x5f\x70\x6c\141\x63\x65\x5f\x6f\162\144\x65\x72\x22\x20\x69\x64\x3d\42\160\154\141\143\145\137\x6f\x72\144\145\x72\x22\40\x64\x61\x74\x61\55\166\x61\x6c\165\145\x3d\x22" . esc_attr($ooomcekygkaukkmk) . "\x22\76" . esc_html($ooomcekygkaukkmk) . "\x3c\57\x62\165\x74\164\157\x6e\76"); ?>
+			<?php echo apply_filters('woocommerce_order_button_html', '<button type="submit" form="checkout" class="btn btn-block font-weight-bold btn-danger button alt" name="woocommerce_checkout_place_order" id="place_order" data-value="' . esc_attr($orderButtonText) . '">' . esc_html($orderButtonText) . '</button>'); ?>
 			
-			<?php  do_action("\x77\x6f\157\x63\x6f\x6d\155\x65\162\143\145\137\162\145\x76\x69\x65\167\137\157\x72\x64\x65\162\x5f\x61\146\x74\145\x72\x5f\163\x75\x62\155\x69\164"); ?>
+			<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
 			
-			<?php  agkmiayuawacakau: ?>
+			<?php
+			}
+			?>
 		</div>
 	</div>
 </div>
+

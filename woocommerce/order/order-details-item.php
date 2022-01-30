@@ -1,15 +1,71 @@
 <?php
-/*   _______________________________________
-    |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61eec51b10e4f             |
-    |_______________________________________|
-*/
- if (defined("\x41\102\x53\120\x41\124\110")) { goto gkqiqaqecmoogmaa; } exit; gkqiqaqecmoogmaa: if (apply_filters("\167\157\157\x63\157\x6d\155\145\x72\x63\x65\x5f\157\162\144\x65\162\x5f\151\164\145\x6d\x5f\166\151\163\151\142\x6c\x65", true, $igqsaukqcqscimok)) { goto mceucsaeouuwyumm; } return; mceucsaeouuwyumm: $swykymamuiiwegii = $igqsaukqcqscimok->get_quantity(); $is_visible = $product && $product->is_visible(); $product_permalink = apply_filters("\167\x6f\157\143\x6f\x6d\155\x65\x72\143\x65\137\x6f\162\x64\x65\x72\x5f\151\x74\145\x6d\x5f\x70\145\x72\x6d\x61\154\x69\156\153", $is_visible ? $product->get_permalink($igqsaukqcqscimok) : '', $igqsaukqcqscimok, $umwqusowiqmyseom); $refunded_qty = $umwqusowiqmyseom->get_qty_refunded_for_item($item_id); if ($refunded_qty) { goto ceiuqsiqgiuiekem; } $qty_display = esc_html($swykymamuiiwegii); goto gsymkkskwsgggoic; ceiuqsiqgiuiekem: $qty_display = "\x3c\x64\145\154\x3e" . esc_html($swykymamuiiwegii) . "\x3c\57\144\x65\x6c\x3e\40\74\x69\x6e\163\76" . esc_html($swykymamuiiwegii - $refunded_qty * -1) . "\x3c\57\151\156\163\76"; gsymkkskwsgggoic: ob_start(); do_action("\167\157\157\143\x6f\x6d\155\x65\162\x63\x65\137\157\x72\144\145\x72\x5f\151\x74\145\155\x5f\155\x65\164\141\137\x73\164\141\162\x74", $item_id, $igqsaukqcqscimok, $umwqusowiqmyseom, false); wc_display_item_meta($igqsaukqcqscimok); do_action("\x77\157\x6f\x63\157\155\155\145\162\x63\145\x5f\157\x72\x64\145\162\x5f\151\x74\x65\x6d\137\155\x65\164\x61\137\145\x6e\144", $item_id, $igqsaukqcqscimok, $umwqusowiqmyseom, false); $miisqgccsqqcscia = ob_get_clean(); wc_get_template("\157\x72\x64\x65\x72\55\x64\145\x74\141\x69\x6c\163\55\151\164\x65\x6d\56\160\x68\x70", ["\151\164\145\155" => $igqsaukqcqscimok, "\x6e\x61\x6d\x65" => apply_filters("\x77\157\157\x63\157\x6d\155\x65\x72\x63\x65\137\157\162\x64\x65\x72\x5f\151\164\x65\155\x5f\x6e\x61\155\x65", $igqsaukqcqscimok->get_name()), "\141\146\164\x65\x72" => $miisqgccsqqcscia, "\x6f\x72\144\x65\x72" => $umwqusowiqmyseom, "\x74\157\164\141\154" => $umwqusowiqmyseom->get_formatted_line_subtotal($igqsaukqcqscimok), "\x69\x74\145\155\137\151\144" => $item_id, "\161\165\141\x6e\164\151\x74\x79" => apply_filters("\x77\x6f\157\x63\157\x6d\155\145\162\143\145\137\157\x72\144\145\162\x5f\151\164\x65\x6d\x5f\x71\x75\141\156\x74\x69\164\x79\x5f\150\164\155\154", sprintf("\x25\x73\x20\74\x73\x70\141\156\40\143\154\x61\x73\x73\75\42\x74\145\170\164\x2d\155\165\164\x65\x64\x22\76\x7c\74\57\x73\160\141\x6e\76\40\x25\x73", sprintf(__("\45\x73\40\116\x75\155\142\x65\162", PR__THM__PMPR), $qty_display), WC()->cart->get_product_price($product)), $igqsaukqcqscimok), "\160\162\157\x64\x75\x63\164" => $product, "\160\x65\162\155\141\x6c\x69\156\153" => $product_permalink, "\x69\164\145\x6d\x5f\x63\x6c\141\163\x73" => apply_filters("\x77\x6f\157\143\157\x6d\155\145\x72\x63\145\137\157\162\x64\145\x72\137\x69\164\x65\155\137\143\154\141\x73\x73", "\x77\157\157\x63\157\x6d\x6d\x65\x72\143\x65\55\164\x61\142\154\145\137\x5f\x6c\x69\156\145\55\151\164\145\155\40\x6f\x72\144\145\x72\x5f\151\164\x65\155", $igqsaukqcqscimok, $umwqusowiqmyseom)]); ?>
+/**
+ * Order Item Details
+ *
+ * This template can be overridden by copying it to yourtheme/woocommerce/order/order-details-item.php.
+ *
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
+ *
+ * @see     https://docs.woocommerce.com/document/template-structure/
+ * @package WooCommerce\Templates
+ * @version 3.7.0
+ */
 
-<?php  if (!($show_purchase_note && $purchase_note)) { goto ugykmcouiwiscoqu; } ?>
+if (!defined('ABSPATH')) {
+	exit;
+}
+
+if (!apply_filters('woocommerce_order_item_visible', true, $item)) {
+	return;
+}
+
+$qty               = $item->get_quantity();
+$is_visible        = $product && $product->is_visible();
+$product_permalink = apply_filters('woocommerce_order_item_permalink', $is_visible ? $product->get_permalink($item) : '', $item, $order);
+$refunded_qty      = $order->get_qty_refunded_for_item($item_id);
+
+if ($refunded_qty) {
+	$qty_display = '<del>' . esc_html($qty) . '</del> <ins>' . esc_html($qty - ($refunded_qty * -1)) . '</ins>';
+} else {
+	$qty_display = esc_html($qty);
+}
+
+ob_start();
+do_action('woocommerce_order_item_meta_start', $item_id, $item, $order, false);
+
+wc_display_item_meta($item);
+
+do_action('woocommerce_order_item_meta_end', $item_id, $item, $order, false);
+$after = ob_get_clean();
+
+wc_get_template(
+	'order-details-item.php',
+	[
+		'item'       => $item,
+		'name'       => apply_filters('woocommerce_order_item_name', $item->get_name()),
+		'after'      => $after,
+		'order'      => $order,
+		'total'      => $order->get_formatted_line_subtotal($item),
+		'item_id'    => $item_id,
+		'quantity'   => apply_filters('woocommerce_order_item_quantity_html', sprintf('%s <span class="text-muted">|</span> %s', sprintf(__('%s Number', PR__THM__PMPR), $qty_display), WC()->cart->get_product_price($product)), $item),
+		'product'    => $product,
+		'permalink'  => $product_permalink,
+		'item_class' => apply_filters('woocommerce_order_item_class', 'woocommerce-table__line-item order_item', $item, $order),
+	]
+);
+?>
+
+<?php
+if ($show_purchase_note && $purchase_note) : ?>
 
     <li class="woocommerce-table__product-purchase-note product-purchase-note list-group-item bg-transparent border-gray-200 px-0 py-3">
-		<?php  echo wpautop(do_shortcode(wp_kses_post($purchase_note))); ?>
+		<?php echo wpautop(do_shortcode(wp_kses_post($purchase_note))) ?>
     </li>
 
-<?php  ugykmcouiwiscoqu:
+<?php
+endif; ?>
+

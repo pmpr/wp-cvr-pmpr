@@ -1,12 +1,28 @@
 <?php
-/*   _______________________________________
-    |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61eec51b10e4f             |
-    |_______________________________________|
-*/
- if (defined("\x41\102\123\x50\x41\124\110")) { goto syusgosewwkoagoq; } exit; syusgosewwkoagoq: ?>
+/**
+ * Show options for ordering
+ *
+ * This template can be overridden by copying it to yourtheme/woocommerce/loop/orderby.php.
+ *
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
+ *
+ * @see         https://docs.woocommerce.com/document/template-structure/
+ * @package     WooCommerce\Templates
+ * @version     3.6.0
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+?>
 <form class="woocommerce-ordering" method="get">
-    <?php  do_action("\x77\157\157\x63\x6f\155\155\x65\162\x63\x65\137\x6f\x72\144\x65\142\x79\x5f\144\x72\157\160\x64\157\167\x6e", $catalog_orderby_options, $waoayeqikyuuamca); ?>
+    <?php do_action('woocommerce_ordeby_dropdown', $catalog_orderby_options, $orderby);?>
 	<input type="hidden" name="paged" value="1" />
-	<?php  wc_query_string_form_fields(null, array("\157\162\144\x65\x72\142\x79", "\x73\165\142\x6d\151\x74", "\x70\141\147\145\x64", "\160\x72\157\144\165\x63\164\55\x70\141\x67\x65")); ?>
+	<?php wc_query_string_form_fields( null, array( 'orderby', 'submit', 'paged', 'product-page' ) ); ?>
 </form>
+
