@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Theme Pmpr\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2021-12-12 21:44+0330\n"
+"POT-Creation-Date: 2022-02-08 15:31+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator:  Farshad Asgharzade <Farshad_asgharzade@hotmail.com>\n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -25,220 +25,306 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-3: asset\n"
 "X-Poedit-SearchPathExcluded-4: build\n"
 
-#: functions.php:15
+#: functions.php:17
 msgid "Pmpr"
 msgstr "پی ام پی آر"
 
-#: functions.php:36
+#: functions.php:38
 msgid "Order number:"
 msgstr "شماره سفارش:"
 
-#: functions.php:40
+#: functions.php:42
 msgid "Date:"
 msgstr "تاریخ:"
 
-#: functions.php:44
+#: functions.php:46
 msgid "Total:"
 msgstr "جمع کل:"
 
-#: functions.php:54
+#: functions.php:56
 msgid "Payment method:"
 msgstr "شیوه پرداخت:"
 
-#: functions.php:145 src/Pmpr/Theme/Pmpr/Woocommerce/Account.php:62
+#: functions.php:147 src/Pmpr/Theme/Pmpr/Woocommerce/Account.php:62
 #, php-format
 msgid "Back to %s"
 msgstr "بازگشت به %s"
 
-#: src/Pmpr/Theme/Pmpr/Comment.php:153
+#: src/Pmpr/Theme/Pmpr/AMP.php:27
+msgid "None AMP Version"
+msgstr "مشاهده نسخه اصلی"
+
+#: src/Pmpr/Theme/Pmpr/Comment.php:154
 msgid "Save my name and email."
 msgstr "نام و ایمیل من را ذخیره کنید."
 
-#: src/Pmpr/Theme/Pmpr/Navigation/Menu.php:136
-msgid "Amp Menu"
+#: src/Pmpr/Theme/Pmpr/Customizer.php:25
+msgid "General Setting"
+msgstr "تنظیمات عمومی"
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:29
+msgid "Enable Scroll to Top"
+msgstr "دکمه رفتن به بالا"
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:34
+msgid "Scroll to Top Icon"
+msgstr "آیکون رفتن به بالا"
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:42
+#, fuzzy
+#| msgid "Header #1"
+msgid "Header Setting"
+msgstr "هدر شمار ۱"
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:46
+#, fuzzy
+#| msgid "Header #1"
+msgid "Header Logos"
+msgstr "هدر شمار ۱"
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:50
+msgid "Desktop Logo"
+msgstr "لوگو دسکتاپ"
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:55
+msgid "Mobile Logo"
+msgstr "لوگو موبایل"
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:61
+msgid "Header Left Menu"
 msgstr ""
 
-#: src/Pmpr/Theme/Pmpr/Navigation/Menu.php:137
-msgid "Primary Menu"
+#: src/Pmpr/Theme/Pmpr/Customizer.php:65
+#, fuzzy
+#| msgid "Header #1"
+msgid "Header Cart"
+msgstr "هدر شمار ۱"
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:73
+msgid "Header Cart Text"
 msgstr ""
 
-#: src/Pmpr/Theme/Pmpr/Navigation/Menu.php:138
-msgid "Secondary Menu"
+#: src/Pmpr/Theme/Pmpr/Customizer.php:78
+msgid "Header Cart Icon"
 msgstr ""
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:110 src/Pmpr/Theme/Pmpr/Pmpr.php:111
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:112
+#: src/Pmpr/Theme/Pmpr/Customizer.php:83
+msgid "Header My Account"
+msgstr "حساب کاربری من"
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:92
+msgid "Header My Account Text"
+msgstr ""
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:97
+msgid "Header My Account Icon"
+msgstr ""
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:102
+msgid "Header My Account Items"
+msgstr ""
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:108
+msgid "Header Whatsapp"
+msgstr ""
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:117
+msgid "Footer Setting"
+msgstr "تنظیمات پاورقی"
+
+#: src/Pmpr/Theme/Pmpr/Customizer.php:121
+msgid "Footer Logo"
+msgstr "لوگو پاورقی"
+
+#: src/Pmpr/Theme/Pmpr/Navigation/Navigation.php:49
+msgid "Primary Navigation Menu"
+msgstr ""
+
+#: src/Pmpr/Theme/Pmpr/Navigation/Navigation.php:50
+msgid "Footer Navigation Menu"
+msgstr ""
+
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:242 src/Pmpr/Theme/Pmpr/Pmpr.php:243
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:244
 #, php-format
 msgid "%s column"
 msgstr "%s ستون"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:229
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:361
 msgid "Very Small"
 msgstr "خیلی کوچک"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:230
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:362
 msgid "Small"
 msgstr "کوچک"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:231
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:363
 msgid "Medium"
 msgstr "متوسط"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:232
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:364
 msgid "Large"
 msgstr "بزرگ"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:233
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:365
 msgid "X Large"
 msgstr "خیلی بزرگ"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:234
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:366
 msgid "Two X Large"
 msgstr "خیلی بزرگ تر"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:235
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:367
 msgid "Full Size"
 msgstr "اندازه کامل"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:292
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:429
 msgid "Header #1"
 msgstr "هدر شمار ۱"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:293
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:430
 msgid "Header #2"
 msgstr "هدر شماره ۲"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:296
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:433
 msgid "Footer #1"
 msgstr "پاورقی شماره ۱"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:297
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:434
 msgid "Footer #2"
 msgstr "پاورقی شماره ۲"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:298
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:435
 msgid "Footer #3"
 msgstr "پاورقی شماره ۳"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:299
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:436
 msgid "Footer #4"
 msgstr "پاورقی شماره ۴"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:300
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:437
 msgid "Footer #5"
 msgstr "پاورقی شماره ۵"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:303
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:440
 msgid "Before Feature Image"
 msgstr ""
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:304
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:441
 msgid "Before Single Content"
 msgstr "قبل از محتوای سینگل"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:305
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:442
 msgid "After Single Content"
 msgstr "بعد از محتوای سینگل"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:308
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:445
 msgid "Sidebar"
 msgstr "سایدبار"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:309
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:446
 msgid "Single Sidebar"
 msgstr "سایدبار سینگل"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:310
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:447
 msgid "Archive Sidebar"
 msgstr "سایدبار آرشیو"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:313
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:450
 #, fuzzy
 #| msgid "Start Container"
 msgid "After Container"
 msgstr "شورتکد شروع"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:314
-#, fuzzy
-#| msgid "After Single Content"
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:451
 msgid "After Single Container"
-msgstr "بعد از محتوای سینگل"
+msgstr "بعد از کانتینر سینگل"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:315
-#, fuzzy
-#| msgid "After Single Content"
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:452
 msgid "After Archive Container"
-msgstr "بعد از محتوای سینگل"
+msgstr "بعد از کانتینر آرشیو"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:322
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:296
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:459
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:319
 #: woocommerce/checkout/thankyou.php:49
 msgid "Email"
 msgstr "پست الکترونیکی"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:323
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:460
 msgid "Full name"
 msgstr "نام و نام خانوادگی"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:324
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:461
 msgid "Comment text"
 msgstr "متن دیدگاه"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:325
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:462
 msgid "Your comment"
 msgstr "دیدگاه شما"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:326
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:463
 msgid "Do you Logout?"
 msgstr "خارج می‌شوید؟"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:327
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:464
 #, php-format
 msgid "in %s Category"
 msgstr "در دسته %s"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:328
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:465
 #, php-format
 msgid "Logged in as %s."
 msgstr "با عنوان %s وارد شده‌اید."
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:329
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:466
 msgid "Last Updated Posts"
 msgstr "آخرین نوشته‌های به روز شده"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:330
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:467
 #, php-format
 msgid "%s cannot be empty"
 msgstr "%s نمی تواند خالی باشد"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:331
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:468
 msgid "Most Controversial"
 msgstr "پر بحث‌ ترین نوشته‌ها"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:332
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:469
 #, php-format
 msgid "Search result for: %s"
 msgstr "نتیجه جستجو برای: %s"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:333 src/Pmpr/Theme/Pmpr/Pmpr.php:334
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:470 src/Pmpr/Theme/Pmpr/Pmpr.php:471
 msgid "Log out of this account"
 msgstr "از این حساب کاربری خارج شوید"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:335
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:472
 msgid "Email cannot empty and must be valid"
 msgstr "ایمیل نمی تواند خالی باشد و باید معتبر باشد"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:450
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:587
 msgid "Back to home"
 msgstr "بازگشت به خانه"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:451
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:588
 msgid "Are you lost?!"
 msgstr "‌چیزی‌که میخوای رو پیدا نمی‌کنی؟!"
 
-#: src/Pmpr/Theme/Pmpr/Pmpr.php:452
+#: src/Pmpr/Theme/Pmpr/Pmpr.php:589
 msgid "The page you requested was not found."
 msgstr "صفحه مورد درخواست شما پیدا نشد."
+
+#: src/Pmpr/Theme/Pmpr/Widget/Budget.php:18
+msgid "Budget"
+msgstr ""
+
+#: src/Pmpr/Theme/Pmpr/Widget/Budget.php:18
+msgid "Display the budget of your site."
+msgstr ""
+
+#: src/Pmpr/Theme/Pmpr/Widget/Budget.php:29
+msgid "Markup"
+msgstr ""
 
 #: src/Pmpr/Theme/Pmpr/Woocommerce/Account.php:131
 msgid "Reset Password"
@@ -282,51 +368,47 @@ msgstr "از"
 msgid "to"
 msgstr "تا"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:42
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:53
 msgid "Checkout"
 msgstr "تسویه حساب"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:89
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:155
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:108
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:174
 msgid "Remove this item"
 msgstr "حذف این ایتم"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:146
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:165
 msgid "Remove Product"
 msgstr "حذف محصول"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:148
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:167
 msgid "Do you want to delete this product?"
 msgstr "آیا مایل به حذف این محصول هستید؟"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:149
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:168
 msgid "Cancel"
 msgstr "انصراف"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:151 woocommerce/cart/cart.php:73
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Cart.php:170 woocommerce/cart/cart.php:70
 msgid "Remove"
 msgstr "حذف"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Menu.php:120
-msgid "Show Account"
-msgstr "مشاهده حساب کاربری"
-
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Menu.php:123
-msgid "Logout account"
-msgstr "خروج از حساب کاربری"
-
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Menu.php:147 woocommerce/cart/cart.php:80
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Header.php:47 woocommerce/cart/cart.php:77
 msgid "Product"
 msgstr "محصول"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Menu.php:151
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Header.php:51
 msgid "View Cart"
 msgstr "مشاهده سبد خرید"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Menu.php:153
-#: woocommerce/cart/mini-cart.php:137
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Header.php:52
+#: woocommerce/cart/mini-cart.php:132
 msgid "No products in the cart."
 msgstr ""
+
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Header.php:96
+msgid "Show Account"
+msgstr "مشاهده حساب کاربری"
 
 #: src/Pmpr/Theme/Pmpr/Woocommerce/Shop.php:92
 msgid "Grid View"
@@ -371,32 +453,32 @@ msgstr "دسته محصول"
 msgid "%s comment"
 msgstr "%s دیدگاه"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:125 woocommerce/cart/cart.php:131
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:148 woocommerce/cart/cart.php:128
 msgid "Regular Price"
 msgstr "قیمت اصلی"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:129
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:152
 msgid "Sale Price"
 msgstr "قیمت فروش"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:133 woocommerce/cart/cart.php:143
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:156 woocommerce/cart/cart.php:140
 msgid "Discount Expiration"
 msgstr "اعتبار تخفیف"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:137 woocommerce/cart/cart.php:138
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:160 woocommerce/cart/cart.php:135
 msgid "Discount"
 msgstr "تخفیف"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:197
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:220
 #, php-format
 msgid "In Category: %s"
 msgstr "در دسته: %s"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:295
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Template.php:318
 msgid "Postcode"
 msgstr "کد پستی"
 
-#: src/Pmpr/Theme/Pmpr/Woocommerce/Woocommerce.php:81
+#: src/Pmpr/Theme/Pmpr/Woocommerce/Woocommerce.php:80
 msgid "Shop Sidebar"
 msgstr "سایدبار فروشگاه"
 
@@ -416,37 +498,37 @@ msgstr "صفحه فروشگاه"
 msgid "Cart totals"
 msgstr ""
 
-#: woocommerce/cart/cart.php:49
+#: woocommerce/cart/cart.php:46
 msgid "Quantity"
 msgstr "تعداد"
 
-#: woocommerce/cart/cart.php:91
+#: woocommerce/cart/cart.php:88
 msgid "Available on backorder"
 msgstr ""
 
-#: woocommerce/cart/cart.php:97
+#: woocommerce/cart/cart.php:94
 msgid "Attributes"
 msgstr "ویژگی‌ها"
 
-#: woocommerce/cart/cart.php:119
+#: woocommerce/cart/cart.php:116
 msgid "Price"
 msgstr "قیمت"
 
-#: woocommerce/cart/cart.php:182
+#: woocommerce/cart/cart.php:179
 msgid "Shop"
 msgstr "فروشگاه"
 
-#: woocommerce/cart/cart.php:208
+#: woocommerce/cart/cart.php:205
 msgid "Update cart"
 msgstr "به روزرسانی کارت"
 
-#: woocommerce/cart/mini-cart.php:95 woocommerce/checkout/review-order.php:23
-#: woocommerce/order/order-details-item.php:52
+#: woocommerce/cart/mini-cart.php:90 woocommerce/checkout/review-order.php:23
+#: woocommerce/order/order-details-item.php:54
 #, php-format
 msgid "%s Number"
 msgstr "%s عدد"
 
-#: woocommerce/cart/mini-cart.php:117 woocommerce/total-card.php:114
+#: woocommerce/cart/mini-cart.php:112 woocommerce/total-card.php:114
 msgid "Total Cart"
 msgstr "جمع سبد خرید"
 
@@ -525,7 +607,7 @@ msgstr "اعمال تخفیف"
 msgid "If you have a coupon code, please apply it above."
 msgstr "اگر شما کد تخفیف دارید ، برای ثبت آن از طریق بالا اقدام کنید."
 
-#: woocommerce/order-details-item.php:35 woocommerce/total-card.php:53
+#: woocommerce/order-details-item.php:32 woocommerce/total-card.php:53
 msgid "Total Sale Price"
 msgstr "جمع قیمت فروش"
 
@@ -564,7 +646,7 @@ msgstr ""
 msgid "Never"
 msgstr "هرگز"
 
-#: woocommerce/sale-flash.php:16
+#: woocommerce/sale-flash.php:12
 msgid "Sale"
 msgstr "فروش ویژه"
 
@@ -608,6 +690,9 @@ msgstr ""
 #: woocommerce/total-card.php:203
 msgid "Update totals"
 msgstr "به روزرسانی جمع کل"
+
+#~ msgid "Logout account"
+#~ msgstr "خروج از حساب کاربری"
 
 #~ msgid "Logout"
 #~ msgstr "خروج"
@@ -761,9 +846,6 @@ msgstr "به روزرسانی جمع کل"
 
 #~ msgid "Your order"
 #~ msgstr "سفارش شما"
-
-#~ msgid "Mobile"
-#~ msgstr "موبایل"
 
 #~ msgid "Remove item"
 #~ msgstr "حذف "
