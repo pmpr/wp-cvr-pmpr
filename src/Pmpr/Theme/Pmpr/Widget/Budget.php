@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             62138b858a3fc             |
+    |             6215f95638188             |
     |_______________________________________|
 */
- namespace Pmpr\Theme\Pmpr\Widget; class Budget extends Common { const kicoscymgmgqeqgy = "\x6d\x61\x72\x6b\x75\160"; public function __construct() { parent::__construct(__("\102\165\x64\147\145\164", PR__THM__PMPR), __("\x44\x69\x73\160\x6c\141\171\x20\164\150\x65\x20\142\165\144\147\145\164\x20\x6f\146\40\x79\x6f\165\x72\x20\163\151\164\x65\56", PR__THM__PMPR)); } public function ugmceccgwaaaigiy() : array { return [self::kicoscymgmgqeqgy => ["\x74\171\x70\145" => "\x74\145\x78\x74\141\162\145\x61", "\156\x61\x6d\145" => __("\115\141\162\x6b\165\x70", PR__THM__PMPR), "\162\x6f\167\x73" => 3]]; } }
+ namespace Pmpr\Theme\Pmpr\Widget; class Budget extends Common { const kicoscymgmgqeqgy = "\155\x61\x72\x6b\165\x70"; public function __construct() { parent::__construct(__("\102\x75\x64\x67\145\164", PR__THM__PMPR), __("\104\151\163\x70\x6c\x61\171\x20\x74\150\x65\x20\x62\x75\x64\x67\x65\164\40\157\146\40\x79\157\165\162\40\x73\151\164\145\56", PR__THM__PMPR)); } public function ugmceccgwaaaigiy() : array { return [self::kicoscymgmgqeqgy => ["\164\171\x70\145" => "\x74\x65\170\x74\141\x72\145\141", "\156\x61\155\x65" => __("\x4d\141\x72\153\165\160", PR__THM__PMPR), "\162\157\x77\x73" => 3]]; } }
