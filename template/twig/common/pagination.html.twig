@@ -1,4 +1,4 @@
-{% set pagination = apply_filters('get_post_paginate_links', '') %}
+{% set pagination = apply_filters(('get_' ~ pagination_type|default('post') ~ '_pagination')|generate_hook, '') %}
 {% if pagination is not empty %}
     <nav class="d-flex justify-content-center my-3" aria-label="{{ pagination_label|esc_attr }}">
         {{ pagination|raw }}
