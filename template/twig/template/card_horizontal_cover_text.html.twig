@@ -18,7 +18,7 @@
                 </a>
             {% endif %}
 
-            {% set description = render_post_data('desc', item) %}
+            {% set description = render_post_data('desc', item, {check: 0}) %}
             {% if description is not empty %}
                 <p class="mb-0 text-white limit-line max-line-4">{{ description|raw }}</p>
             {% endif %}
