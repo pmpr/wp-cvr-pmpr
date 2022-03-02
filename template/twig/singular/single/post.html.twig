@@ -7,19 +7,6 @@
                 class: 'h2'
             }
         } %}
-        {# <div class="row my-5"> #}
-        {# <div class="col-12 col-md-6 mb-5 mb-md-0"> #}
-        {# {{ do_action('cms_post_metadata_render', { #}
-        {# post: post #}
-        {# }) }} #}
-        {# </div> #}
-        {# <div class="col-12 col-md-6"> #}
-        {# {{ do_action('cms_post_relation_render_related', { #}
-        {# post: post, #}
-        {# limit: (apply_filters('cms_post_metadata_get_count', 5) - 1) #}
-        {# }) }} #}
-        {# </div> #}
-        {# </div> #}
         {% if is_active_sidebar('before-feature-image') %}
             <div class="row my-5">
                 {{ dynamic_sidebar('before-feature-image') }}
