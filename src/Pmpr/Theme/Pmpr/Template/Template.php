@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             621d28ff46c19             |
+    |             621f3a4e2eefa             |
     |_______________________________________|
 */
  namespace Pmpr\Theme\Pmpr\Template; class Template extends Common { public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function iemaakgqgqosiecm() { Card::symcgieuakksimmu(); Relation::symcgieuakksimmu(); } }
