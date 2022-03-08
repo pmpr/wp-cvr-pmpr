@@ -19,9 +19,7 @@
                                 <div class="card border-0 bg-transparent">
                                     <div class="card-body p-0">
                                         <div class="d-flex">
-                                            {{ get_icon(item.icon, {
-                                                class: 'icon-info icon-3x my-auto'
-                                            })|raw }}
+                                            {{ render_icon(item.icon, {class: 'icon-info icon-3x my-auto'}) }}
                                             <div class="ml-3 lh-sm my-1 py-1">
                                                 <span class="font-14 text-info">{{ item.title|raw }}</span>
                                                 <div class="font-15 text-secondary h6 mb-0{% if item.key == 'size' %} text-left direction-ltr{% endif %}">{{ item.value|raw }}</div>
