@@ -3,12 +3,13 @@
         <tbody>
         {% for key, item in items %}
 
-            {% set icon = item.getIcon() %}
+            {% set icon = item|call('getIcon') %}
+            {% set title = item|call('getTitle') %}
             <tr class="{{ tr_class|esc_attr }}{% if loop.last %} border-bottom-0{% endif %}">
-                {% if has_title and item.getTitle() is defined
-                    and item.getTitle is not empty %}
+                {% if has_title and title is defined
+                    and title is not empty %}
                     <th class="d-flex font-15 text-left border-0 {{ th_class|esc_attr }}">
-                        {{ item.getTitle()|raw }}
+                        {{ title|raw }}
                     </th>
                     {% set td_class = td_class ~ ' text-right' %}
                 {% else %}
@@ -16,7 +17,7 @@
                     {% set has_title = 0 %}
                 {% endif %}
                 <td class="font-22 font-weight-bold text-gray-700 p-0 border-0 my-auto {{ td_class|esc_attr }}"{% if not has_title %} colspan="2" {% endif %}>
-                    {{ item.getValue()|raw }}
+                    {{ item|call('getValue')|raw }}
                 </td>
             </tr>
         {% endfor %}
