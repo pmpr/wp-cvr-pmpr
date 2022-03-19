@@ -1,66 +1,37 @@
-{% set has_footer_2 = is_active_sidebar('footer-2') %}
-{% set has_footer_3 = is_active_sidebar('footer-3') %}
-{% set has_footer_4 = is_active_sidebar('footer-4') %}
-
 {% if apply_filters('has_footer', has_footer|default(1)) %}
-    <footer class="text-gray-300" id="site_footer">
-        <div class="py-5 py-md-8 bg-gray-800">
+
+    {% set has_footer_1 = is_active_sidebar('footer-1') %}
+    {% set has_footer_2 = is_active_sidebar('footer-2') %}
+    {% set has_footer_3 = is_active_sidebar('footer-3') %}
+    {% set has_footer_4 = is_active_sidebar('footer-4') %}
+
+    {% if has_footer_1 or has_footer_2
+        or has_footer_3 or has_footer_4 %}
+        <footer id="site_footer" class="py-6 py-md-7 py-lg-8 bg-gray-100">
             <div class="container">
-                {% include get_template('../common/logo', _self) with {
-                    args: {
-                        attrs: {
-                            class: 'icon-gray-300'
-                        },
-                        target: 'footer_logo',
-                        container_class: 'navbar-brand d-flex mb-5',
-                    }
-                } %}
-                {{ dynamic_sidebar('footer-1') }}
-            </div>
-        </div>
-        {% if has_footer_2 or has_footer_3 or has_footer_4 %}
-            <div class="py-3 py-md-5 bg-gray-700">
-                <div class="container">
-                    <div class="row">
-                        {% if has_footer_2 or has_footer_3 %}
-                            <div class="col-12 col-lg-8 mb-5 mb-lg-auto">
-                                <div class="row">
-                                    {% if has_footer_2 %}
-                                        <div class="col-12 col-md-6 mb-5 my-lg-auto">
-                                            {{ dynamic_sidebar('footer-2') }}
-                                             {{ wp_nav_menu({theme_location:'footer-menu'}) }}
-                                        </div>
-                                    {% endif %}
-                                    {% if has_footer_3 %}
-                                        <div class="col-12 col-md-6 my-lg-auto">
-                                            {{ dynamic_sidebar('footer-3') }}
-                                        </div>
-                                    {% endif %}
-                                </div>
+                <div class="row">
+                    {% set segments = 4 %}
+                    {% for i in 1..segments %}
+                        {% if is_active_sidebar('footer-' ~ i) %}
+                            {% set class = 'col-12 col-sm-6 col-xl-3' %}
+                            {% if i > 1 and i < 4 %}
+                                {% set class = class ~ ' px-xl-8' %}
+                            {% endif %}
+                            {% if not loop.last %}
+                                {% set class = class ~ ' mb-8 mb-xl-0' %}
+                            {% endif %}
+                            <div class="{{ class|esc_attr }}">
+                                {{ dynamic_sidebar('footer-' ~ i) }}
                             </div>
                         {% endif %}
-                        {% if has_footer_4 %}
-                            <div class="col-12 col-lg-4 my-auto">
-                                <div class="d-flex justify-content-end">
-                                    {{ dynamic_sidebar('footer-4') }}
-                                </div>
-                            </div>
-                        {% endif %}
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
-        {% endif %}
-        {% if is_active_sidebar('footer-5') %}
-            <div class="py-3 bg-gray-900">
-                <div class="container text-gray-500 text-center">
-                    {{ dynamic_sidebar('footer-5') }}
-                </div>
-            </div>
-        {% endif %}
-    </footer>
+        </footer>
+    {% endif %}
+
 {% endif %}
 {{ wp_footer()|raw }}
-{{ add_location(_self, '', 'end_body') }}
 </body>
 </html>
 

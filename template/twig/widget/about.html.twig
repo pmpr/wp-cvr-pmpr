@@ -1,0 +1,11 @@
+<div class="mb-3">
+    {% if logo %}
+        {% include get_template('../common/logo', _self) with {
+            option_key: logo
+        } %}
+    {% endif %}
+    {% if text %}
+        <p class="font-14 text-dark mt-2 text-justify lh-sm">{{ text|raw }}</p>
+    {% endif %}
+</div>
+

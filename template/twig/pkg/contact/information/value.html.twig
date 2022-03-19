@@ -1,4 +1,4 @@
-{% set text_color = text_color|default('gray-200') %}
+{% set text_color = text_color|default('gray-800') %}
 
 {% set content %}
 
@@ -8,21 +8,25 @@
         {% set content_value = content_value ~ '<span>' ~ val ~ '</span>' %}
     {% endfor %}
 
-    {{ get_icon(item.icon, {class: 'icon-centered icon-' ~ icon_size|default('lg') ~  ' icon-' ~ icon_color|default('gray-200')})|raw }}
-    <span class="mt-auto ml-2">
-        {{ content_value|raw }}
-    </span>
+    <div class="{% if not single_show %}d-flex justify-content-between{% else %}font-16 text-justify{% endif %}">
+        {% if not single_show %}
+            {{ render_icon(item.icon, {class: 'icon-centered icon-' ~ icon_size|default('lg') ~  ' icon-' ~ icon_color|default('primary')}) }}
+        {% endif %}
+        <span class="mt-auto {% if not single_show %}ml-2 font-14{% endif %}">
+            {{ content_value|raw }}
+        </span>
+    </div>
 {% endset %}
 
 {% if item.type is same as ('phone') %}
     {% set value = value|replace({'_': '', '-': ''}) %}
     {% set prefix = 'tel' %}
     <a href="{{ prefix }}:{{ value }}" rel="nofollow"
-       class="lh-md d-flex hover-{{ text_color }} text-{{ text_color }}">
-        <div class="d-flex">{{ content|raw }}</div>
+       class="lh-md hover-{{ text_color }} text-{{ text_color }}">
+        {{ content|raw }}
     </a>
 
 {% else %}
-    <div class="d-flex text-{{ text_color }}">{{ content|raw }}</div>
+    {{ content|raw }}
 {% endif %}
 

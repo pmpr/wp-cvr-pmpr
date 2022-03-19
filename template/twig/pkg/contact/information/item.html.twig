@@ -2,7 +2,7 @@
 
 {% if value is not empty %}
     {% set class = "font-" ~ sizes[font_size] %}
-    <div class="d-flex flex-column flex-sm-row {{ item_holder_class|default(class) }}">
+    <div class="{{ item_holder_class|default(class) }}">
         {% if value is iterable %}
             {% for val in value %}
                 {% include get_template('value', _self) %}

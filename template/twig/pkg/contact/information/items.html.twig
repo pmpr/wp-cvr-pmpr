@@ -1,10 +1,10 @@
 {% if items is defined
     and items is not empty %}
 
-    <ul class="list-group text-{{ text_color|default('gray-500') }}">
+    <ul class="list-group">
         {% for key, item in items %}
             {% if item.value is defined and item.value is not empty %}
-                <li class="list-group-item py-1 px-0 border-0 bg-transparent d-flex">
+                <li class="list-group-item py-1 px-0 border-0 bg-transparent">
                     {% include get_template('./item', _self) %}
                 </li>
             {% endif %}

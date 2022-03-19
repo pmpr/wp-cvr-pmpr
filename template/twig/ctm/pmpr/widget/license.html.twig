@@ -1,0 +1,17 @@
+{% if items is defined
+    and items is not empty %}
+
+    <div class="row my-2">
+        {% for key, item in items %}
+            {% if item.content is defined
+                and item.content is not empty %}
+                <div class="col-6">
+                    <div class="card p-3">
+                        {{ item.content|raw }}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}
+

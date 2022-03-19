@@ -1,0 +1,27 @@
+{% if items is defined
+    and items is not empty %}
+
+    <ul class="list-group font-14 text-gray-800">
+        {% for key, item in items %}
+            {% if item.title is defined
+                and item.title is not empty %}
+                {% set has_url = item.url is not empty %}
+                <li class="list-group-item py-1 px-0 border-0 bg-transparent d-flex">
+                    {% if has_url %}
+                    <a href="{{ item.url|esc_attr }}" class="text-decoration-none text-gray-800" rel="nofollow noopener noreferrer">
+                    {% endif %}
+                        <div class="d-flex">
+                            {{ render_icon(item.icon, {class: 'icon-centered icon-primary icon-' ~ icon_size|default('lg')}) }}
+                            <span class="mt-auto ml-2">
+                                {{ item.title|raw }}
+                            </span>
+                        </div>
+                    {% if has_url %}
+                    </a>
+                    {% endif %}
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endif %}
+
