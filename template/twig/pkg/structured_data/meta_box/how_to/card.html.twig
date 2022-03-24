@@ -67,7 +67,7 @@
                                 {% if step.image_id is defined
                                     and step.image_id is not empty %}
                                     {{ render_post_data('image', step.image_id, {
-                                        size: apply_filters('structured_data_howto_step_image_size', 'small')
+                                        size: apply_filters('structured_data_howto_step_image_size', 'small'),
                                         attrs: {
                                             class: 'img-fluid d-none d-md-block mb-auto ml-5',
                                         }
