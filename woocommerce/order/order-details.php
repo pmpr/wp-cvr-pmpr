@@ -43,7 +43,7 @@ if ( $show_downloads ) {
 
     <div class="card border-gray-300">
         <div class="card-body border-gray-300">
-            <h2 class="woocommerce-order-details__title h4 mb-4"><?php esc_html_e( 'Order details', PR__THM__PMPR ); ?></h2>
+            <h2 class="woocommerce-order-details__title h4 mb-4"><?php esc_html_e( 'Order details', PR__CVR__PMPR ); ?></h2>
 	        <?php do_action( 'woocommerce_order_details_before_order_table_items', $order ); ?>
             <ul class="woocommerce-table woocommerce-table--order-details shop_table order_details list-group list-group-flush list-group-compact">
 	            <?php

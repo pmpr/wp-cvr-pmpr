@@ -23,6 +23,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="btn btn-danger font-weight-bold btn-block checkout-button button alt wc-forward">
-	<?php esc_html_e('Proceed to checkout', PR__THM__PMPR); ?>
+	<?php esc_html_e('Proceed to checkout', PR__CVR__PMPR); ?>
 </a>
 

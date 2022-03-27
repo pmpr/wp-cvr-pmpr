@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
                 <?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
             </form>
             <?php
-            get_wc_back_button(wc_get_cart_url(), __('Cart', PR__THM__PMPR), [
+            get_wc_back_button(wc_get_cart_url(), __('Cart', PR__CVR__PMPR), [
                 'class' => 'd-none d-xl-inline-block',
             ]);
             ?>

@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
-	<h2 class="sr-only"><?php esc_html_e('Cart totals', PR__THM__PMPR); ?></h2>
+	<h2 class="sr-only"><?php esc_html_e('Cart totals', PR__CVR__PMPR); ?></h2>
 
 	<?php wc_get_template('total-card.php'); ?>
 

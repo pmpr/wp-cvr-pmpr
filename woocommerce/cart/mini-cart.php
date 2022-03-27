@@ -87,7 +87,7 @@ if (!WC()->cart->is_empty()) : ?>
 
 								echo apply_filters(
 									'woocommerce_widget_cart_item_quantity',
-									'<span class="quantity font-13">' . sprintf('%s <span class="text-muted">|</span> %s', sprintf(__('%s Number', PR__THM__PMPR), $cart_item['quantity']), $product_price) . '</span>'
+									'<span class="quantity font-13">' . sprintf('%s <span class="text-muted">|</span> %s', sprintf(__('%s Number', PR__CVR__PMPR), $cart_item['quantity']), $product_price) . '</span>'
 									, $cart_item, $cart_item_key
 								);
 								?>
@@ -109,7 +109,7 @@ if (!WC()->cart->is_empty()) : ?>
         <div class="d-flex justify-content-between mx-3 my-2">
             <div class="woocommerce-mini-cart__total total ml-3 d-flex flex-column justify-content-between">
                 <span><?php
-	                esc_html_e('Total Cart', PR__THM__PMPR); ?></span>
+	                esc_html_e('Total Cart', PR__CVR__PMPR); ?></span>
 				<?php
 				echo WC()->cart->get_cart_subtotal(); ?>
 				<?php
@@ -129,7 +129,7 @@ if (!WC()->cart->is_empty()) : ?>
 else : ?>
 
     <p class="woocommerce-mini-cart__empty-message text-center my-2"><?php
-		esc_html_e('No products in the cart.', PR__THM__PMPR); ?></p>
+		esc_html_e('No products in the cart.', PR__CVR__PMPR); ?></p>
 
 <?php
 endif; ?>

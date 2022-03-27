@@ -29,7 +29,7 @@ if (!$product instanceof WC_Product) {
                 </span>
             </div>
             <div class="product-total text-center d-flex flex-column justify-content-center">
-                <small class="text-muted"><?php esc_html_e('Total Sale Price', PR__THM__PMPR) ?></small>
+                <small class="text-muted"><?php esc_html_e('Total Sale Price', PR__CVR__PMPR) ?></small>
 				<?php echo $total; ?>
             </div>
         </div>

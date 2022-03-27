@@ -27,7 +27,7 @@ foreach ($cart->get_cart() as $key => $item) {
 if ($t_regular) {
 	
 	$items['cart-regular'] = [
-		'title' => __('Total Regular Price', PR__THM__PMPR),
+		'title' => __('Total Regular Price', PR__CVR__PMPR),
 		'value' => "<del>" . wc_price($t_regular) . "</del>" ,
 	];
 }
@@ -35,7 +35,7 @@ if ($t_regular) {
 if ($t_discount) {
 	
 	$items['cart-discount'] = [
-		'title' => __('Total Discount', PR__THM__PMPR),
+		'title' => __('Total Discount', PR__CVR__PMPR),
 		'value' => wc_price($t_discount),
 	];
 }
@@ -50,7 +50,7 @@ foreach ($cart->get_coupons() as $code => $coupon) {
 }
 
 $items['cart-subtotal'] = [
-	'title' => __('Total Sale Price', PR__THM__PMPR),
+	'title' => __('Total Sale Price', PR__CVR__PMPR),
 	'value' => 'wc_cart_totals_subtotal_html',
 ];
 
@@ -65,7 +65,7 @@ if ($cart->needs_shipping()) {
 	} elseif ('yes' === get_option( 'woocommerce_enable_shipping_calc' )) {
 		
 		$items['shipping-calc'] = [
-			'title' => __('Shipping', PR__THM__PMPR),
+			'title' => __('Shipping', PR__CVR__PMPR),
 			'value' => 'woocommerce_shipping_calculator',
 		];
 	}
@@ -87,7 +87,7 @@ if (wc_tax_enabled() && !$cart->display_prices_including_tax()) {
 	if (WC()->customer->is_customer_outside_base() && !$customer->has_calculated_shipping()) {
 		
 		$estimated_text = sprintf(
-			' <small>' . __('(estimated for %s)', PR__THM__PMPR) . '</small>',
+			' <small>' . __('(estimated for %s)', PR__CVR__PMPR) . '</small>',
 			WC()->countries->estimated_for_prefix($taxable_address[0]) . WC()->countries->countries[$taxable_address[0]]
 		);
 	}
@@ -111,7 +111,7 @@ if (wc_tax_enabled() && !$cart->display_prices_including_tax()) {
 }
 
 $items['order-total'] = [
-	'title' => __('Total Cart', PR__THM__PMPR),
+	'title' => __('Total Cart', PR__CVR__PMPR),
 	'value' => 'wc_cart_totals_order_total_html',
 ];
 
@@ -195,12 +195,12 @@ $items['order-total'] = [
 				do_action( 'woocommerce_proceed_to_checkout' );
 			} elseif (is_checkout()) {
 			 
-				$orderButtonText = __('Place order', PR__THM__PMPR);
+				$orderButtonText = __('Place order', PR__CVR__PMPR);
 			?>
 			<noscript>
-                <?php printf( esc_html__( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so.', PR__THM__PMPR ), '<em>', '</em>' ); ?>
+                <?php printf( esc_html__( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so.', PR__CVR__PMPR ), '<em>', '</em>' ); ?>
 			
-				<br/><button type="submit" class="btn btn-danger button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', PR__THM__PMPR ); ?>"><?php esc_html_e( 'Update totals', PR__THM__PMPR ); ?></button>
+				<br/><button type="submit" class="btn btn-danger button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', PR__CVR__PMPR ); ?>"><?php esc_html_e( 'Update totals', PR__CVR__PMPR ); ?></button>
 			</noscript>
 			
 			<?php do_action( 'woocommerce_review_order_before_submit' ); ?>

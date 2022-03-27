@@ -31,11 +31,11 @@ $show_shipping = !wc_ship_to_billing_address_only() && $order->needs_shipping_ad
 			endif; ?>
 
             <h2 class="woocommerce-column__title h4"><?php
-				esc_html_e('Billing address', PR__THM__PMPR); ?></h2>
+				esc_html_e('Billing address', PR__CVR__PMPR); ?></h2>
 
             <address>
 				<?php
-				echo wp_kses_post($order->get_formatted_billing_address(esc_html__('N/A', PR__THM__PMPR))); ?>
+				echo wp_kses_post($order->get_formatted_billing_address(esc_html__('N/A', PR__CVR__PMPR))); ?>
 				
 				<?php
 				if ($order->get_billing_phone()) : ?>
@@ -59,10 +59,10 @@ $show_shipping = !wc_ship_to_billing_address_only() && $order->needs_shipping_ad
 
         <div class="woocommerce-column woocommerce-column--2 woocommerce-column--shipping-address col-2">
             <h2 class="woocommerce-column__title h4"><?php
-				esc_html_e('Shipping address', PR__THM__PMPR); ?></h2>
+				esc_html_e('Shipping address', PR__CVR__PMPR); ?></h2>
             <address>
 				<?php
-				echo wp_kses_post($order->get_formatted_shipping_address(esc_html__('N/A', PR__THM__PMPR))); ?>
+				echo wp_kses_post($order->get_formatted_shipping_address(esc_html__('N/A', PR__CVR__PMPR))); ?>
             </address>
         </div><!-- /.col-2 -->
 

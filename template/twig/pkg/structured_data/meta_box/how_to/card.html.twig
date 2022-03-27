@@ -8,12 +8,12 @@
                 {% include get_template('list', _self) with {
                     items: howto.supplies,
                     title: supplies_title,
-                    icon: 'check-square',
+                    icon: 'square-check',
                 } %}
                 {% include get_template('list', _self) with {
                     items: howto.tools,
                     title: tools_title,
-                    icon: 'check-circle',
+                    icon: 'circle-check',
                     is_last: 1
                 } %}
             </div>
@@ -54,10 +54,8 @@
                                data-toggle="collapse"
                                data-target="#step_content_{{ index|esc_attr }}"
                                aria-expanded="true" aria-controls="step_content_{{ index|esc_attr }}">
-                                <h4 class="h6 font-17 mb-0 text-right">{{ step_title_mask|format(loop.index|number, step.title)|raw }}</h4>
-                                {{ get_icon('fontawesome/xmark', {
-                                    class: 'el-circle-4xs rotate-45deg icon-gray-600 d-none d-md-block my-auto'
-                                })|raw }}
+                                <h4 class="h6 font-17 my-auto text-right">{{ step_title_mask|format(loop.index|number, step.title)|raw }}</h4>
+                                {{ render_icon('fontawesome/xmark', {class: 'icon-xs rotate-45deg icon-gray-600 d-none d-md-block my-auto'}) }}
                             </a>
                         </div>
                         <div id="step_content_{{ index|esc_attr }}"
@@ -69,7 +67,7 @@
                                     {{ render_post_data('image', step.image_id, {
                                         size: apply_filters('structured_data_howto_step_image_size', 'small'),
                                         attrs: {
-                                            class: 'img-fluid d-none d-md-block mb-auto ml-5',
+                                            class: 'img-fluid d-none d-md-block mb-auto mr-5',
                                         }
                                     })|raw }}
                                 {% endif %}
@@ -77,7 +75,7 @@
                                     {% for instruction in step.instructions %}
                                         {% set isTip = instruction|call('isTip') %}
                                         <li class="list-group-item border-0 mb-2 font-16{% if isTip %} p-2 li-icon svg-icon icon-info-mark icon-before-3xs alert alert-primary d-flex{% else %} px-2 py-0 bg-transparent{% endif %}">
-                                            <span class="my-auto{% if isTip %} mr-2{% endif %}">{{ instruction.text|raw }}</span>
+                                            <div class="my-auto{% if isTip %} mr-2 px-3{% endif %}">{{ instruction|call('getText')|raw }}</div>
                                         </li>
                                     {% endfor %}
                                 </ul>

@@ -3,7 +3,6 @@
 {% block body %}
     {% block before_container %}{% endblock %}
     <div class="container my-5">
-        {{ add_location(_self, 'section') }}
         {% block container %}{% endblock %}
     </div>
     {{ dynamic_sidebar('after-container') }}

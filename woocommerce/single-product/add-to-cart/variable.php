@@ -28,7 +28,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 <form class="variations_form cart h-100 d-flex flex-column justify-content-between" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data' data-product_id="<?php echo absint( $product->get_id() ); ?>" data-product_variations="<?php echo $variations_attr; // WPCS: XSS ok. ?>">
 
 	<?php if ( empty( $available_variations ) && false !== $available_variations ) : ?>
-		<p class="stock out-of-stock"><?php echo esc_html( apply_filters( 'woocommerce_out_of_stock_message', __( 'This product is currently out of stock and unavailable.', PR__THM__PMPR ) ) ); ?></p>
+		<p class="stock out-of-stock"><?php echo esc_html( apply_filters( 'woocommerce_out_of_stock_message', __( 'This product is currently out of stock and unavailable.', PR__CVR__PMPR ) ) ); ?></p>
 	<?php else : ?>
         <div>
             <?php do_action( 'woocommerce_before_variations_form' ); ?>
@@ -46,7 +46,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                                     'product'   => $product,
                                 )
                             );
-                            echo end( $attribute_keys ) === $attribute_name ? wp_kses_post( apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . esc_html__( 'Clear', PR__THM__PMPR ) . '</a>' ) ) : '';
+                            echo end( $attribute_keys ) === $attribute_name ? wp_kses_post( apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . esc_html__( 'Clear', PR__CVR__PMPR ) . '</a>' ) ) : '';
                             ?>
                         </td>
                     </tr>

@@ -21,6 +21,6 @@ defined('ABSPATH') || exit;
 <p class="order-again pt-4 mb-0">
     <a href="<?php
 	echo esc_url($order_again_url); ?>" class="btn btn-danger btn-block button"><?php
-		esc_html_e('Order again', PR__THM__PMPR); ?></a>
+		esc_html_e('Order again', PR__CVR__PMPR); ?></a>
 </p>
 

@@ -2,15 +2,7 @@
     {{ get_header()|raw }}
 {% endblock %}
 
-{{ add_location(_self, '', 'after_header') }}
-
-{{ add_location(_self, 'section') }}
-
 {% block body %}{% endblock %}
-
-{{ add_location(_self, 'section') }}
-
-{{ add_location(_self, '', 'before_footer') }}
 
 {% block footer %}
     {{ get_footer()|raw }}

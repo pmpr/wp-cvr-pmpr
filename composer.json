@@ -1,11 +1,12 @@
 {
-  "name": "pmpr-thm/wp-thm-pmpr",
+  "name": "pmpr-cvr/wp-cvr-pmpr",
   "type": "project",
   "license": "proprietary",
-  "description": "PMPR Theme for Wordpress",
+  "description": "PMPR Cover for Wordpress",
   "keywords": [
     "wordpress",
     "theme",
+    "cover",
     "pmpr"
   ],
   "require": {
@@ -14,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Pmpr\\Theme\\Pmpr\\": "src/Pmpr/Theme/Pmpr"
+      "Pmpr\\Cover\\Pmpr\\": "src/Pmpr/Cover/Pmpr"
     }
   },
   "minimum-stability": "dev"

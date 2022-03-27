@@ -44,7 +44,7 @@ defined('ABSPATH') || exit;
 												?>
                                                 <div class="w-30 w-md-100">
                                                     <div class="product-quantity mb-4"
-                                                         data-title="<?php esc_attr_e('Quantity', PR__THM__PMPR); ?>">
+                                                         data-title="<?php esc_attr_e('Quantity', PR__CVR__PMPR); ?>">
 														<?php
 														if ($_product->is_sold_individually()) {
 
@@ -68,7 +68,7 @@ defined('ABSPATH') || exit;
                                                     </div>
 													<?php do_action('woocommerce_remove_item_link', [
 														'key'     => $key,
-														'title'   => __('Remove', PR__THM__PMPR),
+														'title'   => __('Remove', PR__CVR__PMPR),
 														'class'   => 'btn btn-danger btn-block',
 														'product' => $_product,
 													]); ?>
@@ -76,7 +76,7 @@ defined('ABSPATH') || exit;
                                             </div>
                                             <div class="d-flex flex-column w-100">
                                                 <div class="product-name font-22 mb-3"
-                                                     data-title="<?php esc_attr_e('Product', PR__THM__PMPR); ?>">
+                                                     data-title="<?php esc_attr_e('Product', PR__CVR__PMPR); ?>">
 													<?php
 													echo wp_kses_post(apply_filters('woocommerce_cart_item_name', $_product->get_name(), $item, $key) . '&nbsp;');
 
@@ -87,14 +87,14 @@ defined('ABSPATH') || exit;
 
 													// Backorder notification.
 													if ($_product->backorders_require_notification() && $_product->is_on_backorder($item['quantity'])) {
-														echo wp_kses_post(apply_filters('woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__('Available on backorder', PR__THM__PMPR) . '</p>', $product_id));
+														echo wp_kses_post(apply_filters('woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__('Available on backorder', PR__CVR__PMPR) . '</p>', $product_id));
 													}
 													?>
                                                 </div>
                                                 <div class="row h-100">
                                                     <div class="col-12 col-lg-8 mb-2 mb-lg-0">
                                                         <div class="product-attributes"
-                                                             data-title="<?php esc_attr_e('Attributes', PR__THM__PMPR); ?>">
+                                                             data-title="<?php esc_attr_e('Attributes', PR__CVR__PMPR); ?>">
 															<?php
 															do_action('woocommerce_render_attributes', [
 																'type'        => 'cart',
@@ -117,7 +117,7 @@ defined('ABSPATH') || exit;
                                                     </div>
                                                     <div class="col-12 col-lg-4 d-flex flex-column justify-content-end">
                                                         <div class="product-price w-100"
-                                                             data-title="<?php esc_attr_e('Price', PR__THM__PMPR); ?>">
+                                                             data-title="<?php esc_attr_e('Price', PR__CVR__PMPR); ?>">
 															<?php
 															$qty     = (int)$item['quantity'];
 															$sale    = (int)$_product->get_sale_price('');
@@ -129,19 +129,19 @@ defined('ABSPATH') || exit;
 
 																$total                   = $regular * $qty;
 																$prices['regular_price'] = [
-																	'title' => __('Regular Price', PR__THM__PMPR),
+																	'title' => __('Regular Price', PR__CVR__PMPR),
 																	'value' => "<del>" . wc_price($total) . "</del>",
 																];
 
 																$discount           = ($regular - $sale) * $qty;
 																$percentage         = pmpr_get_discount_percentage($_product);
 																$prices['discount'] = [
-																	'title' => sprintf("%s <small>(%s)</small>", __('Discount', PR__THM__PMPR), $percentage),
+																	'title' => sprintf("%s <small>(%s)</small>", __('Discount', PR__CVR__PMPR), $percentage),
 																	'value' => wc_price($discount),
 																];
 
 																$prices['expire'] = [
-																	'title' => __('Discount Expiration', PR__THM__PMPR),
+																	'title' => __('Discount Expiration', PR__CVR__PMPR),
 																	'value' => apply_filters('woocommerce_product_discount_expire_html', '', [
 																		'product' => $_product,
 																		'class'   => 'font-13',
@@ -181,7 +181,7 @@ defined('ABSPATH') || exit;
                 </ul>
 				<?php do_action('woocommerce_after_cart_table'); ?>
 				<?php
-				get_wc_back_button(get_permalink(wc_get_page_id('shop')), __('Shop', PR__THM__PMPR), [
+				get_wc_back_button(get_permalink(wc_get_page_id('shop')), __('Shop', PR__CVR__PMPR), [
 					'class' => 'd-none d-xl-inline-block',
 				]);
 				?>
@@ -208,7 +208,7 @@ defined('ABSPATH') || exit;
                 </div>
                 <div class="mb-5">
                     <button type="submit" class="button btn btn-danger d-none" name="update_cart"
-                            value="<?php esc_attr_e('Update cart', PR__THM__PMPR); ?>"><?php esc_html_e('Update cart', PR__THM__PMPR); ?></button>
+                            value="<?php esc_attr_e('Update cart', PR__CVR__PMPR); ?>"><?php esc_html_e('Update cart', PR__CVR__PMPR); ?></button>
 
 					<?php do_action('woocommerce_cart_actions'); ?>
 

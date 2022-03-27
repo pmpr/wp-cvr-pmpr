@@ -22,11 +22,11 @@ function empty_card_content() {
     <div class="card border-gray-300">
         <div class="card-body text-center">
             <img src="<?php echo '/img/cart.png'; ?>" alt="cart image" class="img-fluid mx-auto" width="200" height="150">
-            <p class="mb-2 font-20 cart-empty"><?php echo esc_html(apply_filters('wc_empty_cart_message', __('Your cart is empty!', PR__THM__PMPR))); ?></p>
+            <p class="mb-2 font-20 cart-empty"><?php echo esc_html(apply_filters('wc_empty_cart_message', __('Your cart is empty!', PR__CVR__PMPR))); ?></p>
             <div class="return-to-shop">
-                <p class="text-muted mb-0 font-15"><?php echo esc_html(apply_filters('wc_empty_cart_sub_message', __('You can go to blow page to see more products', PR__THM__PMPR))); ?></p>
+                <p class="text-muted mb-0 font-15"><?php echo esc_html(apply_filters('wc_empty_cart_sub_message', __('You can go to blow page to see more products', PR__CVR__PMPR))); ?></p>
                 <a class="card-link button wc-backward font-15" href="<?php echo esc_url(apply_filters('woocommerce_return_to_shop_redirect', wc_get_page_permalink('shop'))); ?>">
-					<?php echo esc_html(apply_filters('woocommerce_return_to_shop_text', __('Shop Page', PR__THM__PMPR))); ?>
+					<?php echo esc_html(apply_filters('woocommerce_return_to_shop_text', __('Shop Page', PR__CVR__PMPR))); ?>
                 </a>
             </div>
         </div>

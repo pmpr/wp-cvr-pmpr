@@ -19,11 +19,11 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <?php do_action('woocommerce_before_checkout_cart_errors'); ?>
 
-<p><?php esc_html_e( 'There are some issues with the items in your cart. Please go back to the cart page and resolve these issues before checking out.', PR__THM__PMPR ); ?></p>
+<p><?php esc_html_e( 'There are some issues with the items in your cart. Please go back to the cart page and resolve these issues before checking out.', PR__CVR__PMPR ); ?></p>
 
 <?php do_action( 'woocommerce_cart_has_errors' ); ?>
 
-<p><a class="button wc-backward" href="<?php echo esc_url( wc_get_cart_url() ); ?>"><?php esc_html_e( 'Return to cart', PR__THM__PMPR ); ?></a></p>
+<p><a class="button wc-backward" href="<?php echo esc_url( wc_get_cart_url() ); ?>"><?php esc_html_e( 'Return to cart', PR__CVR__PMPR ); ?></a></p>
 
 <?php do_action('woocommerce_after_checkout_cart_errors'); ?>
 

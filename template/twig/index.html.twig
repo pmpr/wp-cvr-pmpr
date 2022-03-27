@@ -6,11 +6,9 @@
 {% endblock %}
 
 {% block container %}
-    {{ add_location(_self, 'section') }}
     {% include get_template('./common/loop', _self, _current_template_name) with {
         column: 3
     } %}
-    {{ add_location(_self, 'section') }}
 {% endblock %}
 
 {% block after_container %}

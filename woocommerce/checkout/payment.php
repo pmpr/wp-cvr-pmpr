@@ -24,7 +24,7 @@ if (WC()->cart->needs_payment()) : ?>
     <div id="payment" class="woocommerce-checkout-payment">
         <div class="card border-gray-300 mb-6">
             <div class="card-body">
-                <h2 class="h5 font-weight-normal mb-4"><?php esc_html_e('Payment Method', PR__THM__PMPR) ?></h2>
+                <h2 class="h5 font-weight-normal mb-4"><?php esc_html_e('Payment Method', PR__CVR__PMPR) ?></h2>
                 <ul class="wc_payment_methods payment_methods methods list-group list-group-flush list-group-compact">
 					<?php
 					if (!empty($available_gateways)) {
@@ -33,7 +33,7 @@ if (WC()->cart->needs_payment()) : ?>
 						}
 					} else {
 
-						$notice = apply_filters('woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? esc_html__('Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.', PR__THM__PMPR) : esc_html__('Please fill in your details above to see available payment methods.', PR__THM__PMPR));
+						$notice = apply_filters('woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? esc_html__('Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.', PR__CVR__PMPR) : esc_html__('Please fill in your details above to see available payment methods.', PR__CVR__PMPR));
 						?>
                         <li class="woocommerce-notice woocommerce-notice--info woocommerce-info list-group-item px-0 bg-transparent border-gray-200 px-0 py-4">
                             <div class="<?php get_wc_alert_class('warning', $notice, ['mb-0']); ?>">

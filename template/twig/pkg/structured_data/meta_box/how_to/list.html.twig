@@ -3,7 +3,10 @@
         <h3 class="h5">{{ title|raw }}</h3>
         <ul class="list-group list-group-flush">
             {% for item in items %}
-                <li class="list-group-item border-0 px-0 py-2 d-flex li-icon svg-icon icon-before-3xs icon-before-primary icon-{{ icon|esc_attr }}">
+                <li class="list-group-item border-0 px-0 py-2 d-flex">
+                    {% if icon is defined and icon is not empty %}
+                        {{ render_icon('fontawesome/' ~ icon, {class: 'icon-md mr-2 icon-primary'}) }}
+                    {% endif %}
                     <span class="mr-3">{{ item.name|raw }}</span>
                 </li>
             {% endfor %}

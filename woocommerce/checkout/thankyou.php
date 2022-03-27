@@ -10,16 +10,16 @@ defined( 'ABSPATH' ) || exit;
             <?php do_action('woocommerce_before_thankyou', $order->get_id()); ?>
             <?php if ($isFailed) : ?>
                 <div class="p-4 <?php get_wc_alert_class('warning');?>">
-                    <h2 class="h5"><?php esc_html_e( 'Transaction failed', PR__THM__PMPR ); ?></h2>
+                    <h2 class="h5"><?php esc_html_e( 'Transaction failed', PR__CVR__PMPR ); ?></h2>
                     <p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed">
-                        <?php esc_html_e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', PR__THM__PMPR ); ?>
+                        <?php esc_html_e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', PR__CVR__PMPR ); ?>
                     </p>
                     <hr class="my-4">
 
                     <p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed-actions text-left">
-                        <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" class="btn btn-danger button pay"><?php esc_html_e( 'Pay', PR__THM__PMPR ); ?></a>
+                        <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" class="btn btn-danger button pay"><?php esc_html_e( 'Pay', PR__CVR__PMPR ); ?></a>
                         <?php if (is_user_logged_in()) : ?>
-                            <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="btn btn-gray-200 button pay"><?php esc_html_e( 'My account', PR__THM__PMPR ); ?></a>
+                            <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="btn btn-gray-200 button pay"><?php esc_html_e( 'My account', PR__CVR__PMPR ); ?></a>
                         <?php endif; ?>
                     </p>
                 </div>
@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 
                 <div class="<?php get_wc_alert_class('success');?>">
                     <p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received">
-                        <?php echo apply_filters('woocommerce_thankyou_order_received_text', esc_html__('Thank you. Your order has been received.', PR__THM__PMPR), $order); ?>
+                        <?php echo apply_filters('woocommerce_thankyou_order_received_text', esc_html__('Thank you. Your order has been received.', PR__CVR__PMPR), $order); ?>
                     </p>
                 </div>
             <?php endif; ?>
@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) || exit;
 			                && $order->get_user_id() === get_current_user_id() ) {
 			
 			                $extra['email'] = [
-				                'title' => __('Email', PR__THM__PMPR),
+				                'title' => __('Email', PR__CVR__PMPR),
 				                'value' => $order->get_billing_email(),
 			                ];
 		                }
@@ -54,7 +54,7 @@ defined( 'ABSPATH' ) || exit;
 		                if ($order->get_customer_note()) {
 		                 
 			                $items['note'] = [
-				                'title' => __('Note', PR__THM__PMPR),
+				                'title' => __('Note', PR__CVR__PMPR),
 				                'value' => wp_kses_post(nl2br(wptexturize($order->get_customer_note()))),
 			                ];
                         }
@@ -86,7 +86,7 @@ defined( 'ABSPATH' ) || exit;
         <?php else : ?>
             <div class="<?php get_wc_alert_class('success');?>">
                 <p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received">
-                    <?php echo apply_filters('woocommerce_thankyou_order_received_text', esc_html__('Thank you. Your order has been received.', PR__THM__PMPR), null); ?>
+                    <?php echo apply_filters('woocommerce_thankyou_order_received_text', esc_html__('Thank you. Your order has been received.', PR__CVR__PMPR), null); ?>
                 </p>
             </div>
         <?php endif; ?>

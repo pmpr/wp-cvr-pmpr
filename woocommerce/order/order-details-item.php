@@ -51,7 +51,7 @@ wc_get_template(
 		'order'      => $order,
 		'total'      => $order->get_formatted_line_subtotal($item),
 		'item_id'    => $item_id,
-		'quantity'   => apply_filters('woocommerce_order_item_quantity_html', sprintf('%s <span class="text-muted">|</span> %s', sprintf(__('%s Number', PR__THM__PMPR), $qty_display), WC()->cart->get_product_price($product)), $item),
+		'quantity'   => apply_filters('woocommerce_order_item_quantity_html', sprintf('%s <span class="text-muted">|</span> %s', sprintf(__('%s Number', PR__CVR__PMPR), $qty_display), WC()->cart->get_product_price($product)), $item),
 		'product'    => $product,
 		'permalink'  => $product_permalink,
 		'item_class' => apply_filters('woocommerce_order_item_class', 'woocommerce-table__line-item order_item', $item, $order),

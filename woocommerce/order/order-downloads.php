@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="card border-gray-300">
         <div class="card-body table-responsive">
             <?php if ( isset( $show_title ) ) : ?>
-                <h2 class="woocommerce-order-downloads__title h4"><?php esc_html_e( 'Downloads', PR__THM__PMPR ); ?></h2>
+                <h2 class="woocommerce-order-downloads__title h4"><?php esc_html_e( 'Downloads', PR__CVR__PMPR ); ?></h2>
             <?php endif; ?>
         
             <table class="woocommerce-table woocommerce-table--order-downloads shop_table shop_table_responsive order_details table">
@@ -55,13 +55,13 @@ if ( ! defined( 'ABSPATH' ) ) {
                                             echo '<a href="' . esc_url( $download['download_url'] ) . '" class="woocommerce-MyAccount-downloads-file button alt btn btn-sm btn-outline-primary btn-block py-2">' . esc_html( $download['download_name'] ) . '</a>';
                                             break;
                                         case 'download-remaining':
-	                                        echo number_format_i18n(is_numeric($download['downloads_remaining']) ? esc_html($download['downloads_remaining']) : esc_html__('&infin;', PR__THM__PMPR));
+	                                        echo number_format_i18n(is_numeric($download['downloads_remaining']) ? esc_html($download['downloads_remaining']) : esc_html__('&infin;', PR__CVR__PMPR));
                                             break;
                                         case 'download-expires':
                                             if ( ! empty( $download['access_expires'] ) ) {
                                                 echo '<time datetime="' . esc_attr( date( 'Y-m-d', strtotime( $download['access_expires'] ) ) ) . '" title="' . esc_attr( strtotime( $download['access_expires'] ) ) . '">' . esc_html( date_i18n( get_option( 'date_format' ), strtotime( $download['access_expires'] ) ) ) . '</time>';
                                             } else {
-                                                esc_html_e( 'Never', PR__THM__PMPR );
+                                                esc_html_e( 'Never', PR__CVR__PMPR );
                                             }
                                             break;
                                     }

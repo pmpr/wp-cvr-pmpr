@@ -3,5 +3,4 @@
 {% block container %}
     <h1 class="h3">{{ the_title()|raw }}</h1>
     {{ do_action('render_sitemap_html') }}
-    {{ add_location(_self) }}
 {% endblock %}
