@@ -1,7 +1,0 @@
-<?php
-/*   _______________________________________
-    |  Obfuscated by PMPR - Php Obfuscator  |
-    |             623bbd9c57628             |
-    |_______________________________________|
-*/
- namespace Pmpr\Theme\Pmpr\Interfaces; interface CommonInterface { const kuggasqqyiceoeqi = "\x73\143\x72\157\x6c\x6c\x5f\x75\160"; const yewwoieoeaeosiwg = self::kuggasqqyiceoeqi . "\137\151\x63\x6f\156"; const aaeoesekqkywwqyy = "\155\x6f\x62\151\x6c\145\x5f\154\x6f\x67\x6f"; const ueiqkoeysiqaueae = "\x66\x6f\x6f\164\x65\x72\x5f\154\157\x67\x6f"; const amemwumkckgukscu = "\x64\145\x73\x6b\x74\x6f\x70\137\x6c\157\147\157"; const moamykgguysscqki = "\163\x71\x75\141\162\x65\144\137\154\157\x67\157"; const qsakmwqueiwkcmok = "\150\x65\141\144\145\x72\x5f"; const eaymwcsywymcueus = self::qsakmwqueiwkcmok . "\143\x61\x72\x74"; const kakmqeamywsckeso = self::qsakmwqueiwkcmok . "\141\143\x63\x6f\165\x6e\x74"; const wsksicykoaaacquk = self::qsakmwqueiwkcmok . "\167\150\141\164\x73\x61\x70\x70"; const giesgyymgqsuoqwm = self::qsakmwqueiwkcmok . "\x63\141\162\x74\137\151\x63\x6f\x6e"; const emasiqiiokegmgus = self::qsakmwqueiwkcmok . "\143\141\x72\x74\x5f\164\x65\x78\164"; const ckamasqwquyyiksk = self::qsakmwqueiwkcmok . "\141\x63\143\x6f\x75\x6e\x74\137\x69\x63\x6f\x6e"; const soekqoaqayyqqwgo = self::qsakmwqueiwkcmok . "\141\x63\143\x6f\165\156\x74\x5f\164\x65\170\164"; const sakqiumesekgquyk = self::qsakmwqueiwkcmok . "\141\x63\x63\157\165\x6e\164\x5f\x69\x74\145\155\163"; }
