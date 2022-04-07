@@ -8,7 +8,8 @@
                 {% set has_url = item.url is not empty %}
                 <li class="list-group-item py-1 px-0 border-0 bg-transparent d-flex">
                     {% if has_url %}
-                    <a href="{{ item.url|esc_attr }}" class="text-decoration-none text-gray-800" rel="nofollow noopener noreferrer">
+                    <a href="{{ item.url|esc_attr }}" class="text-decoration-none text-gray-800"
+                       rel="nofollow noopener noreferrer" target="_blank">
                     {% endif %}
                         <div class="d-flex">
                             {{ render_icon(item.icon, {class: 'icon-centered icon-primary icon-' ~ icon_size|default('lg')}) }}
