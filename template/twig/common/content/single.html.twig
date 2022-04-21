@@ -1,5 +1,5 @@
 {{ do_action('single_before_content'|generate_hook, post) }}
 {{ dynamic_sidebar('before-single-content') }}
-<div class="{{ post_type|default('')|esc_attr }}-content">{{ the_content()|raw }}</div>
+<div class="{{ post_type|default('')|esc_attr }}-content post-content">{{ the_content()|raw }}</div>
 {{ dynamic_sidebar('after-single-contenet') }}
 {{ do_action('single_after_content'|generate_hook, post) }}
