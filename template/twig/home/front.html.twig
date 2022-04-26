@@ -40,13 +40,13 @@
                                 } %}
                                     {% block body %}
                                         <div class="carousel-item-content position-absolute bottom-0 w-100 overlay overlay-dark overlay-50">
-                                            <div class="row no-gutters mx-5 py-5">
+                                            <div class="row no-gutters p-3">
                                                 <div class="col-12 col-lg-9">
-                                                    <div class="h4 text-center text-lg-left text-white slide-title"
+                                                    <div class="h5 text-center text-lg-left text-white slide-title"
                                                          data-limit="1">{{ carousel.title|raw }}</div>
                                                     {% if carousel.description %}
                                                         <div class="d-none d-lg-block">
-                                                            <p class="mb-0 fs-lg lh-md text-white"
+                                                            <p class="mb-0 fs-md lh-md text-white"
                                                                data-limit="1">{{ carousel.description|raw }}</p>
                                                         </div>
                                                     {% endif %}
@@ -55,6 +55,7 @@
                                                     <div class="col-12 col-lg-3 mt-auto">
                                                         <div class="d-flex justify-content-end">
                                                             {% include get_template('../common/call_to_action', _self) with {
+                                                                size: 'md',
                                                                 title: carousel.title,
                                                                 text: data.action_text,
                                                                 permalink: carousel.permalink,
@@ -154,11 +155,11 @@
             <div class="row">
                 {% set owner = data.owner %}
                 {% if owner %}
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-6 mb-5 mb-lg-0">
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-12 col-lg-5 d-flex flex-column justify-content-between">
+                                    <div class="col-12 col-lg-5 mb-5 mb-lg-0 d-flex flex-column justify-content-between">
                                         <img src="{{ owner.image|esc_attr }}" width="200" height="200"
                                              alt="Owner Avatar"
                                              class="rounded-circle img-thumbnail img-fluid mx-auto mb-5">
@@ -171,7 +172,7 @@
                                             </div>
                                         {% endif %}
                                     </div>
-                                    <div class="col-12 col-lg-7">
+                                    <div class="col-12 col-lg-7 text-center text-lg-left">
                                         <div class="h4 mb-4">{{ owner.name|raw }}</div>
                                         {% if owner.badges %}
                                             <ul class="list-unstyled">
@@ -198,8 +199,8 @@
                         </div>
                     </div>
                 {% endif %}
-                <div class="col-12 col-md-6">
-                    <div class="teams d-flex h-100">
+                <div class="col-12 col-lg-6">
+                    <div class="teams d-flex flex-column flex-md-row h-100">
                         <nav>
                             <ul class="nav flex-column nav-tabs h-100" id="nav_teams" role="tablist">
                                 {% for team in data.teams %}
