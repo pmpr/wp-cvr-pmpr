@@ -375,7 +375,7 @@
                     {% endif %}
                 </div>
                 <div class="col-12 col-md-8 mb-5 mb-lg-0 order-1">
-                    {{ do_action('contact_render_form'|generate_hook) }}
+                    {{ do_action('contact_render_form'|generate_hook, {}) }}
                 </div>
             </div>
         {% endblock %}
