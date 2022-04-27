@@ -9,13 +9,17 @@
             </div>
             <div class="col-12 col-lg-4 order-{{ sidebar_order|default(3)|esc_attr }}">
                 <aside class="h-100 position-relative">
-                    {{ dynamic_sidebar('aside-sidebar') }}
+                    {% if widget_enable|default(1) %}
+                        {{ dynamic_sidebar('aside-sidebar') }}
+                    {% endif %}
                     {% block sidebar %}{% endblock %}
                 </aside>
             </div>
         </div>
         {% block after_main_and_sidebar %}{% endblock %}
     </div>
-    {{ dynamic_sidebar('after-container') }}
+    {% if widget_enable|default(1) %}
+        {{ dynamic_sidebar('after-container') }}
+    {% endif %}
     {% block after_container %}{% endblock %}
 {% endblock %}

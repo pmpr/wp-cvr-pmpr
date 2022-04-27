@@ -1,3 +1,4 @@
+{% set widget_enable = 0 %}
 {% extends get_cover_template('container_sidebar') %}
 
 {% set info = render_post_data('info', post, {
@@ -8,11 +9,24 @@
 
 {% block main %}
     <main>
-        {% include get_cover_template('common/page_header') with {
+        {% embed get_cover_template('common/page_header') with {
             title_attrs: {
                 class: 'h3 mb-4'
             }
         } %}
+            {% block after_title %}
+                <div class="aligncenter my-4">
+
+                    {{ render_post_data('image', object, {
+                        size: 'large',
+                        attrs: {
+                            class: 'w-100 img-fluid post-featured-image'
+                        }
+                    })|raw }}
+                </div>
+            {% endblock %}
+
+        {% endembed %}
 
         {% if info.business_name is not empty
             and info.business_logo_id is not empty %}
@@ -53,10 +67,10 @@
             <span class="h5">{{ info.name|raw }}</span>
 
             {% if info.business_name %}
-                <span class="h6 mb-0">{{ info.business_name|raw }}</span>
+                <span class="h6 mb-3">{{ info.business_name|raw }}</span>
             {% endif %}
             {% if info.business_url %}
-                <div class="my-4">
+                <div class="mt-1 mb-4">
                     {% include get_cover_template('common/call_to_action') with {
                         blank: 1,
                         size: 'sm',
@@ -78,15 +92,17 @@
     </div>
     {% set product =  info.ordered_product %}
     {% if product %}
-        <div class="card">
-            <div class="card-body text-center lh-md">
+        <div class="sticky-top pt-5">
+            <div class="card">
+                <div class="card-body text-center lh-md">
 
-                <div class="h5 mb-4">{{ get_title(product)|raw }}</div>
-                {% include get_cover_template('common/call_to_action') with {
-                    py: 1,
-                    text: info.view_product,
-                    permalink: get_permalink(product),
-                } %}
+                    <div class="h5 mb-4">{{ get_title(product)|raw }}</div>
+                    {% include get_cover_template('common/call_to_action') with {
+                        py: 1,
+                        text: info.view_product,
+                        permalink: get_permalink(product),
+                    } %}
+                </div>
             </div>
         </div>
     {% endif %}
