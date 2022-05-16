@@ -107,7 +107,7 @@ if (!WC()->cart->is_empty()) : ?>
 
     <div class="woocommerce-mini-cart__buttons buttons border-gray-300 border-top mx-n3">
         <div class="d-flex justify-content-between mx-3 my-2">
-            <div class="woocommerce-mini-cart__total total ml-3 d-flex flex-column justify-content-between">
+            <div class="woocommerce-mini-cart__total total mr-3 d-flex flex-column justify-content-between">
                 <span><?php
 	                esc_html_e('Total Cart', PR__CVR__PMPR); ?></span>
 				<?php
