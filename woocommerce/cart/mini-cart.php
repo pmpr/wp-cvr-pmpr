@@ -20,7 +20,7 @@ if (!WC()->cart->is_empty()) : ?>
 				$_product   = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
 				$product_id = apply_filters('woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key);
 
-				if ($_product instanceof WC_Product && $_product->exists() && $cart_item['quantity'] > 0
+				if ($cart_item['quantity'] > 0 && $_product instanceof WC_Product && $_product->exists()
 					&& apply_filters('woocommerce_widget_cart_item_visible', true, $cart_item, $cart_item_key)) {
 
 					$product_name      = apply_filters('woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key);
