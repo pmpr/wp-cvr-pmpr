@@ -37,12 +37,14 @@
             {% endif %}
         </div>
     </nav>
-    {% if is_active_sidebar('header-2') %}
+
+    {% set breadcrumb = apply_filters('breadcrumb_get_html'|generate_hook, '') %}
+    {% if breadcrumb %}
         <nav class="bg-gray-300">
             <div class="container">
                 <div class="row">
                     <div class="col-12 overflow-auto">
-                        {{ dynamic_sidebar('header-2') }}
+                        {{ breadcrumb|raw }}
                     </div>
                 </div>
             </div>
