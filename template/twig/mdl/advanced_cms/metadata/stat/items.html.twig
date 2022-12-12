@@ -3,7 +3,7 @@
         <div class="w-100 text-center py-3 py-md-auto lh-xxl" id="statistic_{{ item.name|raw }}">
             <div class="d-flex justify-content-center">
                 {{ get_icon(item.icon, {
-                    class: 'icon-primary icon-xxl'
+                    class: 'icon-primary icon-xxl my-auto'
                 })|raw }}
                 <span class="statistic-lg ml-2" data-value="{{ item.value|esc_attr }}">
                     {{ item.value|number|raw }}

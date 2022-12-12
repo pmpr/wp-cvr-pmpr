@@ -1,0 +1,11 @@
+<div class="mb-3">
+    {% if logo %}
+        {% include get_cover_template('common/logo') with {
+            option_key: logo
+        } %}
+    {% endif %}
+    {% if description %}
+        <p class="font-14 text-dark mt-2 text-justify lh-sm">{{ description|raw }}</p>
+    {% endif %}
+</div>
+

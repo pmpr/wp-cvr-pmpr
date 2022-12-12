@@ -6,14 +6,14 @@
             {% if item.title is defined
                 and item.title is not empty %}
                 {% set has_url = item.url is not empty %}
-                <li class="list-group-item py-1 px-0 border-0 bg-transparent d-flex">
+                <li class="list-group-item px-0 border-0 bg-transparent d-flex {% if loop.first %}pb-2{% elseif loop.last %}pt-2{% else %}py-2{% endif %}">
                     {% if has_url %}
                     <a href="{{ item.url|esc_attr }}" class="text-decoration-none text-gray-800"
                        rel="nofollow noopener noreferrer" target="_blank">
                     {% endif %}
                         <div class="d-flex">
                             {{ render_icon(item.icon, {class: 'icon-centered icon-primary icon-' ~ icon_size|default('lg')}) }}
-                            <span class="mt-auto ml-2">
+                            <span class="mt-auto ml-2 lh-xs">
                                 {{ item.title|raw }}
                             </span>
                         </div>

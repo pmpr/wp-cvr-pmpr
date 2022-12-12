@@ -17,7 +17,7 @@
                         <p class="text-primary my-auto font-13">{{ args.comment_waiting_text|raw }}</p>
                     {% endif %}
                 </div>
-                {{ comment_reply_link({
+                {{ get_comment_reply_link({
                     depth: depth,
                     max_depth: max_depth,
                     reply_text: get_icon(reply_icon, {

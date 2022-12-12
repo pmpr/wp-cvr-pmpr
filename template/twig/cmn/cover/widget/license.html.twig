@@ -1,13 +1,11 @@
 {% if items is defined
     and items is not empty %}
-
     <div class="row my-2">
         {% for key, item in items %}
-            {% if item.content is defined
-                and item.content is not empty %}
+            {% if item.markup is defined and item.markup is not empty %}
                 <div class="col-6">
                     <div class="card p-3">
-                        {{ item.content|raw }}
+                        {{ item.markup|raw }}
                     </div>
                 </div>
             {% endif %}

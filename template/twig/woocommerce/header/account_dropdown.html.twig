@@ -13,11 +13,11 @@
             and links is not empty %}
             <div id="cart_content_list_holder" class="card-body bg-transparent p-0">
                 {% for key, item in links %}
-                    <a href="{{ item.link|raw }}" class="dropdown-item px-3 border-bottom-1">
+                    <a href="{{ item.link|raw }}" class="dropdown-item px-3 border-bottom-1 d-flex">
                         {{ get_icon(item.icon, {
-                            class: 'icon-sm icon-primary'
+                            class: 'icon-sm icon-primary my-auto mr-1'
                         })|raw }}
-                        <span class="ml-1">{{ item.text|raw }}</span>
+                        {{ item.text|raw }}
                     </a>
                 {% endfor %}
             </div>
