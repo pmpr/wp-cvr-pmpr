@@ -12,10 +12,8 @@
                        rel="nofollow noopener noreferrer" target="_blank">
                     {% endif %}
                         <div class="d-flex">
-                            {{ render_icon(item.icon, {class: 'icon-centered icon-primary icon-' ~ icon_size|default('lg')}) }}
-                            <span class="mt-auto ml-2 lh-xs">
-                                {{ item.title|raw }}
-                            </span>
+                            {{ render_icon(item.icon, {class: 'my-auto icon-centered icon-primary icon-' ~ icon_size|default('lg')}) }}
+                            <span class="my-auto ml-2 lh-xs">{{ item.title|raw }}</span>
                         </div>
                     {% if has_url %}
                     </a>
