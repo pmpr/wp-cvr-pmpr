@@ -5,7 +5,7 @@
     arrows: 0
 } %}
     {% block carousel %}
-        <div class="carousel-item">
+        <div class="carousel-item px-3">
             {{ wp_get_attachment_image(carousel.image, [140, 140], {class: 'd-block mx-auto mb-3'})|raw }}
             <div class="text-center">{{ carousel.title|raw }}</div>
         </div>
