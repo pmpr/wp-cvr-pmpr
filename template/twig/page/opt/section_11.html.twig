@@ -1,0 +1,9 @@
+{% include get_template('./title_and_description', _self) %}
+
+<div class="row mt-5">
+    {% for step in steps %}
+        <div class="col-12 col-md-4">
+            {{ wp_get_attachment_image(step.image, [386, 386], {class: 'w-100 d-block mx-auto'})|raw }}
+        </div>
+    {% endfor %}
+</div>

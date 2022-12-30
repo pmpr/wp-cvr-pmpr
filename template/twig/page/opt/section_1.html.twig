@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-12 col-lg-8 order-2 order-lg-0">
+        {% include get_template('./title_and_description', _self) with {
+            title_attrs: {class: 'h1 mb-4'},
+            is_center: 0,
+        } %}
+
+        {% if right_image is not empty %}
+            {{ wp_get_attachment_image(right_image, [350, 65], {class: 'd-block mx-auto mb-5'})|raw }}
+        {% endif %}
+
+        {% if action is not empty %}
+            <div class="text-center text-lg-left">
+                {% include get_cover_template('common/call_to_action') with {
+                    text: action.title,
+                    permalink: action.permalink
+                } %}
+            </div>
+        {% endif %}
+    </div>
+    <div class="col-12 col-lg-4 mb-5 my-lg-auto order-0 order-lg-2">
+        {% if left_image is not empty %}
+            {{ wp_get_attachment_image(left_image, [386, 386], {class: 'd-block mx-auto w-100'})|raw }}
+        {% endif %}
+    </div>
+</div>

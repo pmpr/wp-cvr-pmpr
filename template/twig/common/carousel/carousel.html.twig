@@ -1,4 +1,5 @@
 {% if carousels %}
+    {% set carousel_config = carousel_config|merge({rtl: true}) %}
     <div class="position-relative {{ container_class|raw }}">
         {% block before_slides %}{% endblock %}
         <div{% if carousel_config is defined %} data-carousel="{{ carousel_config|json_encode }}"{% endif %}

@@ -14,7 +14,7 @@
 </head>
 <body {{ body_class(body_class|default('')) }} id="top">
 
-{% if apply_filters('has_header', has_header|default(1)) %}
+{% if pmpr_apply_filters('has_header', has_header|default(1)) %}
 <header id="site_header">
     {% set can_render_breadcrumb = apply_filters('breadcrumb_can_render'|generate_hook, 1) %}
     <nav class="navbar navbar-expand-md navbar-light bg-light py-3 main-nav{% if not can_render_breadcrumb %} shadow-sm{% endif %}">

@@ -16,9 +16,7 @@
                                 <li class="list-group-item font-weight-bold">
                                     {% include get_template('../common/call_to_action', _self) with {
                                         button: 0,
-                                        attrs: {
-                                            'data-limit': 1
-                                        },
+                                        attrs: {'data-limit': 1},
                                         text: post.title,
                                         permalink: post.permalink,
                                     } %}

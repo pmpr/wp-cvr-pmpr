@@ -23,5 +23,4 @@
     {% set attrs = attrs|add('target', '_blank') %}
 {% endif %}
 
-<a {{ attrs|parse_attrs|raw }}>{{ text|raw }}</a>
-
+{{ render_if_has_content('a', attrs, text) }}
