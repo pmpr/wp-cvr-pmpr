@@ -5,9 +5,7 @@
     <div class="text-center text-white mb-5">
         {{ render_if_has_content('div', {class: 'h5'}, title) }}
         <div class="d-flex justify-content-between">
-            {{ wp_get_attachment_image(image, [65, 65], {class: 'd-none d-lg-block'})|raw }}
             {{ render_if_has_content('div', {class: 'w-100 h4 no-margin my-auto'}, wpautop(text)) }}
-            {{ wp_get_attachment_image(image, [65, 65], {class: 'd-none d-lg-block'})|raw }}
         </div>
     </div>
     {% if action is not empty %}

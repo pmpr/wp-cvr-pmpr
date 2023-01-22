@@ -33,11 +33,15 @@
 
         {% if options is not empty %}
 
-            <section class="py-8{% if rendered % 2 == 0 %} bg-white{% else %} opt-page-gradient{% endif %}"
+            <section class="opt-section {% if options.bg_color is not empty %}bg-{{ options.bg_color|esc_attr }}{% endif %}{% if loop.index > 1 %} py-8{% endif %}"
                      id="section_{{ section|esc_attr }}">
-                <div class="container">
-                    {% include get_template('./opt/section_' ~ loop.index, _self) with options %}
-                </div>
+                {% if options.has_container %}
+                    <div class="container">
+                {% endif %}
+                        {% include get_template('./opt/section_' ~ loop.index, _self) with options %}
+                {% if options.has_container %}
+                    </div>
+                {% endif %}
             </section>
             {% set rendered = rendered + 1 %}
 
