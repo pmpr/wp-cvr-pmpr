@@ -10,7 +10,7 @@
                 <div class="card{% if not loop.last %} mb-2{% endif %}">
                     <div class="card-header bg-gray-200" id="faq_question_{{ index|esc_attr }}">
                         <a class="d-flex justify-content-between p-0 btn card-link{% if not loop.first %} collapsed{% endif %}"
-                           data-toggle="collapse"
+                           data-toggle="collapse" href="#"
                            data-target="#faq_answer_{{ index|esc_attr }}"
                            aria-expanded="true" aria-controls="faq_answer_{{ index|esc_attr }}">
                             <h3 class="h6 font-17 my-auto text-right">{{ item.question|raw }}</h3>
