@@ -1,6 +1,6 @@
 <li class="list-group-item bg-transparent border-0 p-0 mb-2 comment-list-item{% if depth > 1 %} comment-child{% endif %}"
     id="comment-{{ id|esc_attr }}" data-page="{{ page }}">
-    <article data-id="{{ id|esc_attr }}"
+    <div data-id="{{ id|esc_attr }}"
             {{ comment_class(['d-flex w-100','rounded p-2 mb-2','bg-gray-100 border border-gray-200'], id) }}>
 
         {{ get_avatar(comment, avatar_size, {class: 'avatar-img rounded-circle'})|raw }}
@@ -27,5 +27,5 @@
             </div>
             <p class="font-size-sm text-gray-700 mb-0">{{ text|raw }}</p>
         </div>
-    </article>
+    </div>
 

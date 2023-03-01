@@ -9,6 +9,8 @@
                         {{ wpautop(data.description)|raw }}
                     {% endif %}
                 </div>
+            {% else %}
+                <h2 class="sr-only">Section</h2>
             {% endif %}
 
             {% block content %}{% endblock %}
