@@ -8,10 +8,7 @@
 <html dir="rtl" lang="fa" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html dir="rtl" lang="fa" class="no-js"> <!--<![endif]-->
-<head>
-    {{ wp_head() }}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
-</head>
+<head>{{ wp_head() }}</head>
 <body {{ body_class(body_class|default('')) }} id="top">
 
 {% if pmpr_apply_filters('has_header', has_header|default(1)) %}
