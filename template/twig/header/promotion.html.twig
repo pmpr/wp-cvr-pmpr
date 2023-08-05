@@ -9,7 +9,7 @@
                 {% if desktop.links is not empty %}
                     <div>
                         {% for item in desktop.links %}
-                            <a class="btn btn-sm btn-{{ item.color }} ml-3" href="{{ item.link|esc_attr }}">{{ item.text|raw }}</a>
+                            <a class="btn btn-sm btn-outline-primary px-5 font-weight-bold btn-{{ item.color }} ml-3" href="{{ item.link|esc_attr }}">{{ item.text|raw }}</a>
                         {% endfor %}
                     </div>
                 {% endif %}
@@ -47,7 +47,7 @@
             } %}
                 {% block body %}
                     <img src="{{ wp_get_attachment_image_url(mobile.icon)|esc_attr }}"
-                         class="p-2" alt="Promotion Icon" width="90" height="90">
+                         class="p-2" alt="Promotion Icon" width="70" height="70">
                 {% endblock %}
             {% endembed %}
         {% endif %}

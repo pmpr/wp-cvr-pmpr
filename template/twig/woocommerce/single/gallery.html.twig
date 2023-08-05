@@ -5,7 +5,7 @@
         {% block carousel %}
             {% embed get_cover_template('common/media/background') with {
                 image_url: wp_get_attachment_image_url(carousel, 'large'),
-                container_class: 'carousel-item h-387px mx-md-h350px position-relative bg-cover',
+                container_class: 'carousel-item position-relative bg-no-repeat',
             } %}
                 {% block body %}{% endblock %}
             {% endembed %}

@@ -34,7 +34,7 @@
                             {% block carousel %}
                                 {% embed get_template('../common/media/background', _self) with {
                                     image_url: wp_get_attachment_image_url(carousel.image, 'large'),
-                                    container_class: 'carousel-item h-387px mx-md-h350px position-relative bg-cover',
+                                    container_class: 'carousel-item position-relative bg-cover',
                                 } %}
                                     {% block body %}
                                         <div class="position-absolute bottom-0 w-100 overlay overlay-dark overlay-50">
