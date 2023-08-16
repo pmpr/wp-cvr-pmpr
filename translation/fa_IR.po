@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Cover Pmpr\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2022-12-18 00:13+0330\n"
+"POT-Creation-Date: 2023-08-16 16:41+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;"
 "_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: build\n"
@@ -45,16 +45,16 @@ msgstr "جمع کل:"
 msgid "Payment method:"
 msgstr "شیوه پرداخت:"
 
-#: functions.php:152 src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:62
+#: functions.php:154 src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:63
 #, php-format
 msgid "Back to %s"
 msgstr "بازگشت به %s"
 
-#: src/Pmpr/Cover/Pmpr/AMP.php:27
+#: src/Pmpr/Cover/Pmpr/AMP.php:29
 msgid "None AMP Version"
 msgstr "مشاهده نسخه اصلی"
 
-#: src/Pmpr/Cover/Pmpr/Comment.php:154
+#: src/Pmpr/Cover/Pmpr/Comment.php:151
 msgid "Save my name and email."
 msgstr "نام و ایمیل من را ذخیره کنید."
 
@@ -142,99 +142,17 @@ msgstr ""
 msgid "Footer Navigation Menu"
 msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:69 src/Pmpr/Cover/Pmpr/Setting.php:81
-msgid "Cover Setting"
-msgstr "تنظیمات کاور"
+#: src/Pmpr/Cover/Pmpr/Page/Optimization.php:33
+#: src/Pmpr/Cover/Pmpr/Setting.php:683
+msgid "Optimization"
+msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:76 src/Pmpr/Cover/Pmpr/Setting.php:89
-msgid "General"
-msgstr "عمومی"
+#: src/Pmpr/Cover/Pmpr/Page/ProfessionalWordpress.php:25
+#: src/Pmpr/Cover/Pmpr/Setting.php:465
+msgid "Professional Wordpress"
+msgstr "وردپرس حرفه‌ای"
 
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:77
-msgid "General Configuration"
-msgstr "پیکربندی عمومی"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:81 src/Pmpr/Cover/Pmpr/Setting.php:94
-msgid "Home"
-msgstr "خانه"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:82
-#, fuzzy
-#| msgid "Top Section"
-msgid "Home Page Sections"
-msgstr "بخش بالایی"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:86 src/Pmpr/Cover/Pmpr/Setting.php:98
-msgid "Sections"
-msgstr "بخش‌ها"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:90 src/Pmpr/Cover/Pmpr/Setting.php:125
-msgid "Top Section"
-msgstr "بخش بالایی"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:94 src/Pmpr/Cover/Pmpr/Setting.php:104
-msgid "Top List"
-msgstr "لیست بالا"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:114 src/Pmpr/Cover/Pmpr/Setting.php:364
-msgid "Disable Section"
-msgstr "غیر فعال کردن بخش"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:118 src/Pmpr/Cover/Pmpr/Setting.php:369
-msgid "Title of Section"
-msgstr "عنوان بخش"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:122 src/Pmpr/Cover/Pmpr/Setting.php:374
-msgid "Description of Section"
-msgstr "شرح بخش"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:136 src/Pmpr/Cover/Pmpr/NewSetting.php:176
-#: src/Pmpr/Cover/Pmpr/Setting.php:408 src/Pmpr/Cover/Pmpr/Setting.php:458
-msgid "Post"
-msgstr "نوشته"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:140 src/Pmpr/Cover/Pmpr/NewSetting.php:176
-#: src/Pmpr/Cover/Pmpr/Setting.php:414 src/Pmpr/Cover/Pmpr/Setting.php:458
-msgid "Term"
-msgstr "ترم"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:144 src/Pmpr/Cover/Pmpr/Setting.php:420
-msgid "Link"
-msgstr "پیوند"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:148 src/Pmpr/Cover/Pmpr/NewSetting.php:149
-#: src/Pmpr/Cover/Pmpr/Setting.php:146 src/Pmpr/Cover/Pmpr/Setting.php:147
-#: src/Pmpr/Cover/Pmpr/Setting.php:197 src/Pmpr/Cover/Pmpr/Setting.php:425
-#: src/Pmpr/Cover/Pmpr/Setting.php:426
-msgid "Title"
-msgstr "عنوان"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:155 src/Pmpr/Cover/Pmpr/Setting.php:152
-#: src/Pmpr/Cover/Pmpr/Setting.php:434
-msgid "Description"
-msgstr "شرح"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:156 src/Pmpr/Cover/Pmpr/Setting.php:153
-#: src/Pmpr/Cover/Pmpr/Setting.php:435
-msgid "Excerpt"
-msgstr "چکیده"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:159 src/Pmpr/Cover/Pmpr/Setting.php:158
-#: src/Pmpr/Cover/Pmpr/Setting.php:440
-msgid "Background Image"
-msgstr "تصویر بکگراند"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:160 src/Pmpr/Cover/Pmpr/Setting.php:159
-#: src/Pmpr/Cover/Pmpr/Setting.php:441
-msgid "Featured Image"
-msgstr "تصویر شاخص"
-
-#: src/Pmpr/Cover/Pmpr/NewSetting.php:178 src/Pmpr/Cover/Pmpr/Setting.php:460
-#, php-format
-msgid "Leave empty if you want show %s %s."
-msgstr "اگر می‌خواهید از %s خود %s استفاده شود، این فیلد را خالی رها کنید."
-
-#: src/Pmpr/Cover/Pmpr/Pagination.php:39
+#: src/Pmpr/Cover/Pmpr/Pagination.php:38
 #, php-format
 msgid "Showing %s to %s of %s items"
 msgstr "نمایش %s تا %s از %s آیتم"
@@ -243,398 +161,801 @@ msgstr "نمایش %s تا %s از %s آیتم"
 msgid "Page navigation"
 msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/Pagination.php:144
+#: src/Pmpr/Cover/Pmpr/Pagination.php:146
 msgid "Prev"
 msgstr "قبلی"
 
-#: src/Pmpr/Cover/Pmpr/Pagination.php:145
+#: src/Pmpr/Cover/Pmpr/Pagination.php:147
 msgid "Next"
 msgstr "بعدی"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:40
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:38
 msgid "Pmpr Cover"
-msgstr ""
+msgstr "کاور مهندس محمدپور"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:264 src/Pmpr/Cover/Pmpr/Pmpr.php:265
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:266
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:231 src/Pmpr/Cover/Pmpr/Pmpr.php:232
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:233
 #, php-format
 msgid "%s column"
 msgstr "%s ستون"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:383
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:350
 msgid "Very Small"
 msgstr "خیلی کوچک"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:384
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:351
 msgid "Small"
 msgstr "کوچک"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:385
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:352
 msgid "Medium"
 msgstr "متوسط"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:386
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:353
 msgid "Large"
 msgstr "بزرگ"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:387
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:354
 msgid "X Large"
 msgstr "خیلی بزرگ"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:388
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:355
 msgid "Two X Large"
 msgstr "خیلی بزرگ تر"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:389
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:356
 msgid "Full Size"
 msgstr "اندازه کامل"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:459
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:434
 msgid "Header #1"
 msgstr "هدر شمار ۱"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:460
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:435
 msgid "Header #2"
 msgstr "هدر شماره ۲"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:463
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:438
 msgid "Footer #1"
 msgstr "پاورقی شماره ۱"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:464
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:439
 msgid "Footer #2"
 msgstr "پاورقی شماره ۲"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:465
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:440
 msgid "Footer #3"
 msgstr "پاورقی شماره ۳"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:466
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:441
 msgid "Footer #4"
 msgstr "پاورقی شماره ۴"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:469
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:444
 msgid "Before Feature Image"
 msgstr "قبل از تصویر شاخص"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:470
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:445
 msgid "Before Single Content"
 msgstr "قبل از محتوای سینگل"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:471
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:446
 msgid "After Single Content"
 msgstr "بعد از محتوای سینگل"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:474
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:449
+msgid "Before Post Single Content"
+msgstr "قبل از محتوای سینگل"
+
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:450
+msgid "After Post Single Content"
+msgstr "بعد از محتوای سینگل"
+
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:453
 msgid "Sidebar"
 msgstr "سایدبار"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:475
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:454
 msgid "Single Sidebar"
 msgstr "سایدبار سینگل"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:476
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:455
 msgid "Archive Sidebar"
 msgstr "سایدبار آرشیو"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:479
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:458
 msgid "After Container"
 msgstr "بعد از کانتینر"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:480
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:459
 msgid "After Single Container"
 msgstr "بعد از کانتینر سینگل"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:481
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:460
 msgid "After Archive Container"
 msgstr "بعد از کانتینر آرشیو"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:488
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:319
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:467
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:320
 #: woocommerce/checkout/thankyou.php:49
 msgid "Email"
 msgstr "پست الکترونیکی"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:489
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:468
 msgid "Full name"
 msgstr "نام و نام خانوادگی"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:490
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:469
 msgid "Comment text"
 msgstr "متن دیدگاه"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:491
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:470
 msgid "Your comment"
 msgstr "دیدگاه شما"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:492
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:471
 msgid "Do you Logout?"
 msgstr "خارج می‌شوید؟"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:493
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:472
 #, php-format
 msgid "in %s Category"
 msgstr "در دسته %s"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:494
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:473
 #, php-format
 msgid "Logged in as %s."
 msgstr "با عنوان %s وارد شده‌اید."
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:495
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:474
 msgid "Last Updated Posts"
 msgstr "آخرین نوشته‌های به روز شده"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:496
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:475
 #, php-format
 msgid "%s cannot be empty"
 msgstr "%s نمی تواند خالی باشد"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:497
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:476
 msgid "Most Controversial"
 msgstr "پر بحث‌ ترین نوشته‌ها"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:498
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:477
 #, php-format
 msgid "Search result for: %s"
 msgstr "نتیجه جستجو برای: %s"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:499 src/Pmpr/Cover/Pmpr/Pmpr.php:500
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:478 src/Pmpr/Cover/Pmpr/Pmpr.php:479
 msgid "Log out of this account"
 msgstr "از این حساب کاربری خارج شوید"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:501
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:480
 msgid "Email cannot empty and must be valid"
 msgstr "ایمیل نمی تواند خالی باشد و باید معتبر باشد"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:606
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:589
 msgid "Back to home"
 msgstr "بازگشت به خانه"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:607
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:590
 msgid "Are you lost?!"
 msgstr "‌چیزی‌که میخوای رو پیدا نمی‌کنی؟!"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:608
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:591
 msgid "The page you requested was not found."
 msgstr "صفحه مورد درخواست شما پیدا نشد."
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:110
+#: src/Pmpr/Cover/Pmpr/Setting.php:173
+msgid "Cover Setting"
+msgstr "تنظیمات کاور"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:199
+msgid "General"
+msgstr "عمومی"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:200
+msgid "General Configuration"
+msgstr "پیکربندی عمومی"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:204
+msgid "Promotion"
+msgstr "فروش ویژه"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:208
+msgid "Enable Promotion"
+msgstr "فعال سازی پروموشن"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:212
+msgid "Desktop Screen"
+msgstr "اسکرین دسکتاپ"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:216 src/Pmpr/Cover/Pmpr/Setting.php:256
+#: src/Pmpr/Cover/Pmpr/Setting.php:515 src/Pmpr/Cover/Pmpr/Setting.php:550
+#: src/Pmpr/Cover/Pmpr/Setting.php:571 src/Pmpr/Cover/Pmpr/Setting.php:636
+#: src/Pmpr/Cover/Pmpr/Setting.php:748 src/Pmpr/Cover/Pmpr/Setting.php:798
+#: src/Pmpr/Cover/Pmpr/Setting.php:877 src/Pmpr/Cover/Pmpr/Setting.php:921
+msgid "Text"
+msgstr "متن"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:221 src/Pmpr/Cover/Pmpr/Setting.php:261
+#: src/Pmpr/Cover/Pmpr/Setting.php:709 src/Pmpr/Cover/Pmpr/Setting.php:930
+#: src/Pmpr/Cover/Pmpr/Setting.php:1086
+msgid "Background"
+msgstr "بکگراند"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:225 src/Pmpr/Cover/Pmpr/Setting.php:265
+#: src/Pmpr/Cover/Pmpr/Setting.php:533 src/Pmpr/Cover/Pmpr/Setting.php:554
+#: src/Pmpr/Cover/Pmpr/Setting.php:575 src/Pmpr/Cover/Pmpr/Setting.php:596
+#: src/Pmpr/Cover/Pmpr/Setting.php:640 src/Pmpr/Cover/Pmpr/Setting.php:743
+msgid "Icon"
+msgstr "آیکون"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:229 src/Pmpr/Cover/Pmpr/Setting.php:269
+msgid "Icon Background"
+msgstr "بکگراند آیکون"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:233
+msgid "Links"
+msgstr "پیوندها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:236
+msgid "Link Text"
+msgstr "متن لینک"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:240 src/Pmpr/Cover/Pmpr/Setting.php:273
+msgid "Link URL"
+msgstr "آدرس لینک"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:245
+msgid "Link Color"
+msgstr "رنگ لینک"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:252
+msgid "Mobile Screen"
+msgstr "اسکرین موبایل"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:281
+msgid "Home"
+msgstr "خانه"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:283
+msgid "Home Page Sections"
+msgstr "بخش صفحه اصلی"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:286 src/Pmpr/Cover/Pmpr/Setting.php:469
+#: src/Pmpr/Cover/Pmpr/Setting.php:688
+msgid "Sections"
+msgstr "بخش‌ها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:290
+msgid "Top Section"
+msgstr "بخش بالایی"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:294
+msgid "Top List"
+msgstr "لیست بالا"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:300
 msgid "Slider Action Text"
 msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:111 src/Pmpr/Cover/Pmpr/Setting.php:551
+#: src/Pmpr/Cover/Pmpr/Setting.php:301 src/Pmpr/Cover/Pmpr/Setting.php:1277
 msgid "Read More"
 msgstr "مطالعه بیشتر"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:115
+#: src/Pmpr/Cover/Pmpr/Setting.php:305
 msgid "News Slider"
 msgstr "اسلایدر خبر‌ها"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:121
+#: src/Pmpr/Cover/Pmpr/Setting.php:311
 msgid "Bottom List"
 msgstr "لیست پایین"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:132 src/Pmpr/Cover/Pmpr/Setting.php:258
-msgid "Action Text"
-msgstr "عنوان اکشن"
-
-#: src/Pmpr/Cover/Pmpr/Setting.php:133 src/Pmpr/Cover/Pmpr/Setting.php:568
-msgid "Buy Now!"
-msgstr "الان بخرید!"
-
-#: src/Pmpr/Cover/Pmpr/Setting.php:137
-msgid "Newest Products"
-msgstr "جدیدترین محصولات"
-
-#: src/Pmpr/Cover/Pmpr/Setting.php:141
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Header.php:44 woocommerce/cart/cart.php:79
-msgid "Product"
-msgstr "محصول"
-
-#: src/Pmpr/Cover/Pmpr/Setting.php:163
+#: src/Pmpr/Cover/Pmpr/Setting.php:318 src/Pmpr/Cover/Pmpr/Setting.php:650
 msgid "Products"
 msgstr "محصولات"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:170
-msgid "Owner Name"
-msgstr "نام بنیانگذار"
-
-#: src/Pmpr/Cover/Pmpr/Setting.php:176
-msgid "Owner Image"
-msgstr "تصویر بنیانگذار"
-
-#: src/Pmpr/Cover/Pmpr/Setting.php:182
-msgid "Owner Badges"
-msgstr "بچ‌های مالک"
-
-#: src/Pmpr/Cover/Pmpr/Setting.php:189 src/Pmpr/Cover/Pmpr/Setting.php:198
-#: src/Pmpr/Cover/Pmpr/Setting.php:289
-msgid "Action Post"
-msgstr "نوشته اکشن"
-
-#: src/Pmpr/Cover/Pmpr/Setting.php:195 src/Pmpr/Cover/Pmpr/Setting.php:295
-msgid "Action Title"
+#: src/Pmpr/Cover/Pmpr/Setting.php:322 src/Pmpr/Cover/Pmpr/Setting.php:422
+msgid "Action Text"
 msgstr "عنوان اکشن"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:205
-msgid "Teams"
-msgstr "تیم‌ها"
+#: src/Pmpr/Cover/Pmpr/Setting.php:323 src/Pmpr/Cover/Pmpr/Setting.php:1294
+msgid "Buy Now!"
+msgstr "الان بخرید!"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:209
-msgid "Tab Title"
-msgstr "عنوان تب"
+#: src/Pmpr/Cover/Pmpr/Setting.php:327
+msgid "Newest Products"
+msgstr "جدیدترین محصولات"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:214
-msgid "Manager Name"
-msgstr "نام مدیر"
+#: src/Pmpr/Cover/Pmpr/Setting.php:330 src/Pmpr/Cover/Pmpr/Setting.php:653
+#: src/Pmpr/Cover/Pmpr/Setting.php:658 src/Pmpr/Cover/Pmpr/Setting.php:662
+#: src/Pmpr/Cover/Pmpr/Setting.php:666
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Header.php:38 woocommerce/cart/cart.php:79
+msgid "Product"
+msgstr "محصول"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:219
-msgid "Manager Image"
-msgstr "تصویر مدیر"
+#: src/Pmpr/Cover/Pmpr/Setting.php:335 src/Pmpr/Cover/Pmpr/Setting.php:336
+#: src/Pmpr/Cover/Pmpr/Setting.php:374 src/Pmpr/Cover/Pmpr/Setting.php:529
+#: src/Pmpr/Cover/Pmpr/Setting.php:546 src/Pmpr/Cover/Pmpr/Setting.php:567
+#: src/Pmpr/Cover/Pmpr/Setting.php:592 src/Pmpr/Cover/Pmpr/Setting.php:632
+#: src/Pmpr/Cover/Pmpr/Setting.php:657 src/Pmpr/Cover/Pmpr/Setting.php:658
+#: src/Pmpr/Cover/Pmpr/Setting.php:765 src/Pmpr/Cover/Pmpr/Setting.php:841
+#: src/Pmpr/Cover/Pmpr/Setting.php:853 src/Pmpr/Cover/Pmpr/Setting.php:872
+#: src/Pmpr/Cover/Pmpr/Setting.php:896 src/Pmpr/Cover/Pmpr/Setting.php:916
+#: src/Pmpr/Cover/Pmpr/Setting.php:940 src/Pmpr/Cover/Pmpr/Setting.php:1003
+#: src/Pmpr/Cover/Pmpr/Setting.php:1004
+msgid "Title"
+msgstr "عنوان"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:224
-msgid "Job Title"
-msgstr "عنوان شغل"
+#: src/Pmpr/Cover/Pmpr/Setting.php:340 src/Pmpr/Cover/Pmpr/Setting.php:1010
+msgid "Description"
+msgstr "شرح"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:229
-msgid "Subtext"
-msgstr ""
+#: src/Pmpr/Cover/Pmpr/Setting.php:341 src/Pmpr/Cover/Pmpr/Setting.php:665
+#: src/Pmpr/Cover/Pmpr/Setting.php:666 src/Pmpr/Cover/Pmpr/Setting.php:1011
+msgid "Excerpt"
+msgstr "چکیده"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:234
-msgid "Team Count"
-msgstr "تعداد اعضای تیم"
+#: src/Pmpr/Cover/Pmpr/Setting.php:345 src/Pmpr/Cover/Pmpr/Setting.php:1014
+msgid "Background Image"
+msgstr "تصویر بکگراند"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:235
-msgid "This value added to real value based on accepted agreement requests"
-msgstr ""
+#: src/Pmpr/Cover/Pmpr/Setting.php:346 src/Pmpr/Cover/Pmpr/Setting.php:1015
+msgid "Featured Image"
+msgstr "تصویر شاخص"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:240
-msgid "Team Experience"
-msgstr "تجربه تیم"
-
-#: src/Pmpr/Cover/Pmpr/Setting.php:245
-msgid "Agreement"
-msgstr "الگوی درآمدی"
-
-#: src/Pmpr/Cover/Pmpr/Setting.php:251
+#: src/Pmpr/Cover/Pmpr/Setting.php:352
 msgid "Owner and Teams"
 msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:259 src/Pmpr/Cover/Pmpr/Setting.php:713
-msgid "View Story"
-msgstr "مشاهده داستان"
+#: src/Pmpr/Cover/Pmpr/Setting.php:356
+msgid "Owner Name"
+msgstr "نام بنیانگذار"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:264
-msgid "Posts"
-msgstr "نوشته‌ها"
+#: src/Pmpr/Cover/Pmpr/Setting.php:360
+msgid "Owner Image"
+msgstr "تصویر بنیانگذار"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:267
+#: src/Pmpr/Cover/Pmpr/Setting.php:365
+msgid "Owner Badges"
+msgstr "بچ‌های مالک"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:370 src/Pmpr/Cover/Pmpr/Setting.php:374
+#: src/Pmpr/Cover/Pmpr/Setting.php:446
+msgid "Action Post"
+msgstr "نوشته اکشن"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:373 src/Pmpr/Cover/Pmpr/Setting.php:451
+#: src/Pmpr/Cover/Pmpr/Setting.php:701 src/Pmpr/Cover/Pmpr/Setting.php:840
+#: src/Pmpr/Cover/Pmpr/Setting.php:939
+msgid "Action Title"
+msgstr "عنوان اکشن"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:378
+msgid "Teams"
+msgstr "تیم‌ها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:381
+msgid "Tab Title"
+msgstr "عنوان تب"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:385
+msgid "Manager Name"
+msgstr "نام مدیر"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:389
+msgid "Manager Image"
+msgstr "تصویر مدیر"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:394
+msgid "Job Title"
+msgstr "عنوان شغل"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:398
+msgid "Subtext"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:402
+msgid "Team Count"
+msgstr "تعداد اعضای تیم"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:403
+msgid "This value added to real value based on accepted agreement requests."
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:407
+msgid "Team Experience"
+msgstr "تجربه تیم"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:411
+msgid "Agreement"
+msgstr "الگوی درآمدی"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:418
 msgid "Success Stories"
 msgstr "داستان‌های موفقیت"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:274
-msgid "Order by"
-msgstr "مرتب‌شده به وسیله"
+#: src/Pmpr/Cover/Pmpr/Setting.php:423 src/Pmpr/Cover/Pmpr/Setting.php:1445
+msgid "View Story"
+msgstr "مشاهده داستان"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:276
-msgid "Newest"
-msgstr "جدیدترین"
+#: src/Pmpr/Cover/Pmpr/Setting.php:427
+msgid "Posts"
+msgstr "نوشته‌ها"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:282
-msgid "Stats"
-msgstr "آمار و اطلاعات"
-
-#: src/Pmpr/Cover/Pmpr/Setting.php:298
+#: src/Pmpr/Cover/Pmpr/Setting.php:433
 msgid "Blog Posts"
 msgstr "نوشته‌های وبلاگ"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:302
+#: src/Pmpr/Cover/Pmpr/Setting.php:437
+msgid "Order by"
+msgstr "مرتب‌شده به وسیله"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:438
+msgid "Newest"
+msgstr "جدیدترین"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:441 src/Pmpr/Cover/Pmpr/Setting.php:522
+msgid "Stats"
+msgstr "آمار و اطلاعات"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:457
 msgid "Contact US"
 msgstr "ارتباط با ما"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:309
+#: src/Pmpr/Cover/Pmpr/Setting.php:466
+msgid "Professional Wordpress Page Sections"
+msgstr "بخش‌های صفحه حرفه‌ای وردپرس"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:473 src/Pmpr/Cover/Pmpr/Setting.php:692
+msgid "Introduce"
+msgstr "معرفی"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:477 src/Pmpr/Cover/Pmpr/Setting.php:609
+#: src/Pmpr/Cover/Pmpr/Setting.php:770 src/Pmpr/Cover/Pmpr/Setting.php:858
+#: src/Pmpr/Cover/Pmpr/Setting.php:882 src/Pmpr/Cover/Pmpr/Setting.php:901
+#: src/Pmpr/Cover/Pmpr/Setting.php:926
+msgid "Image"
+msgstr "تصویر"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:482 src/Pmpr/Cover/Pmpr/Setting.php:619
+#: src/Pmpr/Cover/Pmpr/Setting.php:676
+msgid "Call to Actions"
+msgstr "کال تو اکشن‌ها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:487
+msgid "Question & Answer"
+msgstr "پرسش و پاسخ"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:491 src/Pmpr/Cover/Pmpr/Setting.php:526
+#: src/Pmpr/Cover/Pmpr/Setting.php:543 src/Pmpr/Cover/Pmpr/Setting.php:629
+#: src/Pmpr/Cover/Pmpr/Setting.php:762 src/Pmpr/Cover/Pmpr/Setting.php:804
+#: src/Pmpr/Cover/Pmpr/Setting.php:850 src/Pmpr/Cover/Pmpr/Setting.php:869
+#: src/Pmpr/Cover/Pmpr/Setting.php:913
+msgid "Items"
+msgstr "آیتم‌ها‌"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:494
+msgid "Type"
+msgstr "نوع"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:497
+msgid "Question"
+msgstr "سوال"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:498
+msgid "Answer"
+msgstr "پاسخ"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:503
+msgid "Avatar"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:507 src/Pmpr/Cover/Pmpr/Setting.php:784
+msgid "Name"
+msgstr "نام"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:511
+msgid "Date"
+msgstr "تاریخ"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:539
+msgid "What We Do"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:560 src/Pmpr/Cover/Pmpr/Setting.php:735
+msgid "Why US"
+msgstr "چرا ما"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:564 src/Pmpr/Cover/Pmpr/Setting.php:795
+msgid "Features"
+msgstr "ویژگی‌ها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:580
+msgid "Technologies Title"
+msgstr "عنوان تکنولوژی‌ها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:584
+msgid "Technologies Text"
+msgstr "متن تکنولوژی‌ها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:589
+msgid "Technologies"
+msgstr "تکنولوژی‌ها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:602
+msgid "Demo"
+msgstr "دمو"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:606
+msgid "Carousel"
+msgstr "اسلایدر"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:614
+msgid "Alert"
+msgstr "اعلان"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:625
+msgid "Our Difference"
+msgstr "تفاوت ما"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:646
+#, fuzzy
+#| msgid "Comments"
+msgid "Components"
+msgstr "دیدگاه‌ها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:661 src/Pmpr/Cover/Pmpr/Setting.php:662
+msgid "Thumbnail"
+msgstr "تصویر شاخص"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:671
+msgid "Button Text"
+msgstr "متن دکمه"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:684
+msgid "Landing Page of Optimization"
+msgstr "صفحه فرود بهینه‌سازی"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:696 src/Pmpr/Cover/Pmpr/Setting.php:835
+#: src/Pmpr/Cover/Pmpr/Setting.php:934
+msgid "Action"
+msgstr "اکشن"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:705 src/Pmpr/Cover/Pmpr/Setting.php:789
+msgid "Logo"
+msgstr "لوگو"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:714
+msgid "Speed"
+msgstr "سرعت"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:718 src/Pmpr/Cover/Pmpr/Setting.php:819
+#, fuzzy
+#| msgid "Right align"
+msgid "Right Title"
+msgstr "راست چین"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:722 src/Pmpr/Cover/Pmpr/Setting.php:753
+#: src/Pmpr/Cover/Pmpr/Setting.php:823
+#, fuzzy
+#| msgid "Right align"
+msgid "Right Image"
+msgstr "راست چین"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:726 src/Pmpr/Cover/Pmpr/Setting.php:827
+#, fuzzy
+#| msgid "%s Title"
+msgid "Left Title"
+msgstr "عنوان %s"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:730 src/Pmpr/Cover/Pmpr/Setting.php:831
+#, fuzzy
+#| msgid "Just Image"
+msgid "Left Image"
+msgstr "فقط تصویر"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:739
+msgid "List Items"
+msgstr "لیست آیتم‌ها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:758
+msgid "Specifications"
+msgstr "مشخصات"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:777
+msgid "Solutions"
+msgstr "راه حل‌ها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:781
+msgid "Vendors"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:805
+msgid "Please add vendors and features before add items."
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:808
+msgid "Vendor"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:815
+msgid "Our Tests"
+msgstr "تست‌های ما"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:841 src/Pmpr/Cover/Pmpr/Setting.php:940
+#: src/Pmpr/Cover/Pmpr/Setting.php:991 src/Pmpr/Cover/Pmpr/Setting.php:1031
+msgid "Post"
+msgstr "نوشته"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:846
+msgid "Peace of Mind"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:865
+msgid "Requirements"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:889
+msgid "How Start"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:893
+msgid "Steps"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:909
+msgid "Promotions"
+msgstr "پروموشن‌ها"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:944
+msgid "Position"
+msgstr "موقعیت"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:949
+msgid "Negative"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:950
+msgid "Positive"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:951
+msgid "Before"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:952
+msgid "After"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:957 src/Pmpr/Cover/Pmpr/Setting.php:958
+#: src/Pmpr/Cover/Pmpr/Setting.php:959
+msgid "Template"
+msgstr "قالب"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:966
 msgid "Components & Plugins"
-msgstr ""
+msgstr "افزونه‌ها و کامپوننت‌ها"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:313
-msgid "Woocommerce"
-msgstr ""
+#: src/Pmpr/Cover/Pmpr/Setting.php:970
+msgid "WooCommerce"
+msgstr "ووکامرس"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:317
+#: src/Pmpr/Cover/Pmpr/Setting.php:973
 #, fuzzy
 #| msgid "Just Image"
 msgid "Cart Image"
 msgstr "فقط تصویر"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:358
-#, php-format
-msgid "Section %s"
-msgstr "بخش %s"
+#: src/Pmpr/Cover/Pmpr/Setting.php:995 src/Pmpr/Cover/Pmpr/Setting.php:1031
+msgid "Term"
+msgstr "ترم"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:614
+#: src/Pmpr/Cover/Pmpr/Setting.php:999
+msgid "Link"
+msgstr "پیوند"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:1033
+#, php-format
+msgid "Leave empty if you want show %s %s."
+msgstr "اگر می‌خواهید از %s خود %s استفاده شود، این فیلد را خالی رها کنید."
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:1057
+msgid "Disable Section"
+msgstr "غیر فعال کردن بخش"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:1061
+msgid "Title of Section"
+msgstr "عنوان بخش"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:1065
+msgid "Description of Section"
+msgstr "شرح بخش"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:1073
+msgid "Background Color"
+msgstr "رنگ بکگراند"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:1075
+msgid "White"
+msgstr "سفید"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:1076
+msgid "Gray"
+msgstr "خاکستری"
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:1077
+msgid "Gradient"
+msgstr ""
+
+#: src/Pmpr/Cover/Pmpr/Setting.php:1345
 #, php-format
 msgid "%s years of team experience"
 msgstr "تجربه تیم %s سال"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:641
+#: src/Pmpr/Cover/Pmpr/Setting.php:1371
 msgid "Do you want to work with this team?"
 msgstr "مایل به همکاری با این تیم هستید؟"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:642
+#: src/Pmpr/Cover/Pmpr/Setting.php:1372
 msgid "Cooperation Terms"
 msgstr "شرایط همکاری"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:645
+#: src/Pmpr/Cover/Pmpr/Setting.php:1375
 msgid "Submit Request for Cooperation"
 msgstr "ثبت درخواست همکاری"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:655
+#: src/Pmpr/Cover/Pmpr/Setting.php:1384
 #, php-format
 msgid "%s members team"
 msgstr "اعضای تیم %s نفر"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:687
+#: src/Pmpr/Cover/Pmpr/Setting.php:1419
 msgid "Success story of"
 msgstr "داستان موفقیت"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:690
+#: src/Pmpr/Cover/Pmpr/Setting.php:1422
 #, php-format
 msgid "%s using"
 msgstr "%s به کمک"
 
-#: src/Pmpr/Cover/Pmpr/Setting.php:699
+#: src/Pmpr/Cover/Pmpr/Setting.php:1431
 #, php-format
 msgid "%s in"
 msgstr "%s در"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:131
+#: src/Pmpr/Cover/Pmpr/Setting.php:1765
+#, php-format
+msgid "%s at %s"
+msgstr "%s ساعت %s"
+
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:132
 msgid "Reset Password"
 msgstr "بازنشانی گذرواژه"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:156
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:282
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:157
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:283
 msgid "Username or Email"
 msgstr "نام کاربری یا ایمیل"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:167
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:178
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:168
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:179
 msgid "Login"
 msgstr "ورود"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:179
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:180
 msgid "Register"
 msgstr "ثبت نام"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:240
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:241
 msgid "Remember me"
 msgstr "مرا به خاطر داشته باش"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:283
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:284
 msgid "Password"
 msgstr "گذرواژه"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:284
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:285
 msgid "Email Address"
 msgstr "پست الکترونیکی"
 
@@ -675,11 +996,11 @@ msgstr "انصراف"
 msgid "Remove"
 msgstr "حذف"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Header.php:48
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Header.php:39
 msgid "View Cart"
 msgstr "مشاهده سبد خرید"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Header.php:49
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Header.php:43
 #: woocommerce/cart/mini-cart.php:132
 msgid "No products in the cart."
 msgstr "سبد خرید شما خالی است."
@@ -712,45 +1033,45 @@ msgstr "همه"
 msgid "Product Category"
 msgstr "دسته محصول"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Single.php:340
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Single.php:466
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Single.php:342
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Single.php:468
 #, php-format
 msgid "%s comment"
 msgstr "%s دیدگاه"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:148 woocommerce/cart/cart.php:132
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:149 woocommerce/cart/cart.php:132
 msgid "Regular Price"
 msgstr "قیمت اصلی"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:152
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:153
 msgid "Sale Price"
 msgstr "قیمت فروش"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:156 woocommerce/cart/cart.php:144
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:157 woocommerce/cart/cart.php:144
 msgid "Discount Expiration"
 msgstr "اعتبار تخفیف"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:160 woocommerce/cart/cart.php:139
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:161 woocommerce/cart/cart.php:139
 msgid "Discount"
 msgstr "تخفیف"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:220
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:221
 #, php-format
 msgid "In Category: %s"
 msgstr "در دسته: %s"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:318
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:319
 msgid "Postcode"
 msgstr "کد پستی"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Woocommerce.php:85
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Woocommerce.php:108
 #, php-format
 msgid "%s has been added to your cart."
 msgid_plural "%s have been added to your cart."
 msgstr[0] "%s به سبد خرید شما افزوده شد."
 msgstr[1] "%s به سبد خرید شما افزوده شد."
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Woocommerce.php:118
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Woocommerce.php:141
 msgid "Shop Sidebar"
 msgstr "سایدبار فروشگاه"
 
@@ -961,17 +1282,26 @@ msgstr ""
 msgid "Update totals"
 msgstr "به روزرسانی جمع کل"
 
+#~ msgid "Action Link Type"
+#~ msgstr "نوع لینک اکشن"
+
+#~ msgid "Internal Link"
+#~ msgstr "لینک داخلی"
+
+#~ msgid "External Link"
+#~ msgstr "لینک خارجی"
+
+#~ msgid "Action Link"
+#~ msgstr "لینک اکشن"
+
+#~ msgid "Section %s"
+#~ msgstr "بخش %s"
+
 #~ msgid "Setting"
 #~ msgstr "تنظیمات"
 
 #~ msgid "About US"
 #~ msgstr "درباره ما"
-
-#~ msgid "Logo"
-#~ msgstr "لوگو"
-
-#~ msgid "Desktop"
-#~ msgstr "دسکتاپ"
 
 #~ msgid "Footer"
 #~ msgstr "پاورقی"
@@ -1092,9 +1422,6 @@ msgstr "به روزرسانی جمع کل"
 
 #~ msgid "Register and enjoy our features"
 #~ msgstr "ثبت‌ نام کن از ویژگی‌هامون لذت ببر"
-
-#~ msgid "Comments"
-#~ msgstr "دیدگاه‌ها"
 
 #~ msgid "%s has not made any comment yet."
 #~ msgstr "%s هنوز دیدگاهی ارسال نکرده است."
@@ -1239,9 +1566,6 @@ msgstr "به روزرسانی جمع کل"
 #~ msgid "Bahman 1360"
 #~ msgstr "بهمن ۱۳۶۰"
 
-#~ msgid "Professional Society"
-#~ msgstr "جامعه متخصصین"
-
 #~ msgid "%s years"
 #~ msgstr "%s سال"
 
@@ -1286,9 +1610,6 @@ msgstr "به روزرسانی جمع کل"
 
 #~ msgid "Services"
 #~ msgstr "خدمات"
-
-#~ msgid "Links"
-#~ msgstr "پیوندها"
 
 #~ msgid "%s Results"
 #~ msgstr "%s نتیجه"
@@ -1356,9 +1677,6 @@ msgstr "به روزرسانی جمع کل"
 #~ msgid "Card Description"
 #~ msgstr "توضیحات کارت"
 
-#~ msgid "Link of %s"
-#~ msgstr "پیوند %s"
-
 #~ msgid "Color of Button"
 #~ msgstr "رنگ دکمه"
 
@@ -1418,23 +1736,14 @@ msgstr "به روزرسانی جمع کل"
 #~ msgid "Notice"
 #~ msgstr "هشدار"
 
-#~ msgid "Text"
-#~ msgstr "متن"
-
 #~ msgid "Prerequisite of Study"
 #~ msgstr "پیش‌ نیاز مطالعه"
-
-#~ msgid "Quotation"
-#~ msgstr "نقل قول"
 
 #~ msgid "Study Recommendation"
 #~ msgstr "پیشنهاد برای مطالعه"
 
 #~ msgid "Pmpr shortcodes"
 #~ msgstr "شورت‌کد Pmpr"
-
-#~ msgid "Post Type"
-#~ msgstr "نوع نوشته"
 
 #~ msgid "What kind of post type, show in card?"
 #~ msgstr "چه نوع نوشته‌ای، در کارت‌ نمایش داده شود؟"
@@ -1472,14 +1781,8 @@ msgstr "به روزرسانی جمع کل"
 #~ msgid "Ascending"
 #~ msgstr "نزولی"
 
-#~ msgid "%s Title"
-#~ msgstr "عنوان %s"
-
 #~ msgid "%s Title to display."
 #~ msgstr "عنوان %s جهت نمایش."
-
-#~ msgid "Shortcode Title"
-#~ msgstr "عنوان کلی شورتکد"
 
 #~ msgid "Shortcode Description"
 #~ msgstr "توضیحات کلی شورتکد"
@@ -1489,12 +1792,6 @@ msgstr "به روزرسانی جمع کل"
 
 #~ msgid "Left align"
 #~ msgstr "چپ چین"
-
-#~ msgid "Center align"
-#~ msgstr "وسط چین"
-
-#~ msgid "Right align"
-#~ msgstr "راست چین"
 
 #~ msgid "Full Image Slider"
 #~ msgstr "اسلایدر سرتاسری"
@@ -1549,7 +1846,4 @@ msgstr "به روزرسانی جمع کل"
 
 #~ msgid "Shadow of tip"
 #~ msgstr "سایه نکته"
-
-#~ msgid "Your Text"
-#~ msgstr "متن شما"
 

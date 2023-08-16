@@ -33,12 +33,12 @@
 
         {% if options is not empty %}
 
-            <section class="opt-section {% if options.bg_color is not empty %}bg-{{ options.bg_color|esc_attr }}{% endif %}{% if loop.index > 1 %} py-8{% endif %}"
+            <section class="pro-wp-section {% if options.bg_color is not empty %}bg-{{ options.bg_color|esc_attr }}{% endif %}{% if loop.index > 1 %} py-8{% endif %}"
                      id="section_{{ section|esc_attr }}">
                 {% if options.has_container %}
                     <div class="container">
                 {% endif %}
-                        {% include get_template('./opt/section_' ~ loop.index, _self) with options %}
+                    {% include get_template('./opt/section_' ~ loop.index, _self) with options %}
                 {% if options.has_container %}
                     </div>
                 {% endif %}
