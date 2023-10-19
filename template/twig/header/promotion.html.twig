@@ -9,7 +9,9 @@
                 {% if desktop.links is not empty %}
                     <div>
                         {% for item in desktop.links %}
-                            <a class="btn btn-sm btn-outline-primary px-5 font-weight-bold btn-{{ item.color }} ml-3" href="{{ item.link|esc_attr }}">{{ item.text|raw }}</a>
+                            <a class="btn btn-sm btn-outline-primary px-5 font-weight-bold btn-{{ item.color }} ml-3"
+                               href="{{ item.link|esc_attr }}"
+                               aria-label="{{ item.text|esc_attr }}">{{ item.text|raw }}</a>
                         {% endfor %}
                     </div>
                 {% endif %}
@@ -38,7 +40,7 @@
     {% block body %}
         <div class="container text-center">
             <a class="no-margin text-decoration-none text-white font-weight-bold"
-               href="{{ mobile.link|esc_attr }}">{{ wpautop(desktop.text)|raw }}</a>
+               href="{{ mobile.link|esc_attr }}" aria-label="{{ desktop.text|esc_attr }}">{{ wpautop(desktop.text)|raw }}</a>
         </div>
         {% if mobile.icon is not empty %}
             {% embed get_cover_template('common/media/gradient') with {

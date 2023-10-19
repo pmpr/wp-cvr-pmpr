@@ -16,7 +16,7 @@
             {% if has_link %}
 
                 {% set attrs = { href: link, class: 'card-link', title: text} %}
-                <a {{ attrs|parse_attrs|raw }}>{{ text|raw }}</a>
+                <a {{ attrs|parse_attrs|raw }} aria-label="{{ text|esc_attr }}">{{ text|raw }}</a>
             {% else %}
 
                 {{ text|raw }}

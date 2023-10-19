@@ -41,7 +41,7 @@
                 <div class="card-body text-center">
                     <h3 class="card-title h5">{{ carousel.title|raw }}</h3>
                     <div class="card-text no-margin mb-2 font-14">{{ wpautop(carousel.excerpt)|raw }}</div>
-                    <a href="{{ carousel.permalink|esc_attr }}" target="_blank" class="btn btn-primary">{{ button_text|raw }}</a>
+                    <a href="{{ carousel.permalink|esc_attr }}" target="_blank" class="btn btn-primary" aria-label="{{ button_text|esc_attr }}">{{ button_text|raw }}</a>
                 </div>
             </div>
         </article>

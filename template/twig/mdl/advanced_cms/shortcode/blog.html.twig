@@ -33,6 +33,6 @@
 
     <div class="text-center">
         <p class="paragraph">{{ call_to_action_desc|raw }}</p>
-        <a href="{{ permalink|raw }}" class="btn btn-lg btn-primary call-to-action">{{ call_to_action_text|raw }}</a>
+        <a href="{{ permalink|raw }}" class="btn btn-lg btn-primary call-to-action" aria-label="{{ call_to_action_text|esc_attr }}">{{ call_to_action_text|raw }}</a>
     </div>
 {% endif %}

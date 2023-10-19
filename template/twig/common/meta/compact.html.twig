@@ -8,7 +8,7 @@
 
             {% if has_link %}
                 {% set value %}
-                    <a class="{{ link_class|default('card-link') }}" href="{{ item.link|esc_attr }}">{{ value|raw }}</a>
+                    <a class="{{ link_class|default('card-link') }}" href="{{ item.link|esc_attr }}" aria-label="{{ value|esc_attr }}">{{ value|raw }}</a>
                 {% endset %}
             {% endif %}
 

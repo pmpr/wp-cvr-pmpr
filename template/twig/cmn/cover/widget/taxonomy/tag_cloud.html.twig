@@ -6,6 +6,7 @@
         <div class="my-auto">
             {% for item in items %}
                 <a href="{{ get_category_link(item)|raw }}" rel="tag"
+                   aria-label="{{ item.name|esc_attr }}"
                    class="btn btn-sm btn-outline-secondary ml-1 my-1 py-1 px-2">
                     {{ item.name|raw }}
                     {% if show_count %}

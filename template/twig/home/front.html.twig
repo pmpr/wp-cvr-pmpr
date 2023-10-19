@@ -81,7 +81,8 @@
                                                 {{ wp_get_attachment_image(item.image, 'thumbnail')|raw }}
                                                 <div class="ml-4 d-flex justify-content-between flex-column">
                                                     <a href="{{ item.permalink|esc_attr }}"
-                                                       class="stretched-link card-link">
+                                                       class="stretched-link card-link"
+                                                       aria-label="{{ item.title|esc_attr }}">
                                                         <h3 class="h5 mb-2" data-limit="1">
                                                             {{ item.title|raw }}
                                                         </h3>
@@ -202,10 +203,10 @@
                         <nav>
                             <ul class="nav flex-column nav-tabs h-100" id="nav_teams" role="tablist">
                                 {% for team in data.teams %}
-                                    <li class="nav-item">
+                                    <li class="nav-item" role="tab">
                                         <a href="#team_{{ team.key|esc_attr }}" role="tab" data-toggle="tab"
                                            class="text-nowrap mb-0 rounded-0 nav-link{% if loop.first %} active{% endif %}"
-                                           id="team_{{ team.key|esc_attr }}_tab">
+                                           id="team_{{ team.key|esc_attr }}_tab" aria-label="{{ team.title|esc_attr }}">
                                             {{ team.title|raw }}
                                         </a>
                                     </li>

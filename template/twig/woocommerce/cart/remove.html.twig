@@ -19,7 +19,9 @@
                 <a href="#" class="btn btn-outline-secondary px-5"
                    data-dismiss="modal">{{ close_text|raw }}</a>
                 <span class="product-remove">
-                    <a {{ remove_button_attrs|parse_attrs|raw }} data-dismiss="modal">
+                    <a {{ remove_button_attrs|parse_attrs|raw }}
+                            data-dismiss="modal"
+                            aria-label="{{ remove_button_title|esc_attr }}">
                         {{ remove_button_title|raw }}
                     </a>
                 </span>

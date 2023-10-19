@@ -7,7 +7,7 @@
             {% for item in items %}
                 <div class="col-6 col-lg-12 col-xl-6 d-flex justify-content-between bg-gray-100 py-1 my-1">
                     <a href="{{ get_category_link(item)|raw }}" rel="nofollow"
-                       class="w-100 text-decoration-none text-gray-700">
+                       class="w-100 text-decoration-none text-gray-700" aria-label="{{ item.name|esc_attr }}">
                         {{ item.name|raw }}
                     </a>
                     {% if show_count %}
