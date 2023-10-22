@@ -1,6 +1,6 @@
 {% if items is defined and items is not empty %}
     <div class="text-center my-3 rounded bg-white border">
-        <table class="table mb-0 bg-transparent w-100">
+        <table class="table my-0 bg-transparent w-100">
             <tbody>
             {% for key, item in items %}
                 {% set has_link = item.link is defined and item.link is not empty %}
