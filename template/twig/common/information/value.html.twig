@@ -21,7 +21,7 @@
 {% if item.type is same as ('phone') %}
     {% set value = value|replace({'_': '', '-': ''}) %}
     {% set prefix = 'tel' %}
-    <a href="{{ prefix }}:{{ value }}" rel="nofollow" aria-label="{{ __('Information Value', domain)|esc_attr }}"
+    <a href="{{ prefix }}:{{ value }}" rel="nofollow" aria-label="{{ item.title|esc_attr }}"
        class="lh-md hover-{{ text_color }} text-{{ text_color }}">
         {{ content|raw }}
     </a>

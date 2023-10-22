@@ -15,7 +15,7 @@
                         and item.title is not empty %}
                         {% set has_title = 1 %}
                         <th class="d-flex font-15 font-weight-normal text-gray-800 text-left py-2">
-                            {{ get_icon(item.icon, {class: 'icon-lg mr-3'}, 1)|raw }}
+                            {{ get_icon(item.icon, {class: 'icon-lg mr-3'})|raw }}
                             {{ item.title|raw }}
                         </th>
                     {% endif %}
