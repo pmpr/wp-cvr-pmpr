@@ -75,11 +75,11 @@
                         <div class="row">
                             {% for item in bottom_list %}
                                 {% if item %}
-                                    <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                                    <div class="col-12 col-lg-6 mb-5">
                                         <div class="card">
                                             <article class="card-body d-flex">
                                                 {{ wp_get_attachment_image(item.image, 'thumbnail')|raw }}
-                                                <div class="ml-4 d-flex justify-content-between flex-column">
+                                                <div class="ml-4">
                                                     <a href="{{ item.permalink|esc_attr }}"
                                                        class="stretched-link card-link"
                                                        aria-label="{{ item.title|esc_attr }}">
@@ -87,7 +87,7 @@
                                                             {{ item.title|raw }}
                                                         </h3>
                                                     </a>
-                                                    <div class="lh-md text-justify no-margin font-15" data-limit="2">
+                                                    <div class="lh-sm text-justify no-margin font-15" data-limit="2">
                                                         {{ wpautop(item.description)|raw }}
                                                     </div>
                                                 </div>
@@ -201,12 +201,12 @@
                 <div class="col-12 col-lg-6">
                     <div class="teams d-flex flex-column flex-md-row h-100">
                         <nav>
-                            <ul class="nav flex-column nav-tabs h-100" id="nav_teams" role="tablist">
+                            <ul class="nav flex-column nav-tabs h-100" id="nav_teams">
                                 {% for team in data.teams %}
                                     <li class="nav-item" role="tab">
-                                        <a href="#team_{{ team.key|esc_attr }}" role="tab" data-toggle="tab"
+                                        <a href="#team_{{ team.key|esc_attr }}" data-toggle="tab"
                                            class="text-nowrap mb-0 rounded-0 nav-link{% if loop.first %} active{% endif %}"
-                                           id="team_{{ team.key|esc_attr }}_tab" aria-label="{{ team.title|esc_attr }}">
+                                           id="team_{{ team.key|esc_attr }}_tab">
                                             {{ team.title|raw }}
                                         </a>
                                     </li>
