@@ -18,7 +18,7 @@
                 </a>
                 {% if has_meta %}
                     {% set metadata = metadata|default((is_archive() ? ['publish', 'category'] : ['publish'])) %}
-                    {{ do_action('metadata_render'|generate_hook, {
+                    {{ pmpr_do_action('metadata_render', {
                         post: item,
                         include: metadata,
                         template: get_template('metadata', _self),

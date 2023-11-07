@@ -14,7 +14,7 @@
 {% if pmpr_apply_filters('has_header', has_header|default(1)) %}
 <header id="site_header">
     {{ pmpr_do_action('before_header') }}
-    {% set can_render_breadcrumb = apply_filters('breadcrumb_can_render'|generate_hook, 1) %}
+    {% set can_render_breadcrumb = pmpr_apply_filters('breadcrumb_can_render', 1) %}
     <nav class="navbar navbar-expand-md navbar-light bg-light py-3 main-nav{% if not can_render_breadcrumb %} shadow-sm{% endif %}">
         <div class="container">
 
@@ -32,13 +32,13 @@
                 </button>
                 <div class="collapse navbar-collapse nav-bar" id="navbar">
                     {{ wp_nav_menu({theme_location:'main-menu'}) }}
-                    {{ do_action('pmpr_header_left'|generate_hook) }}
+                    {{ pmpr_do_action('pmpr_header_left') }}
                 </div>
             {% endif %}
         </div>
     </nav>
 
-    {% set breadcrumb = apply_filters('breadcrumb_get_html'|generate_hook, '') %}
+    {% set breadcrumb = pmpr_apply_filters('breadcrumb_get_html', '') %}
     {% if breadcrumb %}
         <nav class="bg-gray-300">
             <div class="container">

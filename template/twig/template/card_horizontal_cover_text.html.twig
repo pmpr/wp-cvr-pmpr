@@ -28,7 +28,7 @@
                 has_border: 0
             } %}
                 {% block content %}
-                    {{ do_action('metadata_render'|generate_hook, {
+                    {{ pmpr_do_action('metadata_render', {
                         post: item,
                         include: metadata|default(['publish', 'category']),
                         template: get_template('metadata', _self),
