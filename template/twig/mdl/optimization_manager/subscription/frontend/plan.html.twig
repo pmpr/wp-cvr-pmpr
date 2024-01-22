@@ -1,0 +1,32 @@
+<article class="plan card shadow mn-h-450 w-100" data-id="{{ plan.id|esc_attr }}">
+    <div class="card-body text-center mb-14">
+        {{ render_if_has_content('h2', {class: 'h5'}, plan.display_title) }}
+        {{ do_action('woocommerce_product_price_section', {
+            has_card: 0,
+            has_title: 0,
+            is_single: 0,
+            table_class: 'table-borderless my-5',
+            product: plan.product,
+        }) }}
+
+        {{ render_if_has_content('div', {class: 'h5 my-5 text-secondary'}, plan.period) }}
+
+        {% if plan.features is not empty %}
+            <div class="d-flex justify-content-center">
+                <ul class="list-group">
+                    {% for feature in plan.features %}
+                        {% if feature.text is not empty %}
+                            <li class="list-group-item border-0 d-flex p-0{% if not loop.last %} mb-3{% endif %}">
+                                {{ render_icon(feature_icon, {class: 'my-auto icon-success icon-md mr-2'}) }}
+                                <span class="my-auto">{{ feature.text|raw }}</span>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        {{ render_if_has_content('div', {class: 'mt-5 text-muted'}, wpautop(plan.description)) }}
+    </div>
+</article>
+

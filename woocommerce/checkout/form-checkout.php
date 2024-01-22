@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) {
             </form>
             <?php
             get_wc_back_button(wc_get_cart_url(), __('Cart', PR__CVR__PMPR), [
-                'class' => 'd-none d-xl-inline-block',
+                'class' => 'd-none d-xl-flex',
             ]);
             ?>
         </main>

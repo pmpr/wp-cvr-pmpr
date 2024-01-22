@@ -182,7 +182,7 @@ defined('ABSPATH') || exit;
 				<?php do_action('woocommerce_after_cart_table'); ?>
 				<?php
 				get_wc_back_button(get_permalink(wc_get_page_id('shop')), __('Shop', PR__CVR__PMPR), [
-					'class' => 'd-none d-xl-inline-block',
+					'class' => 'd-none d-flex',
 				]);
 				?>
             </main>
