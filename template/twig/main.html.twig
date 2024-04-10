@@ -3,7 +3,7 @@
 {% block body %}
     {% block before_main %}{% endblock %}
     <main>
-        {% if jumbotron is defined and jumbotron is not empty%}
+        {% if jumbotron is defined and jumbotron is not empty %}
             <h1 class="sr-only">{{ jumbotron|raw }}</h1>
         {% endif %}
         {% block main %}{% endblock %}

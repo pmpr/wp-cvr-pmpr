@@ -4,4 +4,4 @@
     |             6616500702db5             |
     |_______________________________________|
 */
- do_action("\x72\145\156\x64\x65\x72\x5f\150\145\141\x64\x65\162");
+ namespace Pmpr\Cover\Pmpr\Widget; use Pmpr\Cover\Pmpr\Container; class Widget extends Container { public function mameiwsayuyquoeq() { Advertise::symcgieuakksimmu(); } }
