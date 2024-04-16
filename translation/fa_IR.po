@@ -139,10 +139,8 @@ msgid "Menu Icon"
 msgstr "آیکون منو"
 
 #: src/Pmpr/Cover/Pmpr/Header.php:153
-#, fuzzy
-#| msgid "Show Account"
 msgid "Whatsapp Account"
-msgstr "مشاهده حساب کاربری"
+msgstr "حساب واتس آپ"
 
 #: src/Pmpr/Cover/Pmpr/Navigation/Navigation.php:49
 msgid "Primary Navigation Menu"
@@ -155,7 +153,7 @@ msgstr ""
 #: src/Pmpr/Cover/Pmpr/Page/Optimization.php:30
 #: src/Pmpr/Cover/Pmpr/Setting.php:214 src/Pmpr/Cover/Pmpr/Setting.php:711
 msgid "Optimization"
-msgstr ""
+msgstr "افزایش سرعت"
 
 #: src/Pmpr/Cover/Pmpr/Page/ProfessionalWordpress.php:24
 #: src/Pmpr/Cover/Pmpr/Setting.php:219 src/Pmpr/Cover/Pmpr/Setting.php:493
@@ -164,7 +162,7 @@ msgstr "وردپرس حرفه‌ای"
 
 #: src/Pmpr/Cover/Pmpr/Page/Reportage.php:24 src/Pmpr/Cover/Pmpr/Setting.php:224
 msgid "Reportage"
-msgstr ""
+msgstr "رپورتاژ"
 
 #: src/Pmpr/Cover/Pmpr/Pagination.php:38
 #, php-format
@@ -373,14 +371,13 @@ msgstr "پیکربندی عمومی"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:209
 msgid "Pages"
-msgstr ""
+msgstr "صفحات"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:214 src/Pmpr/Cover/Pmpr/Setting.php:219
 #: src/Pmpr/Cover/Pmpr/Setting.php:224
-#, fuzzy, php-format
-#| msgid "Shop Page"
+#, php-format
 msgid "%s Page"
-msgstr "صفحه فروشگاه"
+msgstr "صفحه %s"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:231
 msgid "Promotion"
@@ -676,7 +673,7 @@ msgstr "پاسخ"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:531
 msgid "Avatar"
-msgstr ""
+msgstr "آواتار"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:535 src/Pmpr/Cover/Pmpr/Setting.php:812
 msgid "Name"
@@ -727,10 +724,8 @@ msgid "Our Difference"
 msgstr "تفاوت ما"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:674
-#, fuzzy
-#| msgid "Comments"
 msgid "Components"
-msgstr "دیدگاه‌ها"
+msgstr "کامپوننت‌ها"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:689 src/Pmpr/Cover/Pmpr/Setting.php:690
 msgid "Thumbnail"
@@ -759,29 +754,21 @@ msgid "Speed"
 msgstr "سرعت"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:746 src/Pmpr/Cover/Pmpr/Setting.php:847
-#, fuzzy
-#| msgid "Right align"
 msgid "Right Title"
-msgstr "راست چین"
+msgstr "عنوان راست"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:750 src/Pmpr/Cover/Pmpr/Setting.php:781
 #: src/Pmpr/Cover/Pmpr/Setting.php:851
-#, fuzzy
-#| msgid "Right align"
 msgid "Right Image"
-msgstr "راست چین"
+msgstr "تصویر راست"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:754 src/Pmpr/Cover/Pmpr/Setting.php:855
-#, fuzzy
-#| msgid "%s Title"
 msgid "Left Title"
-msgstr "عنوان %s"
+msgstr "عنوان راست"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:758 src/Pmpr/Cover/Pmpr/Setting.php:859
-#, fuzzy
-#| msgid "Just Image"
 msgid "Left Image"
-msgstr "فقط تصویر"
+msgstr "تصویر چپ"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:767
 msgid "List Items"
@@ -850,11 +837,11 @@ msgstr ""
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:979
 msgid "Before"
-msgstr ""
+msgstr "قبل"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:980
 msgid "After"
-msgstr ""
+msgstr "بعد"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:985 src/Pmpr/Cover/Pmpr/Setting.php:986
 #: src/Pmpr/Cover/Pmpr/Setting.php:987
@@ -870,10 +857,8 @@ msgid "WooCommerce"
 msgstr "ووکامرس"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:1001
-#, fuzzy
-#| msgid "Just Image"
 msgid "Cart Image"
-msgstr "فقط تصویر"
+msgstr "تصویر کارت"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:1023 src/Pmpr/Cover/Pmpr/Setting.php:1059
 msgid "Term"
@@ -955,7 +940,7 @@ msgstr "%s در"
 
 #: src/Pmpr/Cover/Pmpr/Widget/Advertise.php:18
 msgid "Advertise"
-msgstr ""
+msgstr "تبلیغات"
 
 #: src/Pmpr/Cover/Pmpr/Widget/Advertise.php:19
 msgid "Display advertise."
@@ -966,16 +951,12 @@ msgid "Page/Post Link"
 msgstr ""
 
 #: src/Pmpr/Cover/Pmpr/Widget/Advertise.php:51
-#, fuzzy
-#| msgid "Button"
 msgid "Button Color"
-msgstr "دکمه (پیوند)"
+msgstr "رنگ دکمه"
 
 #: src/Pmpr/Cover/Pmpr/Widget/Advertise.php:56
-#, fuzzy
-#| msgid "Link of Button"
 msgid "Outline Button"
-msgstr "پیوند دکمه"
+msgstr "دکمه به صورت outline"
 
 #: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:132
 msgid "Reset Password"
