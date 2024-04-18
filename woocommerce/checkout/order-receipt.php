@@ -29,7 +29,7 @@ if (!isset($order)) {
 <div class="container my-5">
         <div class="card mx-auto max-width-1">
             <div class="card-body">
-                <table class="order_details table table-borderless mb-0">
+                <table class="order_details table table-borderless my-0">
                     <?php foreach (get_wc_order_details($order) as $key => $item): ?>
                         <tr class="<?php echo $key ?>">
                             <th><?php echo esc_html($item['title']); ?></th>

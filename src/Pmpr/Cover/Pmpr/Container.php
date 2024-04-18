@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             661e6f5ab992a             |
+    |             6621af0415f73             |
     |_______________________________________|
 */
  namespace Pmpr\Cover\Pmpr; use Pmpr\Common\Foundation\Container\Container as BaseClass; use Pmpr\Cover\Pmpr\Interfaces\CommonInterface; use Pmpr\Cover\Pmpr\Traits\CommonTrait; abstract class Container extends BaseClass implements CommonInterface { use CommonTrait; public function __construct() { $this->settingObj = Setting::symcgieuakksimmu(); parent::__construct(); } }
