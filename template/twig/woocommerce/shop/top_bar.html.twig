@@ -6,7 +6,7 @@
             {{ do_action('woocommerce_shop_top_bar') }}
             <div class="list-view d-flex mr-2">
                 {% for item in views %}
-                    <button class="btn p-0 change-view card-link ml-2 shadow-none" role="button"
+                    <button class="btn p-0 change-view card-link ml-2 shadow-none"
                             aria-label="{{ item.title|esc_attr }}" data-name="{{ item.name|esc_attr }}">
                         {{ get_icon(item.icon, {
                             class: 'icon-lg my-auto icon-' ~ (item|call('isEnable') ? 'primary enable' : 'gray-500')

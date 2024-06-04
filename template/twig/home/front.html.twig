@@ -201,7 +201,8 @@
                 <div class="col-12 col-lg-6">
                     <div class="teams d-flex flex-column flex-md-row h-100">
                         <nav>
-                            <ul class="nav flex-column nav-tabs h-100" id="nav_teams">
+                            <ul class="nav flex-column nav-tabs h-100"
+                                id="nav_teams" role="tablist">
                                 {% for team in data.teams %}
                                     <li class="nav-item" role="tab">
                                         <a href="#team_{{ team.key|esc_attr }}" data-toggle="tab"
