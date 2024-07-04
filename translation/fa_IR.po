@@ -183,7 +183,7 @@ msgstr "بعدی"
 
 #: src/Pmpr/Cover/Pmpr/Pmpr.php:29
 msgid "Pmpr Cover"
-msgstr "کاور مهندس محمدپور"
+msgstr "کاور دکتر محمدپور"
 
 #: src/Pmpr/Cover/Pmpr/Pmpr.php:231 src/Pmpr/Cover/Pmpr/Pmpr.php:232
 #: src/Pmpr/Cover/Pmpr/Pmpr.php:233
@@ -1551,7 +1551,7 @@ msgstr "به روزرسانی جمع کل"
 #~ msgstr "من در یک نگاه"
 
 #~ msgid "Eng Peyman Mohamadpour"
-#~ msgstr "مهندس پیمان محمدپور"
+#~ msgstr "دکتر پیمان محمدپور"
 
 #~ msgid "Master of Information Technology"
 #~ msgstr "کارشناس ارشد فناوری اطلاعات"
