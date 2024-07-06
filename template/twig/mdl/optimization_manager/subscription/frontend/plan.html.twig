@@ -11,19 +11,13 @@
         </div>
         <div class="card-body p-3">
             <ul class="list-group">
-                {% for key, specification in specifications %}
+                {% for key, specification in plan.specifications %}
                     <li class="list-group-item p-0 border-0 d-flex justify-content-between">
                         <div class="d-flex font-15">
                             {{ render_icon(specification.icon, {class: 'icon-md my-auto icon-primary mr-2'}) }}
                             {{ specification.title|raw }}
                         </div>
-                        <strong>
-                            {% if specification.coin %}
-                                {{ coin_mask|format(plan[key]|number)|raw }}
-                            {% else %}
-                                {{ plan[key]|raw }}
-                            {% endif %}
-                        </strong>
+                        <strong>{{ specification.value|raw }}</strong>
                     </li>
                 {% endfor %}
             </ul>
@@ -31,10 +25,10 @@
         <div class="card-body p-3 border-top-2 border-gray-300">
             <div class="h6 text-center">{{ services_cost|raw }}</div>
             <ul class="list-group">
-                {% for key, usage in usages %}
+                {% for key, usage in plan.usages %}
                     <li class="list-group-item p-0 border-0 d-flex justify-content-between">
-                        <div class="d-flex font-15">{{ usage|raw }}</div>
-                        <strong>{{ coin_mask|format(plan[key]|number)|raw }}</strong>
+                        <div class="d-flex font-15">{{ usage.title|raw }}</div>
+                        <strong>{{ usage.value|raw }}</strong>
                     </li>
                 {% endfor %}
             </ul>
