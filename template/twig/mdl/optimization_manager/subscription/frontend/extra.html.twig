@@ -5,10 +5,10 @@
             <span class="font-14 font-weight-bold">{{ discount_mask|format((discount ~ '%')|number)|raw }}</span>
         </div>
     {% endif %}
-    <div class="card min-h-425px border-2 bg-no-repeat"
+    <div class="card min-h-425px border-1 border-gray-500 bg-no-repeat"
          style="background-image: url('{{ wp_get_attachment_image_url(extra.thumbnail_id, 'full') }}')">
-        <div class="card-header text-center p-3">
-            {{ render_if_has_content('h2', {class: 'h5 m-0'}, extra.title) }}
+        <div class="card-header bg-gray-200 text-gray-700">
+            {{ render_if_has_content('h2', {class: 'text-center h5 m-0'}, extra.title) }}
         </div>
         {% if extra.features is not empty %}
             <div class="p-3 mt-auto">
@@ -23,7 +23,7 @@
             </div>
         {% endif %}
 
-        <div class="card-footer h5 mb-0 text-center">
+        <div class="card-footer h5 mb-0 text-center bg-gray-200 text-gray-700">
             {{ extra.price|woo_price|raw }}
         </div>
     </div>
