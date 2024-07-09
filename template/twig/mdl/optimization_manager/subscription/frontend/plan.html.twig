@@ -34,21 +34,18 @@
             </ul>
         </div>
         {% if plan.features is not empty %}
-            <div class="card-body d-flex justify-content-center p-3 border-top-2 border-gray-300 text-center">
+            <div class="card-body p-3 border-top-2 border-gray-300">
                 <ul class="list-group">
                     {% for feature in plan.features %}
                         {% if feature is not empty %}
-                            <li class="list-group-item border-0 d-flex p-0">
-                                {{ render_icon(feature_icon, {class: 'my-auto icon-success icon-md mr-2'}) }}
-                                <span class="my-auto">{{ feature|raw }}</span>
-                            </li>
+                            <li class="list-group-item border-0 p-0 text-center font-15">{{ feature|raw }}</li>
                         {% endif %}
                     {% endfor %}
                 </ul>
             </div>
         {% endif %}
         <div class="card-footer h5 mb-0 text-center bg-gray-200 text-gray-700">
-            {{ plan.price|woo_price|raw }}
+            {{ plan.price_html|raw }}
         </div>
     </div>
 </article>
