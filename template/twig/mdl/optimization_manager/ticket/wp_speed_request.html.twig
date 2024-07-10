@@ -1,0 +1,13 @@
+{% extends get_cover_template('container') %}
+
+{% block before_container %}
+
+{% endblock %}
+
+{% block container %}
+
+    {{ 'woocommerce_output_all_notices'|call() }}
+
+    {% include get_cover_template('common/content/page') %}
+{% endblock %}
+
