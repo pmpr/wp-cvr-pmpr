@@ -8,9 +8,9 @@
             <div class="{{ class_prefix }}step-wrapper">
                 <div class="position-relative w-100">
                     <div class="{{ class_prefix }}step-line my-6"></div>
-                    {{ render_icon(step|call('getIcon'), {class: 'icon-4x centered-absolute icon-white z-index-2 mx-auto ' ~ class_prefix ~ 'step-icon'}) }}
+                    {{ render_icon(step|call('getIcon'), {class: 'centered-absolute icon-white z-index-2 mx-auto ' ~ class_prefix ~ 'step-icon'}) }}
                 </div>
-                <span class="{{ class_prefix }}step-label font-16 mt-2">{{ step|call('getLabel')|raw }}</span>
+                <span class="{{ class_prefix }}step-label mt-2">{{ step|call('getLabel')|raw }}</span>
             </div>
         </div>
     {% endfor %}

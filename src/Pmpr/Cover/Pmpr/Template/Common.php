@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             668f1c0882705             |
+    |             669ada6f97df7             |
     |_______________________________________|
 */
  namespace Pmpr\Cover\Pmpr\Template; use Pmpr\Cover\Pmpr\Container; class Common extends Container { }

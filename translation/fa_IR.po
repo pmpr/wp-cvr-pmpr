@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Cover Pmpr\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2024-04-16 13:29+0330\n"
+"POT-Creation-Date: 2024-07-17 12:21+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;"
 "_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.3\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: build\n"
@@ -25,112 +25,118 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-3: asset\n"
 "X-Poedit-SearchPathExcluded-4: build\n"
 
-#: functions.php:18
+#: functions.php:12
 msgid "Pmpr"
 msgstr "پی ام پی آر"
 
-#: functions.php:44
+#: functions.php:38
 msgid "Order number:"
 msgstr "شماره سفارش:"
 
-#: functions.php:48
+#: functions.php:42
 msgid "Date:"
 msgstr "تاریخ:"
 
-#: functions.php:52
+#: functions.php:46
 msgid "Total:"
 msgstr "جمع کل:"
 
-#: functions.php:63
+#: functions.php:57
 msgid "Payment method:"
 msgstr "شیوه پرداخت:"
 
-#: functions.php:156 src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:63
+#: functions.php:150 src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:58
 #, php-format
 msgid "Back to %s"
 msgstr "بازگشت به %s"
+
+#: index.php:10
+msgid ""
+"Your session has expired. You can log in again from this page or go to the "
+"login page."
+msgstr ""
 
 #: src/Pmpr/Cover/Pmpr/AMP.php:29
 msgid "None AMP Version"
 msgstr "مشاهده نسخه اصلی"
 
-#: src/Pmpr/Cover/Pmpr/Comment.php:140
+#: src/Pmpr/Cover/Pmpr/Comment.php:138
 msgid "Save my name and email."
 msgstr "نام و ایمیل من را ذخیره کنید."
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:25
+#: src/Pmpr/Cover/Pmpr/Customizer.php:22
 msgid "General Setting"
 msgstr "تنظیمات عمومی"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:29
+#: src/Pmpr/Cover/Pmpr/Customizer.php:25
 msgid "Enable Scroll to Top"
 msgstr "دکمه رفتن به بالا"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:34
+#: src/Pmpr/Cover/Pmpr/Customizer.php:30
 msgid "Scroll to Top Icon"
 msgstr "آیکون رفتن به بالا"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:42
+#: src/Pmpr/Cover/Pmpr/Customizer.php:36
 msgid "Header Setting"
 msgstr "تنظیمات هدر"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:46
+#: src/Pmpr/Cover/Pmpr/Customizer.php:38
 msgid "Header Logos"
 msgstr "لوگوهای هدر"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:50
+#: src/Pmpr/Cover/Pmpr/Customizer.php:41
 msgid "Desktop Logo"
 msgstr "لوگو دسکتاپ"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:55
+#: src/Pmpr/Cover/Pmpr/Customizer.php:45
 msgid "Squared Logo"
 msgstr "لگوی مربعی"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:60
+#: src/Pmpr/Cover/Pmpr/Customizer.php:49
 msgid "Mobile Logo"
 msgstr "لوگو موبایل"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:66
+#: src/Pmpr/Cover/Pmpr/Customizer.php:53
 msgid "Header Left Menu"
 msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:70
+#: src/Pmpr/Cover/Pmpr/Customizer.php:56
 msgid "Header Cart"
 msgstr "کارت هدر"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:78
+#: src/Pmpr/Cover/Pmpr/Customizer.php:64
 msgid "Header Cart Text"
 msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:83
+#: src/Pmpr/Cover/Pmpr/Customizer.php:68
 msgid "Header Cart Icon"
 msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:88
+#: src/Pmpr/Cover/Pmpr/Customizer.php:73
 msgid "Header My Account"
 msgstr "حساب کاربری من"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:97
+#: src/Pmpr/Cover/Pmpr/Customizer.php:82
 msgid "Header My Account Text"
 msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:102
+#: src/Pmpr/Cover/Pmpr/Customizer.php:86
 msgid "Header My Account Icon"
 msgstr "آیکون حساب‌ کاربری من"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:107
+#: src/Pmpr/Cover/Pmpr/Customizer.php:91
 msgid "Header My Account Items"
 msgstr "آیتم‌های حساب کاربری من"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:113
+#: src/Pmpr/Cover/Pmpr/Customizer.php:97
 msgid "Header Whatsapp"
 msgstr "واتساپ"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:122
+#: src/Pmpr/Cover/Pmpr/Customizer.php:106
 msgid "Footer Setting"
 msgstr "تنظیمات پاورقی"
 
-#: src/Pmpr/Cover/Pmpr/Customizer.php:126
+#: src/Pmpr/Cover/Pmpr/Customizer.php:109
 msgid "Footer Logo"
 msgstr "لوگو پاورقی"
 
@@ -142,11 +148,11 @@ msgstr "آیکون منو"
 msgid "Whatsapp Account"
 msgstr "حساب واتس آپ"
 
-#: src/Pmpr/Cover/Pmpr/Navigation/Navigation.php:49
+#: src/Pmpr/Cover/Pmpr/Navigation/Navigation.php:42
 msgid "Primary Navigation Menu"
 msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/Navigation/Navigation.php:50
+#: src/Pmpr/Cover/Pmpr/Navigation/Navigation.php:43
 msgid "Footer Navigation Menu"
 msgstr ""
 
@@ -160,24 +166,24 @@ msgstr "افزایش سرعت"
 msgid "Professional Wordpress"
 msgstr "وردپرس حرفه‌ای"
 
-#: src/Pmpr/Cover/Pmpr/Page/Reportage.php:24 src/Pmpr/Cover/Pmpr/Setting.php:224
+#: src/Pmpr/Cover/Pmpr/Page/Reportage.php:22 src/Pmpr/Cover/Pmpr/Setting.php:224
 msgid "Reportage"
 msgstr "رپورتاژ"
 
-#: src/Pmpr/Cover/Pmpr/Pagination.php:38
+#: src/Pmpr/Cover/Pmpr/Pagination.php:33
 #, php-format
 msgid "Showing %s to %s of %s items"
 msgstr "نمایش %s تا %s از %s آیتم"
 
-#: src/Pmpr/Cover/Pmpr/Pagination.php:70
+#: src/Pmpr/Cover/Pmpr/Pagination.php:65
 msgid "Page navigation"
 msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/Pagination.php:145
+#: src/Pmpr/Cover/Pmpr/Pagination.php:140
 msgid "Prev"
 msgstr "قبلی"
 
-#: src/Pmpr/Cover/Pmpr/Pagination.php:146
+#: src/Pmpr/Cover/Pmpr/Pagination.php:141
 msgid "Next"
 msgstr "بعدی"
 
@@ -185,175 +191,175 @@ msgstr "بعدی"
 msgid "Pmpr Cover"
 msgstr "کاور دکتر محمدپور"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:231 src/Pmpr/Cover/Pmpr/Pmpr.php:232
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:233
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:232 src/Pmpr/Cover/Pmpr/Pmpr.php:233
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:234
 #, php-format
 msgid "%s column"
 msgstr "%s ستون"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:306
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:307
 msgid "Very Small"
 msgstr "خیلی کوچک"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:307
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:308
 msgid "Small"
 msgstr "کوچک"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:308
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:309
 msgid "Medium"
 msgstr "متوسط"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:309
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:310
 msgid "Large"
 msgstr "بزرگ"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:310
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:311
 msgid "X Large"
 msgstr "خیلی بزرگ"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:311
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:312
 msgid "Two X Large"
 msgstr "خیلی بزرگ تر"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:312
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:313
 msgid "Full Size"
 msgstr "اندازه کامل"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:397
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:398
 msgid "Header #1"
 msgstr "هدر شمار ۱"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:398
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:399
 msgid "Header #2"
 msgstr "هدر شماره ۲"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:401
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:402
 msgid "Footer #1"
 msgstr "پاورقی شماره ۱"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:402
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:403
 msgid "Footer #2"
 msgstr "پاورقی شماره ۲"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:403
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:404
 msgid "Footer #3"
 msgstr "پاورقی شماره ۳"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:404
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:405
 msgid "Footer #4"
 msgstr "پاورقی شماره ۴"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:407
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:408
 msgid "Before Feature Image"
 msgstr "قبل از تصویر شاخص"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:408
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:409
 msgid "Before Single Content"
 msgstr "قبل از محتوای سینگل"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:409
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:410
 msgid "After Single Content"
 msgstr "بعد از محتوای سینگل"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:412
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:413
 msgid "Before Post Single Content"
 msgstr "قبل از محتوای سینگل نوشته"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:413
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:414
 msgid "After Post Single Content"
 msgstr "بعد از محتوای سینگل نوشته"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:416
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:417
 msgid "Sidebar"
 msgstr "سایدبار"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:417
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:418
 msgid "Single Sidebar"
 msgstr "سایدبار سینگل"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:418
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:419
 msgid "Archive Sidebar"
 msgstr "سایدبار آرشیو"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:421
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:422
 msgid "After Container"
 msgstr "بعد از کانتینر"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:422
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:423
 msgid "After Single Container"
 msgstr "بعد از کانتینر سینگل"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:423
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:424
 msgid "After Archive Container"
 msgstr "بعد از کانتینر آرشیو"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:430
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:325
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:431
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:323
 #: woocommerce/checkout/thankyou.php:49
 msgid "Email"
 msgstr "پست الکترونیکی"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:431
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:432
 msgid "Full name"
 msgstr "نام و نام خانوادگی"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:432
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:433
 msgid "Comment text"
 msgstr "متن دیدگاه"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:433
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:434
 msgid "Your comment"
 msgstr "دیدگاه شما"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:434
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:435
 msgid "Do you Logout?"
 msgstr "خارج می‌شوید؟"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:435
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:436
 #, php-format
 msgid "in %s Category"
 msgstr "در دسته %s"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:436
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:437
 #, php-format
 msgid "Logged in as %s."
 msgstr "با عنوان %s وارد شده‌اید."
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:437
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:438
 msgid "Last Updated Posts"
 msgstr "آخرین نوشته‌های به روز شده"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:438
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:439
 #, php-format
 msgid "%s cannot be empty"
 msgstr "%s نمی تواند خالی باشد"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:439
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:440
 msgid "Most Controversial"
 msgstr "پر بحث‌ ترین نوشته‌ها"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:440
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:441
 #, php-format
 msgid "Search result for: %s"
 msgstr "نتیجه جستجو برای: %s"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:441 src/Pmpr/Cover/Pmpr/Pmpr.php:442
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:442 src/Pmpr/Cover/Pmpr/Pmpr.php:443
 msgid "Log out of this account"
 msgstr "از این حساب کاربری خارج شوید"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:443
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:444
 msgid "Email cannot empty and must be valid"
 msgstr "ایمیل نمی تواند خالی باشد و باید معتبر باشد"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:554
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:555
 msgid "Back to home"
 msgstr "بازگشت به خانه"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:555
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:556
 msgid "Are you lost?!"
 msgstr "‌چیزی‌که میخوای رو پیدا نمی‌کنی؟!"
 
-#: src/Pmpr/Cover/Pmpr/Pmpr.php:556
+#: src/Pmpr/Cover/Pmpr/Pmpr.php:557
 msgid "The page you requested was not found."
 msgstr "صفحه مورد درخواست شما پیدا نشد."
 
@@ -467,7 +473,7 @@ msgstr "مطالعه بیشتر"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:333
 msgid "News Slider"
-msgstr "اسلایدر خبر‌ها"
+msgstr "اسلایدر اخبار"
 
 #: src/Pmpr/Cover/Pmpr/Setting.php:339
 msgid "Bottom List"
@@ -962,66 +968,66 @@ msgstr "دکمه به صورت outline"
 msgid "Reset Password"
 msgstr "بازنشانی گذرواژه"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:157
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:283
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:160
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:286
 msgid "Username or Email"
 msgstr "نام کاربری یا ایمیل"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:168
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:179
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:171
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:182
 msgid "Login"
 msgstr "ورود"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:180
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:183
 msgid "Register"
 msgstr "ثبت نام"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:241
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:244
 msgid "Remember me"
 msgstr "مرا به خاطر داشته باش"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:284
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:287
 msgid "Password"
 msgstr "گذرواژه"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:285
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Account.php:288
 msgid "Email Address"
 msgstr "پست الکترونیکی"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Base.php:100
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Base.php:88
 msgid "Select"
 msgstr "انتخاب"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Base.php:196
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Base.php:141
 msgid "from"
 msgstr "از"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Base.php:196
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Base.php:141
 msgid "to"
 msgstr "تا"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:49
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:46
 msgid "Checkout"
 msgstr "تسویه حساب"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:105
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:171
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:106
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:177
 msgid "Remove this item"
 msgstr "حذف این ایتم"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:162
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:168
 msgid "Remove Product"
 msgstr "حذف محصول"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:164
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:170
 msgid "Do you want to delete this product?"
 msgstr "آیا مایل به حذف این محصول هستید؟"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:165
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:171
 msgid "Cancel"
 msgstr "انصراف"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:167 woocommerce/cart/cart.php:71
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Cart.php:173 woocommerce/cart/cart.php:71
 msgid "Remove"
 msgstr "حذف"
 
@@ -1038,69 +1044,69 @@ msgstr "سبد خرید شما خالی است."
 msgid "Show Account"
 msgstr "مشاهده حساب کاربری"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:89
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:84
 msgid "Grid View"
 msgstr ""
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:95
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:90
 msgid "List View"
 msgstr "نمایش لیستی"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:107
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:102
 msgid "No products were found matching your selection."
 msgstr "هیچ محصولی مطابق با انتخاب شما یافت نشد."
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:124
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:119
 msgid "Default"
 msgstr "پیشفرض"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:153
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:148
 msgid "All"
 msgstr "همه"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:167
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Shop.php:162
 msgid "Product Category"
 msgstr "دسته محصول"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Single.php:342
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Single.php:468
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Single.php:339
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Single.php:465
 #, php-format
 msgid "%s comment"
 msgstr "%s دیدگاه"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:151 woocommerce/cart/cart.php:132
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:146 woocommerce/cart/cart.php:132
 msgid "Regular Price"
 msgstr "قیمت اصلی"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:155
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:150
 msgid "Sale Price"
 msgstr "قیمت فروش"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:159 woocommerce/cart/cart.php:144
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:154 woocommerce/cart/cart.php:144
 msgid "Discount Expiration"
 msgstr "اعتبار تخفیف"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:163 woocommerce/cart/cart.php:139
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:158 woocommerce/cart/cart.php:139
 msgid "Discount"
 msgstr "تخفیف"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:226
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:224
 #, php-format
 msgid "In Category: %s"
 msgstr "در دسته: %s"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:324
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Template.php:322
 msgid "Postcode"
 msgstr "کد پستی"
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Woocommerce.php:124
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Woocommerce.php:122
 #, php-format
 msgid "%s has been added to your cart."
 msgid_plural "%s have been added to your cart."
 msgstr[0] "%s به سبد خرید شما افزوده شد."
 msgstr[1] "%s به سبد خرید شما افزوده شد."
 
-#: src/Pmpr/Cover/Pmpr/Woocommerce/Woocommerce.php:138
+#: src/Pmpr/Cover/Pmpr/Woocommerce/Woocommerce.php:137
 msgid "Shop Sidebar"
 msgstr "سایدبار فروشگاه"
 
