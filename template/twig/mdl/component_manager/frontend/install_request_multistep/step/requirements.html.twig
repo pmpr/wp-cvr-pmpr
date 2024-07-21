@@ -36,7 +36,7 @@
                                     {% endfor %}
                                 {% endif %}
                             {% endset %}
-                            <strong class="text-left">{{ item.value|raw }}</strong>
+                            <strong class="text-right">{{ item.value|raw }}</strong>
                             {{ render_frontend_modal({
                                 id: 'requirement-guide-' ~ key,
                                 centered: 1,
