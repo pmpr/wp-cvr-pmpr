@@ -1,3 +1,8 @@
+{{ render_frontend_spinner({
+    type: 'loader',
+    show: 0,
+    overlay: 1,
+}) }}
 <nav class="{{ class_prefix }}nav" data-total-steps="{{ steps|length }}">
     {% for step in steps %}
         {% set step_id = step|call('getId') %}
