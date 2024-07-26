@@ -16,7 +16,7 @@
     {{ pmpr_do_action('before_header') }}
     {% set can_render_breadcrumb = pmpr_apply_filters('breadcrumb_can_render', 1) %}
     <nav class="navbar navbar-expand-md navbar-light bg-light py-3 main-nav{% if not can_render_breadcrumb %} shadow-sm{% endif %}">
-        <div class="container">
+        <div class="container position-relative">
 
             {% include get_cover_template('common/logo') with {
                 logo_type: 'header',
@@ -30,10 +30,11 @@
                         aria-controls="navbar" aria-expanded="true" aria-label="{{ __('Toggle navigation', domain) }}">
                     {{ get_icon('fasm/6/set/bars', {}, 1)|raw }}
                 </button>
-                <div class="collapse navbar-collapse nav-bar" id="navbar">
+                <div class="collapse navbar-collapse nav-bar overflow-auto" id="navbar">
                     {{ wp_nav_menu({theme_location:'main-menu'}) }}
-                    {{ pmpr_do_action('pmpr_header_left') }}
+                    {{ pmpr_do_action('pmpr_header_left_buttons') }}
                 </div>
+                {{ pmpr_do_action('pmpr_header_left_dropdowns') }}
             {% endif %}
         </div>
     </nav>
