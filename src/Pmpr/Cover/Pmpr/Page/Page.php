@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             669eeba41d44c             |
+    |             66a2f440542e0             |
     |_______________________________________|
 */
  namespace Pmpr\Cover\Pmpr\Page; use Pmpr\Cover\Pmpr\Container; class Page extends Container { public function mameiwsayuyquoeq() { Reportage::symcgieuakksimmu(); Optimization::symcgieuakksimmu(); ProfessionalWordpress::symcgieuakksimmu(); } }

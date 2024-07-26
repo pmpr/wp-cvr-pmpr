@@ -62,9 +62,9 @@
                              class="bg-gray-100 collapse{% if loop.first %} show{% endif %}"
                              aria-labelledby="step_header_{{ index|esc_attr }}" data-parent="#steps_accordion">
                             <div class="card-body d-flex">
-                                {% if step.image_id is defined
-                                    and step.image_id is not empty %}
-                                    {{ render_post_data('image', step.image_id, {
+                                {% if step.image is defined
+                                    and step.image is not empty %}
+                                    {{ render_post_data('image', step.image, {
                                         size: apply_filters('structured_data_howto_step_image_size', 'small'),
                                         attrs: {
                                             class: 'img-fluid d-none d-md-block mb-auto mr-5',

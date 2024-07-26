@@ -5,4 +5,5 @@
     {% set content = apply_filters('page_content_filter', content, post, post_type) %}
     {{ content|raw }}
     {{ do_action('single_after_content', post) }}
+    {{ pmpr_do_action('single_after_content', post) }}
 {% endblock %}
