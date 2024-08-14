@@ -28,13 +28,13 @@
                 <div class="col-12 col-lg-8 mb-5 mb-lg-0">
                     {% set slider = data.slider %}
                     {% if slider is not empty %}
-                        {% embed get_template('../common/carousel/single_column', _self) with {
+                        {% embed get_template('../common/carousel/swiper/single_column', _self) with {
                             carousels: slider,
                         } %}
                             {% block carousel %}
                                 {% embed get_template('../common/media/background', _self) with {
                                     image_url: wp_get_attachment_image_url(carousel.image, 'large'),
-                                    container_class: 'carousel-item position-relative bg-cover',
+                                    container_class: 'carousel-item h-100 position-relative bg-cover',
                                 } %}
                                     {% block body %}
                                         <div class="position-absolute bottom-0 w-100 overlay overlay-dark overlay-50">
@@ -109,17 +109,14 @@
         section_class: 'py-8 bg-gray-100'
     } %}
         {% block content %}
-            {% embed get_template('../common/carousel/three_column', _self) with {
-                carousels: data.products,
-                container_class: 'h-100',
+            {% embed get_template('../common/carousel/swiper/three_column', _self) with {
+                carousels: data.products
             } %}
                 {% block carousel %}
                     <div class="carousel-item position-relative">
                         <div class="card border-0 mx-2">
                             <article class="card-body">
-                                <h3 class="h6 mb-3" data-limit="1">
-                                    {{ carousel.title|raw }}
-                                </h3>
+                                <h3 class="h6 mb-3" data-limit="1">{{ carousel.title|raw }}</h3>
                                 <div class="d-flex">
                                     {{ wp_get_attachment_image(carousel.image, 'thumbnail')|raw }}
                                     <div class="d-flex flex-column justify-content-between">
@@ -273,9 +270,8 @@
         section_class: 'py-8 bg-gray-100'
     } %}
         {% block content %}
-            {% embed get_template('../common/carousel/four_column', _self) with {
+            {% embed get_template('../common/carousel/swiper/four_column', _self) with {
                 carousels: data.posts,
-                container_class: 'h-100',
             } %}
                 {% block carousel %}
                     <div class="carousel-item position-relative">

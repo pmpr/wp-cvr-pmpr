@@ -1,5 +1,5 @@
 {% if items is not empty %}
-    {% embed get_cover_template('common/carousel/single_column') with {
+    {% embed get_cover_template('common/carousel/swiper/single_column') with {
         carousels: items,
     } %}
         {% block carousel %}
