@@ -30,6 +30,7 @@
                     {% if slider is not empty %}
                         {% embed get_template('../common/carousel/swiper/single_column', _self) with {
                             carousels: slider,
+                            container_class: 'frontend-carousel'
                         } %}
                             {% block carousel %}
                                 {% embed get_template('../common/media/background', _self) with {
