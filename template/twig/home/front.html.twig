@@ -8,24 +8,7 @@
         {% block content %}
 
             <div class="row">
-                <div class="col-12 col-lg-4 mb-5 mb-lg-0">
-                    {% set top_lists = data.top_list %}
-                    {% if top_lists is not empty %}
-                        <ul class="list-group">
-                            {% for post in top_lists %}
-                                <li class="list-group-item font-weight-bold">
-                                    {% include get_template('../common/call_to_action', _self) with {
-                                        button: 0,
-                                        attrs: {'data-limit': 1},
-                                        text: post.title,
-                                        permalink: post.permalink,
-                                    } %}
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    {% endif %}
-                </div>
-                <div class="col-12 col-lg-8 mb-5 mb-lg-0">
+                <div class="col-12 col-lg-8 mb-5 mb-lg-0 order-lg-2">
                     {% set slider = data.slider %}
                     {% if slider is not empty %}
                         {% embed get_template('../common/carousel/swiper/single_column', _self) with {
@@ -39,8 +22,8 @@
                                     container_class: 'carousel-item h-100 position-relative bg-cover',
                                 } %}
                                     {% block body %}
-                                        <div class="position-absolute bottom-0 w-100 overlay overlay-dark overlay-50">
-                                            <div class="row no-gutters p-3">
+                                        <div class="position-absolute bottom-0 w-100 overlay overlay-dark overlay-50 z-index-1">
+                                            <div class="row no-gutters p-3 z-index-2">
                                                 <div class="col-12 col-lg-9">
                                                     <div class="h5 text-center text-lg-left text-white slide-title"
                                                          data-limit="1">{{ carousel.title|raw }}</div>
@@ -71,7 +54,24 @@
                         {% endembed %}
                     {% endif %}
                 </div>
-                <div class="col-12 mt-0 mt-lg-3">
+                <div class="col-12 col-lg-4 mb-5 mb-lg-0 order-lg-1">
+                    {% set top_lists = data.top_list %}
+                    {% if top_lists is not empty %}
+                        <ul class="list-group">
+                            {% for post in top_lists %}
+                                <li class="list-group-item font-weight-bold">
+                                    {% include get_template('../common/call_to_action', _self) with {
+                                        button: 0,
+                                        attrs: {'data-limit': 1},
+                                        text: post.title,
+                                        permalink: post.permalink,
+                                    } %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+                <div class="col-12 mt-0 mt-lg-3 order-3">
                     {% set bottom_list = data.bottom_list %}
                     {% if bottom_list is not empty %}
                         <div class="row">

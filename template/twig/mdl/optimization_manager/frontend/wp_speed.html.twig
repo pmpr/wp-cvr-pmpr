@@ -25,7 +25,7 @@
                                     container_class: 'wp-speed-carousel'
                                 } %}
                                     {% block carousel %}
-                                        {{ wp_get_attachment_image(carousel.id, [593, 285], {class: 'w-100 d-block card-img-top'})|raw }}
+                                        {{ wp_get_attachment_image(carousel.id, [593, 220], {class: 'w-100 d-block card-img-top'})|raw }}
                                         <div class="position-absolute bottom-0 w-100 overlay overlay-dark overlay-70 z-index-1">
                                             <div class="h5 text-center text-lg-left text-white slide-title p-4 z-index-2"
                                                  data-limit="1">{{ carousel.text|raw }}</div>
@@ -33,7 +33,7 @@
                                     {% endblock %}
                                 {% endembed %}
                             {% else %}
-                                {{ wp_get_attachment_image(card.image, [593, 285], {class: 'w-100 d-block card-img-top'})|raw }}
+                                {{ wp_get_attachment_image(card.image, [593, 220], {class: 'w-100 d-block card-img-top'})|raw }}
                             {% endif %}
                         {% endif %}
                         <div class="card-body">
