@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             66cb56afe7646             |
+    |             66ce114e0e8f4             |
     |_______________________________________|
 */
  namespace Pmpr\Cover\Pmpr\Widget; use Pmpr\Cover\Pmpr\Container; class Widget extends Container { public function mameiwsayuyquoeq() { Advertise::symcgieuakksimmu(); } }
