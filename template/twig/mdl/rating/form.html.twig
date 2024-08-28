@@ -1,9 +1,9 @@
-<div class="rating-container position-relative my-5 py-3 text-center">
+<div class="rating-container position-relative my-3 py-7 text-center">
 
     {{ render_frontend_spinner({
         type: 'loader',
         show: not render,
-        overlay: render,
+        overlay: true,
     }) }}
 
     {% if render is defined and render %}
