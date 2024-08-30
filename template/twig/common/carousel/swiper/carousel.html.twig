@@ -1,6 +1,8 @@
 {% if carousels %}
     <div class="swiper-container position-relative">
-        <div class="swiper"{% if carousel_config is defined %} data-carousel="{{ carousel_config|json_encode|esc_attr }}"{% endif %} dir="rtl">
+        <div class="swiper"{% if carousel_config is defined %}
+        data-carousel="{{ carousel_config|json_encode|esc_attr }}"{% endif %}
+             dir="rtl"{% if carousel_id is defined %} id="{{ carousel_id|esc_attr }}"{% endif %}>
 
             {% block before_slides %}{% endblock %}
             <div class="swiper-wrapper {{ container_class|esc_attr }}">
